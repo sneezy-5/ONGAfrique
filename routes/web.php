@@ -31,7 +31,10 @@ use Illuminate\Support\Facades\Route;
 
  
 //
+Route::middleware(['visitor'])->group(function(){
 
+
+    
 Route::get('/', [welcomeController::class, 'index'])->name('/');
 
 //route A propos de nous 
@@ -109,6 +112,7 @@ Route::resource('/contact', ContactController::class)->only([
 ]);
 
 
+});
 
 Route::middleware(['auth',])->group(function(){
 

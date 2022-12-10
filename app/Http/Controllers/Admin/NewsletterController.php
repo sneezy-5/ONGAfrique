@@ -54,6 +54,18 @@ class NewsletterController extends Controller
         return back()->with('sucess','send succes');
     }
 
+        /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        
+        Newsletter::find($id)->delete();
+        return redirect()->route('newletter.index');
+    }
     public function export() 
     {
        return Excel::download(new EmailExport, 'email.xlsx');

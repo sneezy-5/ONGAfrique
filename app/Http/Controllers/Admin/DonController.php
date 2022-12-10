@@ -49,9 +49,9 @@ class DonController extends Controller
     public function show($id)
     {
 
-        Don::create($id);
+        $don =Don::create($id);
 
-        return redirect()->route('don.index');
+        return redirect()->route('don.index','don');
     }
 
     /**
@@ -85,6 +85,8 @@ class DonController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        Don::find($id)->delete();
+        return redirect()->route('dons.index');
     }
 }
