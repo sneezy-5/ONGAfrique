@@ -1,0 +1,574 @@
+
+/*css acceil*/
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+  
+  
+  .modal-dialog{
+     max-width:800px;
+  }
+  
+  .container{
+    background: #00000017;
+    min-width:100%!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0
+  }
+  /**header**/
+  
+  .top-container {
+    background-color: #07b0e9;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .top-container h2{
+    color:white;
+  
+  }
+  
+  .top-container .minititle{
+    position:relative;
+    top:23px;
+    font-family:system-ui;
+    color:white
+  }
+  
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  /**header**/
+  
+  .headerpg{
+    box-shadow:1px 1px 20px -10px
+  }
+  
+  .imgheader{
+    display:flex;
+  }
+  
+  /**banner**/
+  
+  
+  
+  
+  .txtimg .txttop{
+    background-color: brown;
+  
+  }
+  
+  .txtimg .imgbanner{
+  background-color: black;
+  
+  height:200px
+  }
+  
+  .cerclebanner{
+    position:absolute;
+    z-index: 5;
+    height:250px;
+    width:250px;
+    left:250px;
+    top:250px
+  }
+  
+  @media only screen and (max-width: 768px){
+    .cerclebanner{
+      position:absolute;
+      z-index: 5;
+      height:150px;
+      width:150px;
+      left:auto;
+      top:auto;
+      bottom:0;
+  
+    }
+  }
+  
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-inner .carousel-item{
+    height: 700px;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  .carousel-inner .carousel-item:nth-child(1){
+    background:center/cover no-repeat url('../img/sante/1.jpg');
+  }
+  
+  .carousel-inner .carousel-item:nth-child(2){
+    background:center/cover no-repeat url('../img/sante/9.jpg');
+    }
+  
+    .carousel-inner .carousel-item:nth-child(3){
+      background:center/cover no-repeat url('../img/sante/8.jpg');
+      background-position: top;
+      }
+  /**fin banner**/
+  
+  /**center**/
+  
+  .center{
+    width:100%;
+    background: #808080;
+    display:flex;
+    align-items:center;
+  justify-content:center
+  }
+  
+  .parentbloc0{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #fbfbfb;
+  } 
+  
+  .parentblocdeo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #e8e8e8;
+  }
+  
+  
+  .carddeo{
+    background-color: #e8e8e8;
+    width:75%
+  }
+  
+  @media only screen and (max-width:768px){
+    .carddeo{
+      width: 100%;
+    }
+  }
+  
+  .imgzoom{
+  height: auto;
+  background-color: #ffffff;
+  border:none;
+  box-shadow:1px 1px 10px 1px #a9a9a9
+  }
+  
+  
+  
+  
+  
+  .btnflottant{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform:rotate(-90deg) translatey(50%);
+    z-index:50
+  }
+  
+  
+  .montant{
+    text-align:center;
+    margin-top:2px;
+  }
+  
+  .montant .btnprix{
+    width: 80px;
+    font-size:14px;
+    box-shadow:1px 1px 5px 0.1px #33333370;
+    border:none
+  }
+  
+  .btnprix:hover{
+    background:#99cfff
+  }
+  .montant .active{
+    background-color: #2196F3;
+    color:white;
+    box-shadow:inset 0px 0px 10px 1px #0201014d;
+    border:2px solid #dbdbdb
+  }
+  
+  
+  .sousinfo{
+    background-color:rgb(187, 21, 21);
+  }
+  
+  .infosocial{
+    background-color: #000;
+  }
+  
+  .infosocial .blocsocial{
+    background: #2ac80000;
+  }
+  
+  /**fin center**/
+  
+  /* css acceil*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Style the Image Used to Trigger the Modal */
+  .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modalimg {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-contentimg {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  .caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-contentimg, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-contentimg {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  .parentblocstory{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  
+  .Storydiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .cardstory {
+      max-width: 350px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background: #fff;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      user-select: none;
+      z-index: 10;
+      overflow: hidden;
+      text-decoration:none;
+  }
+  
+  .cardstory .backgroundEffect {
+      bottom: 0;
+      height: 0px;
+      width: 100%
+  }
+  
+  .cardstory:hover {
+      color: #fff;
+      transform: scale(1.025);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+  }
+  
+  .cardstory:hover .backgroundEffect {
+      bottom: 0;
+      height: 320px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      background: #1b9ce3;
+      animation: popBackground 0.3s ease-in
+  }
+  
+  @keyframes popBackground {
+      0% {
+          height: 20px;
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%
+      }
+  
+      50% {
+          height: 80px;
+          border-top-left-radius: 75%;
+          border-top-right-radius: 75%
+      }
+  
+      75% {
+          height: 160px;
+          border-top-left-radius: 85%;
+          border-top-right-radius: 85%
+      }
+  
+      100% {
+          height: 320px;
+          border-top-left-radius: 100%;
+          border-top-right-radius: 100%
+      }
+  }
+  
+  .cardstory .pic {
+      position: relative
+  }
+  
+  .cardstory .pic img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover
+  }
+  
+  .cardstory .date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 70px;
+      background-color: #1b9ce3;
+      color: white;
+      position: absolute;
+      bottom: 0px;
+      transition: all ease
+  }
+  
+  .cardstory .date .day {
+      font-size: 14px;
+      font-weight: 600
+  }
+  
+  .cardstory .date .month,
+  .cardstory .date .year {
+      font-size: 10px
+  }
+  
+  .cardstory .text-muted {
+      font-size: 12px
+  }
+  
+  .cardstory:hover .text-muted {
+      color: #fff !important
+  }
+  
+  .cardstory .content {
+      padding: 0 20px
+  }
+  
+  .cardstory .content .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      background-color: #1b9ce3;
+      border-radius: 25px;
+      font-size: 12px;
+      border: none
+  }
+  
+  .cardstory:hover .content .btn {
+      background: #fff;
+      color: #1b9ce3;
+      box-shadow: #0000001a 0px 3px 5px
+  }
+  
+  .cardstory .content .btn .fas {
+      font-size: 10px;
+      padding-left: 5px
+  }
+  
+  .cardstory .content .foot .admin {
+      color: #1b9ce3;
+      font-size: 12px
+  }
+  
+  .cardstory:hover .content .foot .admin {
+      color: #fff
+  }
+  
+  .cardstory .content .foot .icon {
+      font-size: 12px
+  }
+  
+  
+  
+  
+  
+  
+
+  
+/*API CINEPAY*/
+
+.cp-close{
+  margin-top:50px;
+}
+  
+
+
+
+
+
+  /*Modal adhesion*/
+
+  :root{--primary-color: rgb(11, 78, 179)}*, *::before, *::after{box-sizing: border-box}
+
+  .labeladhe{display: block;margin-bottom: 0.5rem}
+  .champadhes{display: block;width: 100%;padding: 0.75rem;border: 1px solid #ccc;border-radius: 0.25rem;height: 50px}
+  
+  .progressbar{position: relative;display: flex;justify-content: space-between;counter-reset: step;margin: 2rem 0 4rem}
+  .progressbar::before, .progress{content: "";position: absolute;top: 50%;transform: translateY(-50%);height: 4px;width: 100%;background-color: #dcdcdc;z-index: 1}
+  .progress{background-color: rgb(0 128 0);width: 0%;transition: 0.3s}
+  .progress-step{width: 2.1875rem;height: 2.1875rem;background-color: #dcdcdc;border-radius: 50%;display: flex;justify-content: center;align-items: center;z-index: 1}
+  .progress-step::before{counter-increment: step;content: counter(step)}
+  .progress-step::after{content: attr(data-title);position: absolute;top: calc(100% + 0.5rem);font-size: 0.85rem;color: #666}
+  .progress-step-active{background-color: var(--primary-color);color: #f3f3f3}
+  .step-forms{display: none;transform-origin: top;animation: animate 1s}
+  .step-forms-active{display: block}
+  .divipts{margin: 1rem 0}@keyframes animate{from{transform: scale(1, 0);opacity: 0}to{transform: scale(1, 1);opacity: 1}}
+  .btns-group{display: grid;grid-template-columns: repeat(2, 1fr);gap: 1.5rem}
+  .btnsuive{padding: 0.75rem;display: block;text-decoration: none;background-color: var(--primary-color);color: #f3f3f3;text-align: center;border-radius: 0.25rem;cursor: pointer;transition: 0.3s}
+  .btnsuive:hover{box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color)}
+  .progress-step-check{position: relative;background-color: green !important;transition: all 0.8s}
+  .progress-step-check::before{position: absolute;content: '\2713';width: 100%;height: 100%;top: 8px;left: 13px;font-size: 12px}
+  .divipts{position: relative}
+  .divipts label{font-size: 13px;position: absolute;height: 19px;padding: 4px 7px;top: -14px;left: 10px;color: #a2a2a2;background-color: white}
+  .welcome{height: 450px;width: 350px;background-color: #fff;border-radius: 6px;display: flex;justify-content: center;align-items: center}
+  .welcome .content{display: flex;align-items: center;flex-direction: column}
+  .checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}
+  .checkmark{width: 56px;height: 56px;border-radius: 50%;display: block;stroke-width: 2;stroke: #fff;stroke-miterlimit: 10;margin: 10% auto;box-shadow: inset 0px 0px 0px #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}
+  .checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke{100%{stroke-dashoffset: 0}}@keyframes scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #7ac142}}
+ 
+  
+  
+  
+  
+  
+  
