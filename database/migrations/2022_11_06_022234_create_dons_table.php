@@ -22,8 +22,9 @@ class CreateDonsTable extends Migration
             $table->string('city')->nullable();
             $table->string('address')->nullable();
             $table->string('amount');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
-            $table->foreignId('user_name')->constrained()
+            $table->foreign('user_id')->references('id')->on('users')
                  ->onUpdate('cascade')
                 ->onDelete('cascade');
         });
