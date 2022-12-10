@@ -15,7 +15,7 @@ class CultureController extends Controller
 
     public function index()
     {
-        $cultures = story::where('type', 'culture')->get();
+        $cultures = story::where('type', 'culture')->paginate(8);
         
         return view('template.nosmissions.cultures', compact('cultures'));
     }

@@ -17,7 +17,7 @@ class DonateController extends Controller
     public function index()
     {
         //
-        $donner = Don::paginate(10);
+        $donner = Don::paginate(8);
         // $countdon = Auth::user()->dons->where('amount',);
         return view('espace_donateur/don_show', compact('donner'));
     }

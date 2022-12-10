@@ -46,8 +46,10 @@
 <div class="parentbloc0">
        
   <div class="card-text w-100 m-2 container-fluid d-flex justify-content-center align-items-center flex-column"  style="text-align:center;">
-    <h1 class="card-title text-dark fst-italic mb-4 mt-5" style="font-weight:700;">Le grand Titre du Centre</h1>
-    <p class="w-75 text-dark h5 mb-5">le contenue Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex cupiditate quaerat veritatis illo aliquam dignissimos at, sapiente nostrum, voluptatibus beatae t</p>
+    <h1 class="card-title text-dark fst-italic mb-4 mt-5" style="font-weight:700;">NOS MISSIONS</h1>
+    <p class="w-75 text-dark h5 mb-5">L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Taabo-Village à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés...
+
+L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les femmes dans leurs projets entrepreneuriales Nous intervenons dans le social, la santé, l'éducation, les activités socio-économiques, culturelles et sportives</p>
   </div>
 
 </div>
@@ -89,7 +91,7 @@
       <div class="titreinfo container-fluid align-items-center card-body" style="text-align:start;">
       <h3 class="title text-dark fst-italic"  style="font-weight:700;">
           L'AIDE HUMANITAIRE DE L'ONG SOURIRE D'AFRIQUE POUR LES ENFANTS <br>
-        <a href="#" class="h5">LISEZ NOS HISTOIRES »</a>
+        <a href="{{route('actualites.index')}}" class="h5">LISEZ NOS HISTOIRES »</a>
       </h3>
      </div>
 
@@ -161,7 +163,7 @@
 
       </div>
        <div class="col-md-6 container-fluid m-2">
-       <iframe class="container-fluid col-md" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fprofile.php%3Fid%3D100086654464545&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+       <iframe class="container-fluid col-md" src="https://web.facebook.com/profile.php?id=100086654464545"></iframe>
       </div>
   </div>
 

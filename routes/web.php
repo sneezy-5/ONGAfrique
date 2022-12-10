@@ -90,12 +90,12 @@ Route::resource('/commentnousaider/faireundon', DonateController::class)->only([
 
 // route story (actualité)
 
-Route::resource('/story', StoryController::class)->only([
+Route::resource('/actualites', StoryController::class)->only([
     'index', 'show'
 ]);
 
 // route evenement (activité)
-Route::resource('/event', EventController::class)->only([
+Route::resource('/activites', EventController::class)->only([
     'index', 'show'
 ]);
 
@@ -107,6 +107,8 @@ Route::resource('/newsletter', NewsletterController::class)->only([
 Route::resource('/contact', ContactController::class)->only([
     'index','create', 'store'
 ]);
+
+
 
 Route::middleware(['auth',])->group(function(){
 

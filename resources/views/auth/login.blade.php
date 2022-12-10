@@ -1,9 +1,11 @@
 @extends('base.login')
 
-
+@section('title', 'ONG | SOURIRE D\'AFRIQUE')
 @section('login')
 
 <!--CENTER-->
+
+
 
 <div class="center row">
 

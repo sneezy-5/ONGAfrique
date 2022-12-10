@@ -94,7 +94,12 @@
 
 @endforeach
 
-
+{{$ev->links()}}
+                               <style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
   <!--  -->
 
                    

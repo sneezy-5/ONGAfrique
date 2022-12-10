@@ -11,12 +11,12 @@ class welcomeController extends Controller
     //
     public function index()
     {
-        $cultures = Story::latest('id')->first();
-        $economies = Story::latest('id')->first();
-        $educations = Story::latest('id')->first();
-        $santes = Story::latest('id')->first();
-        $sociales = Story::latest('id')->first();
-        $sports = Story::latest('id')->first();
+        $cultures = Story::where('type', 'culture')->first();
+        $economies = Story::where('type', 'economie')->first();
+        $educations = Story::where('type', 'education')->first();
+        $santes = Story::where('type', 'sante')->first();
+        $sociales = Story::where('type', 'sociale')->first();
+        $sports = Story::where('type', 'sport')->first();
         
         return view('welcome', compact('cultures','economies','educations',
                                         'santes','sociales','sports',));

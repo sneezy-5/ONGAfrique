@@ -71,7 +71,7 @@
         
         <h3>Push notifications</h3>
             <i class="fa fa-bell"></i>
-            <p class="r3 px-md-5 px-sm-1">Coucou , tu recois ce mail pour {{$post['title']}} .</p>
+            <p class="r3 px-md-5 px-sm-1">Coucou , tu recois ce mail pour la creation d'un compte donateur .</p>
     
             <div class="text-center mb-3"> <button class="btn btn-primary w-50 rounded-pill b1"><a href="http://ongsouriredafrique.com/">Visite le site</a></button> </div>
             

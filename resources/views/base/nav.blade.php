@@ -51,8 +51,8 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('event.index')}}">Nos Activités</a></li>
-            <li><a class="dropdown-item" href="{{route('story.index')}}">Nos Actualités</a></li>
+            <li><a class="dropdown-item" href="{{route('actualites.index')}}">Nos Activités</a></li>
+            <li><a class="dropdown-item" href="{{route('activites.index')}}">Nos Actualités</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -63,7 +63,7 @@
             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Donner par mois</a></li>
             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalAdhesion">Adhérer</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" download="{{asset('styles/img/pdf/FICHE-D\'ADHESIONDEL\'ONGSOURIRE.pdf')}}" href="img/pdf/FICHE-D'ADHESIONDEL'ONGSOURIRE.pdf">Télécharger Pdf Adhésion</a></li>
+            <li><a class="dropdown-item" download="{{asset('styles/img/pdf/FICHE-D\'ADHESIONDEL\'ONGSOURIRE.pdf')}}" href="{{asset('styles/img/pdf/FICHE-D\'ADHESIONDEL\'ONGSOURIRE.pdf')}}">Télécharger Pdf Adhésion</a></li>
           </ul>
         </li>
 
@@ -127,20 +127,20 @@
                     <div class="step-forms step-forms-active">
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="nom&prénoms">Nom et Prénoms</label>
-                        <input type="text" name="nom&prénoms"  class="iptadhe champadhes1 champadhes">
+                        <input type="text" name="last_name"  class="iptadhe champadhes1 champadhes">
                       </div>
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="Datedenaissance">Date de naissance</label>
-                        <input type="date" name="Datedenaissance" class="iptadhe champadhes2 champadhes">
+                        <input type="date" name="date_naissance" class="iptadhe champadhes2 champadhes">
                       </div>
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="Fonction">Fonction</label>
-                        <input type="text" name="Fonction" class="iptadhe champadhes3 champadhes">
+                        <input type="text" name="fonction" class="iptadhe champadhes3 champadhes">
                       </div>
 
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="fichier">Votre photo</label>
-                        <input type="file" name="photo" class="form-control-file iptadhe champadhes4 champadhes">
+                        <input type="file" name="picture" class="form-control-file iptadhe champadhes4 champadhes">
                       </div>
 
 
@@ -153,7 +153,7 @@
 
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="contacts">Contacts</label>
-                        <input type="number" name="contacts" class="iptadhe champadhes5 champadhes">
+                        <input type="number" name="phone" class="iptadhe champadhes5 champadhes">
                       </div>
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="email">Mail</label>
@@ -169,7 +169,7 @@
 
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="Région/district">Région/district</label>
-                        <input type="text" name="Région/district" class="iptadhe champadhes7 champadhes">
+                        <input type="text" name="region" class="iptadhe champadhes7 champadhes">
                       </div>
               
                       <div class="group-inputs divipts">
