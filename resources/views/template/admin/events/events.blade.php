@@ -36,7 +36,7 @@
                           {{ $event->title }}
                           </td>
                           <td>
-                            {{$event->description}}
+                         {{ Str::limit($event->description, 50) }}   
                           </td>
                           <td>
                           <img src="{{asset('storage/image/'.$event->picture)}}" alt="">

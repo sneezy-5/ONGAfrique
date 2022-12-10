@@ -59,7 +59,7 @@
 @foreach($educations as $edu)
 <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
 <!-- Trigger the Modal -->
-<img class="myImg imgtrans" src="{{asset('storage/image/'.$stori->image)}}" alt="Snow" style="width:100%;max-width:300px">
+<img class="myImg imgtrans" src="{{asset('storage/image/'.$edu->image)}}" alt="Snow" style="width:100%;max-width:300px">
 
 
 <!-- The Modal -->

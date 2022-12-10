@@ -72,8 +72,8 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('event.index')}}">Nos Activités</a></li>
-            <li><a class="dropdown-item" href="{{route('story.index')}}">Nos Actualités</a></li>
+            <li><a class="dropdown-item" href="{{route('activites.index')}}">Nos Activités</a></li>
+            <li><a class="dropdown-item" href="{{route('actualites.index')}}">Nos Actualités</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -421,7 +421,7 @@
         <div class="col-6 col-md-2 mb-3">
           <h5>Nos Activités</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="{{route('story.index')}}" class="nav-link p-0 text-muted">Nos activités</a></li>
+            <li class="nav-item mb-2"><a href="{{route('actualites.index')}}" class="nav-link p-0 text-muted">Nos activités</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Partager une Story</a></li>
           </ul>
         </div>
