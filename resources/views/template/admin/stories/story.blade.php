@@ -25,21 +25,21 @@
                         <select class="form-control" id="exampleSelectGender" name="type" style="width:1000px;">
                           <option value="sport">Sport</option>
                           <option value="education">Education</option>
-                          <option value="sante">Sante</option>
                           <option value="culture">Culture</option>
-                          <option value="economie">Socio-Economie</option>
-                          <option value="sociale">Social</option>
+                          <option value="social">Social</option>
+                          <option value="economie">Sociaux-economie</option>
+                          <option value="sante">Santé</option>
                         </select>
                       </div>
                     <div class="form-group">
                    
                       <label>Image</label>
-                      <input type="file" name="image[]" multiple>
+                      <input type="file" name="image" >
                     </div>
                     <div class="form-group">
                    
                    <label>video</label>
-                   <input type="file" name="video[]" multiple>
+                   <input type="file" name="video">
                  </div>
                     <div class="form-group">
                       <label for="exampleInputCity1">Titre de la story</label>

@@ -40,61 +40,46 @@ class StoryController extends Controller
     {
         $data = $request->except('_token');
  
-       # dd($data['image'][0]->getClientOriginalName());
+       //dd($data['image']->getClientOriginalName());
         
-        if ($request->hasFile('image')) {
-            $d = [];
-            foreach($data['image'] as $key=>$value){
-               # dd($value);
-                $filenameWithExt =$value->getClientOriginalName (); #$request->file('image')->getClientOriginalName ();
-                // Get Filename
-                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                // Get just Extension
-                $extension =$value->getClientOriginalExtension();  #$request->file('image')->getClientOriginalExtension();
-                // Filename To store
-                $fileNameToStore = $filename. ''. time().'.'.$extension;
-                // Upload Image $path = 
-                $value->storeAs('public/image', $fileNameToStore);
-               # $request->file('image')->storeAs('public/image', $fileNameToStore);
-               array_push($d,$fileNameToStore);
-               
-            }
-            $data['image']=json_encode($d);
-            }
-                 // Else add a dummy image
-        else {
-            $fileNameToStore = 'noimage.jpg';
-            $path = 'noimage.jpg';
-            $data['image']=json_encode($fileNameToStore);
-            }
-            
-         if ($request->hasFile('video')) {
-                $d = [];
-                foreach($data['video'] as $key=>$value){
-                  
-                    $filenameWithExt =$value->getClientOriginalName (); 
-                    
-                    $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                    
-                    $extension =$value->getClientOriginalExtension();  
-                   
-                    $fileNameToStore = $filename. ''. time().'.'.$extension;
-                  
-                    $value->storeAs('public/vidéo', $fileNameToStore);
-
-                   array_push($d,$fileNameToStore);
-                   
-                }
-                ;
-                $data['video']=json_encode($d);
-                }     // Else add a dummy image
-                else {
-                    $fileNameToStore = 'novideo.jpg';
-                    $data['video']=json_encode($fileNameToStore);
-                    }
-                    
-       
+       if ($request->hasFile('image')) {
+        $filenameWithExt = $request->file('image')->getClientOriginalName ();
+        // Get Filename
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        // Get just Extension
+        $extension = $request->file('image')->getClientOriginalExtension();
+        // Filename To store
+        $fileNameToStore = $filename. ''. time().'.'.$extension;
+        // Upload Image $path = 
+        $request->file('image')->storeAs('public/image', $fileNameToStore);
+        $data['image']=$fileNameToStore;
+        }
    
+    // Else add a dummy image
+    else {
+        $fileNameToStore = 'noimage.jpg';
+        $data['image']=$fileNameToStore;
+        }
+
+        if ($request->hasFile('video')) {
+            $filenameWithExt = $request->file('video')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('video')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore = $filename. ''. time().'.'.$extension;
+            // Upload Image $path = 
+            $request->file('video')->storeAs('public/video', $fileNameToStore);
+            $data['video']=$fileNameToStore;
+            }
+       
+        // Else add a dummy image
+        else {
+            $fileNameToStore = 'novideo.jpg';
+            $data['video']=$fileNameToStore;
+            }
+       
             #dd($data);
         Story::create($data);
 
@@ -139,56 +124,42 @@ class StoryController extends Controller
    
 
         if ($request->hasFile('image')) {
-            $d = [];
-            foreach($data['image'] as $key=>$value){
-               # dd($value);
-                $filenameWithExt =$value->getClientOriginalName (); #$request->file('image')->getClientOriginalName ();
+            $filenameWithExt = $request->file('image')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore = $filename. ''. time().'.'.$extension;
+            // Upload Image $path = 
+            $request->file('image')->storeAs('public/image', $fileNameToStore);
+            $data['image']=$fileNameToStore;
+            }
+       
+        // Else add a dummy image
+        else {
+            $fileNameToStore = 'noimage.jpg';
+            $data['image']=Story::find($id)->video;
+            }
+    
+            if ($request->hasFile('video')) {
+                $filenameWithExt = $request->file('video')->getClientOriginalName ();
                 // Get Filename
                 $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
                 // Get just Extension
-                $extension =$value->getClientOriginalExtension();  #$request->file('image')->getClientOriginalExtension();
+                $extension = $request->file('video')->getClientOriginalExtension();
                 // Filename To store
                 $fileNameToStore = $filename. ''. time().'.'.$extension;
                 // Upload Image $path = 
-                $value->storeAs('public/image', $fileNameToStore);
-               # $request->file('image')->storeAs('public/image', $fileNameToStore);
-               array_push($d,$fileNameToStore);
-               
-            }
-            ;
-            $data['image']=json_encode($d);
-            }
+                $request->file('video')->storeAs('public/video', $fileNameToStore);
+                $data['video']=$fileNameToStore;
+                }
+           
             // Else add a dummy image
-        else {
-                $fileNameToStore = 'noimage.jpg';
-                $path = 'noimage.jpg';
-                $data['image']=  Story::find($id)->image;
+            else {
+                $fileNameToStore = 'novideo.jpg';
+                $data['video']= Story::find($id)->video;
                 }
-
-        if ($request->hasFile('video')) {
-                $d = [];
-                foreach($data['video'] as $key=>$value){
-                  
-                    $filenameWithExt =$value->getClientOriginalName (); 
-                    
-                    $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                    
-                    $extension =$value->getClientOriginalExtension();  
-                   
-                    $fileNameToStore = $filename. ''. time().'.'.$extension;
-                  
-                    $value->storeAs('public/vidéo', $fileNameToStore);
-
-                   array_push($d,$fileNameToStore);
-                   
-                }
-                ;
-                $data['video']=json_encode($d);
-                } // Else add a dummy image
-                else {
-                    $fileNameToStore = 'novideo.jpg';
-                    $data['video']=  Story::find($id)->video;
-                    }
    
             //dd($data);
             Story::find($id)->update($data);

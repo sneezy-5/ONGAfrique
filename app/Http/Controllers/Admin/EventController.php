@@ -41,58 +41,44 @@ class EventController extends Controller
         $data = $request->except('_token');
        // dd($data);
        if ($request->hasFile('picture')) {
-        $d = [];
-        foreach($data['picture'] as $key=>$value){
-           # dd($value);
-            $filenameWithExt =$value->getClientOriginalName (); 
-            // Get Filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            // Get just Extension
-            $extension =$value->getClientOriginalExtension(); 
-            // Filename To store
-            $fileNameToStore = $filename. ''. time().'.'.$extension;
-            // Upload Image $path = 
-            $value->storeAs('public/image', $fileNameToStore);
-           array_push($d,$fileNameToStore);
-           
+        $filenameWithExt = $request->file('picture')->getClientOriginalName ();
+        // Get Filename
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        // Get just Extension
+        $extension = $request->file('picture')->getClientOriginalExtension();
+        // Filename To store
+        $fileNameToStore = $filename. ''. time().'.'.$extension;
+        // Upload Image $path = 
+        $request->file('picture')->storeAs('public/image', $fileNameToStore);
+        $data['picture']=$fileNameToStore;
         }
-        $data['picture']=json_encode($d);
-        }
-        
    
     // Else add a dummy image
     else {
         $fileNameToStore = 'noimage.jpg';
-        $path = 'noimage.jpg';
-        $data['picture']=json_encode($fileNameToStore);
+        $data['picture']=$fileNameToStore;
         }
 
-
         if ($request->hasFile('video')) {
-            $d = [];
-            foreach($data['video'] as $key=>$value){
-              
-                $filenameWithExt =$value->getClientOriginalName (); 
-                
-                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                
-                $extension =$value->getClientOriginalExtension();  
-               
-                $fileNameToStore = $filename. ''. time().'.'.$extension;
-              
-                $value->storeAs('public/vidéo', $fileNameToStore);
-
-               array_push($d,$fileNameToStore);
-               
+            $filenameWithExt = $request->file('video')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('video')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore = $filename. ''. time().'.'.$extension;
+            // Upload Image $path = 
+            $request->file('video')->storeAs('public/video', $fileNameToStore);
+            $data['video']=$fileNameToStore;
             }
-            ;
-            $data['video']=json_encode($d);
-            }     // Else add a dummy image
-            else {
-                $fileNameToStore = 'novideo.jpg';
-                $data['video']=json_encode($fileNameToStore);
-                }
-
+       
+        // Else add a dummy image
+        else {
+            $fileNameToStore = 'novideo.jpg';
+            $data['video']=$fileNameToStore;
+            }
+       
+        
         Event::create($data);
 
         return redirect()->route('events.index');
@@ -134,52 +120,42 @@ class EventController extends Controller
         $data = $request->except("_tokent");
 
         if ($request->hasFile('picture')) {
-            $d = [];
-            foreach($data['picture'] as $key=>$value){
-               # dd($value);
-                $filenameWithExt =$value->getClientOriginalName (); 
+            $filenameWithExt = $request->file('picture')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('picture')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore = $filename. ''. time().'.'.$extension;
+            // Upload Image $path = 
+            $request->file('picture')->storeAs('public/image', $fileNameToStore);
+            $data['picture']=$fileNameToStore;
+            }
+       
+        // Else add a dummy image
+        else {
+            $fileNameToStore = 'noimage.jpg';
+            $data['picture']=Event::find($id)->video;
+            }
+    
+            if ($request->hasFile('video')) {
+                $filenameWithExt = $request->file('video')->getClientOriginalName ();
                 // Get Filename
                 $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
                 // Get just Extension
-                $extension =$value->getClientOriginalExtension(); 
+                $extension = $request->file('video')->getClientOriginalExtension();
                 // Filename To store
                 $fileNameToStore = $filename. ''. time().'.'.$extension;
                 // Upload Image $path = 
-                $value->storeAs('public/image', $fileNameToStore);
-               array_push($d,$fileNameToStore);
-               
-            }
-            $data['picture']=json_encode($d);
-            }else{
-                $data['picture']= Event::find($id)->picture;
-            }
-
-
-            if ($request->hasFile('video')) {
-                $d = [];
-                foreach($data['video'] as $key=>$value){
-                  
-                    $filenameWithExt =$value->getClientOriginalName (); 
-                    
-                    $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-                    
-                    $extension =$value->getClientOriginalExtension();  
-                   
-                    $fileNameToStore = $filename. ''. time().'.'.$extension;
-                  
-                    $value->storeAs('public/vidéo', $fileNameToStore);
-
-                   array_push($d,$fileNameToStore);
-                   
+                $request->file('video')->storeAs('public/video', $fileNameToStore);
+                $data['video']=$fileNameToStore;
                 }
-                ;
-                $data['video']=json_encode($d);
-                } // Else add a dummy image
-                else {
-                    $fileNameToStore = 'novideo.jpg';
-                    $data['video']=  Event::find($id)->video;
-                    }
-   
+           
+            // Else add a dummy image
+            else {
+                $fileNameToStore = 'novideo.jpg';
+                $data['video']= Event::find($id)->video;
+                }
         Event::find($id)->update($data);
         return redirect()->route('events.index');
     }

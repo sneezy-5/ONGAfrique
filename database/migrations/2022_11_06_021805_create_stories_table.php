@@ -18,7 +18,7 @@ class CreateStoriesTable extends Migration
             $table->string('type');
             $table->string('title');
             $table->json('image')->nullable();
-            $table->string('description');
+            $table->text('description');
             $table->string('mission_name');
             $table->string('mission_date');
             $table->json('video')->nullable();

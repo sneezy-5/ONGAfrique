@@ -1,3 +1,5 @@
+
+
 @extends('layouts.admin')
 
 @section('content')
@@ -37,7 +39,7 @@
                             {{$event->description}}
                           </td>
                           <td>
-                          <img src="{{asset('storage/image/'.json_decode($event->picture,true)[0])}}" alt="">
+                          <img src="{{asset('storage/image/'.$event->picture)}}" alt="">
                           </td>
                           
                           <td>

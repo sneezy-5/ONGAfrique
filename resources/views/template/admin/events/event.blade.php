@@ -24,13 +24,13 @@
                     <div class="form-group">
                    
                       <label>Image</label>
-                      <input type="file" name="picture[]" multiple>
+                      <input type="file" name="picture" >
                     </div>
 
                     <div class="form-group">
                    
                    <label>video</label>
-                   <input type="file" name="video[]" multiple>
+                   <input type="file" name="video" >
                  </div>
                     <div class="form-group">
                       <label for="exampleInputCity1">Titre</label>
