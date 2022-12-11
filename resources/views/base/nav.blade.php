@@ -51,8 +51,8 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('actualites.index')}}">Nos Activités</a></li>
-            <li><a class="dropdown-item" href="{{route('activites.index')}}">Nos Actualités</a></li>
+            <li><a class="dropdown-item" href="{{route('activites.index')}}">Nos Activités</a></li>
+            <li><a class="dropdown-item" href="{{route('actualites.index')}}">Nos Actualités</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
