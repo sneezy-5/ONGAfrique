@@ -38,7 +38,19 @@ class MemberController extends Controller
     public function store(Request $request)
     {
         $data = $request->except('_token');
-        //dd($data);
+        if ($request->hasFile('picture')) {
+            $filenameWithExt = $request->file('picture')->getClientOriginalName ();
+            // Get Filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just Extension
+            $extension = $request->file('picture')->getClientOriginalExtension();
+            // Filename To store
+            $fileNameToStore = $filename. ''. time().'.'.$extension;
+            // Upload Image $path = 
+            $request->file('picture')->storeAs('public/image', $fileNameToStore);
+            $data['picture']=$fileNameToStore;
+            }
+       
         Member::create($data);
         return redirect()->route('members.index');
     }
@@ -52,7 +64,7 @@ class MemberController extends Controller
     public function show($id)
     {
         $member = Member::find($id);
-        return view('template/admin/members/show_member',compact('memeber'));
+        return view('template/admin/members/show_member',compact('member'));
     }
 
     /**

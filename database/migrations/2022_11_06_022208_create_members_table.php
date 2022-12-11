@@ -15,7 +15,7 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->string('last_name');
+            $table->string('nom');
             $table->date('date_naissance');
             $table->string('fonction');
             $table->string('picture')->nullable();
@@ -24,7 +24,8 @@ class CreateMembersTable extends Migration
             $table->string('region');
             $table->string('address')->nullable();
             $table->string('section');
-            
+            $table->string('civilite')->nullable();
+            $table->boolean('payer');
             $table->timestamps();
         });
     }

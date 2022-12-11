@@ -25,15 +25,16 @@ class MemberRequestValidation extends FormRequest
     {
         return [
             //
-            'last_name' => ['required', 'string'],
-            'first_name' => ['required', 'string'],
+            'nom' => ['required', 'string'],
+            'date_naissance' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255',],
-            'country' => ['required', 'string'],
-            'city' => ['required', 'string'],
-            'address' => ['required', 'string'],
-            'phone' => ['required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10', 'string'],
-            'civility'=> ['required', 'string'],
-            'postal_code'=> ['required', 'string'],
+            'fonction' => ['required', 'string'],
+            'picture' => ['required', 'string'],
+            'phone' => ['required', 'string'],
+            'email' => ['required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10', 'string'],
+            'region'=> ['required', 'string'],
+            'address'=> ['required', 'string'],
+            'section'=> ['required', 'string'],
             'paye'=> ['required', 'string'],
         ];
     }

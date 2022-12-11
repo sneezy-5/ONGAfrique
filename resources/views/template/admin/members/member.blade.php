@@ -22,42 +22,50 @@
                     @csrf
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nom</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Nom" name="first_name">
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Nom" name="nom">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">Prénom</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Prénom" name="last_name">
+                      <label for="exampleInputUsername1">Date de naissance</label>
+                      <input type="date" class="form-control" id="exampleInputUsername1" placeholder="Prénom" name="date_naissance">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">Pays</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="pays" name="country">
+                      <label for="exampleInputUsername1">Fonction</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="pays" name="fonction">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">Ville</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="ville" name="city">
+                      <label for="exampleInputUsername1">Region</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="pays" name="region">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Photo</label>
+                      <input type="file" class="form-control" id="exampleInputUsername1" name="picture">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">numéro de téléphone</label>
                       <input type="text" class="form-control" id="exampleInputUsername1" placeholder="numéro de téléphone" name="phone">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputUsername1">code postal</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="code postal" name="postal_code">
-                    </div>
-                    <div class="form-group">
                       <label for="exampleInputEmail1">Email</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputEmail1">address</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="address" name="address">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">section</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="section" name="section">
+                    </div>
+                    <div class="form-group">
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="civility" id="optionsRadios1" value="homme">
+                              <input type="radio" class="form-check-input" name="civilite" id="optionsRadios1" value="homme">
                               homme
                             <i class="input-helper"></i></label>
                           </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="civility" id="optionsRadios2" value="femme" checked="">
+                              <input type="radio" class="form-check-input" name="civilite" id="optionsRadios2" value="femme" checked="">
                               femme 
                             <i class="input-helper"></i></label>
                           </div>
@@ -66,13 +74,13 @@
                     <div class="form-group">
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="paye" id="optionsRadios1" value="1">
+                              <input type="radio" class="form-check-input" name="payer" id="optionsRadios1" value="1">
                               Payer
                             <i class="input-helper"></i></label>
                           </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="paye" id="optionsRadios2" value="0" checked="">
+                              <input type="radio" class="form-check-input" name="payer" id="optionsRadios2" value="0" checked="">
                               pas Payer 
                             <i class="input-helper"></i></label>
                           </div>

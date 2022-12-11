@@ -16,7 +16,7 @@
                             Nom
                           </th>
                           <th>
-                            Prénom
+                          Date de naissance
                           </th>
                           <th>
                           Email
@@ -31,10 +31,10 @@
                         @foreach($members as $member)
                         <tr>
                           <td class="py-1">
-                          {{ $member->first_name }}
+                          {{ $member->nom }}
                           </td>
                           <td>
-                            {{$member->last_name}}
+                            {{$member->date_naissance}}
                           </td>
                           <td>
                           {{$member->email}}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UserRequestValidation extends FormRequest
@@ -26,7 +27,10 @@ class UserRequestValidation extends FormRequest
         return [
             'first_name' => 'required|max:100|string',
             'last_name' => 'required|max:100|string',
-            'email' => 'required|email|unique:users',
+            'email' =>  [ 'required', 
+                        'email', 
+                        'max:100', 
+                        Rule::unique('users', 'email')->ignore($this->user)],
             'password' => 'required|string|confirmed|min:6',
         ];
     }
@@ -40,6 +44,7 @@ class UserRequestValidation extends FormRequest
             'last_name.string' => 'Le nom de la mission  est incorrect',
             'email.required' => 'La date de la mission est requis',
             'email.date' => 'La date de la mission  est incorrect',
+            'email.unique' => 'L\'adresse email est déjà utilisé',
         ];
     }
 }
