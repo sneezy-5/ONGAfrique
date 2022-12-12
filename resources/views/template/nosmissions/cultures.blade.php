@@ -96,10 +96,9 @@
       
       <div class="card-body w-75">
         <p class="card-text m-2 col-md">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum delectus hic error labore at voluptatibus tempora, voluptate dolore. Quod, quo sit. Officia nihil quidem reprehenderit modi aliquid debitis quam!
-          Molestiae eveniet iste deleniti eos maxime doloremque cupiditate nam, labore hic molestias dolorum animi incidunt nemo sunt, temporibus aut, dolorem dicta qui veniam voluptatem veritatis illum dolores ducimus similique? Quas!
-          Quos officiis ratione optio neque rerum veritatis doloribus est, natus iusto exercitationem vel iure quis, libero adipisci alias omnis a velit aperiam voluptates eum iste dolorem culpa. Consequatur, facilis sint.
-          Possimus aperiam, libero vitae laudantiuIllum similique possimus et, nemo ut iste! Minus sint, illo repudiandae aut ratione iure! Cumque maxime optio suscipit ullam vitae eius corporis molestiae est iure. Maiores aut libero fugit dicta!
+        Dans sa vision de rallumer la joie et le bonheur dans les cœurs,  L'ONG Sourire D'Afrique L'ONG Sourire D'Afrique accompagne le festival N’GOHA de Taabo organisé par l'alliance des jeunes leaders pour le Développement de Taabo ( AJLD). 
+
+Le Président fondateur M.Richard Gabdibé est le    Parrain de ce grand Festival qui réunit les fils et filles du département de Taabo autour d'un idéal commun.  Celui du vivre ensemble et de la cohésion sociale.
         </p>
       </div>
 

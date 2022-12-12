@@ -61,7 +61,7 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
     <img src="{{asset('styles/img/social/4.jpg')}}" alt="" class="card-img-top" enctype="multipart/form-data">
     <div class="card-body">
       <h5 class="card-title text-dark fst-italic h3" style="font-weight:700;">Nos actions sociales</h5>
-      <a href="{{route('nosmissions.sociales')}}" class="btn btn-primary">Visité</a>
+      <a href="{{route('nosmissions.sociales')}}" class="btn btn-primary">Voir</a>
     </div>
   </div>
 
@@ -69,7 +69,7 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
     <img src="{{asset('styles/img/sante/6.jpg')}}" alt="" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title text-dark fst-italic h3" style="font-weight:700;">Accompagnons les malades</h5>
-      <a href="{{route('nosmissions.santes')}}" class="btn btn-primary">Visité</a>
+      <a href="{{route('nosmissions.santes')}}" class="btn btn-primary">Voir</a>
     </div>
   </div>
 
@@ -77,7 +77,7 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
     <img src="{{asset('styles/img/education/3.jpg')}}" alt="" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title text-dark fst-italic h3" style="font-weight:700;">Les enfants non-scolarisé</h5>
-      <a href="{{route('nosmissions.educations')}}" class="btn btn-primary">Visité</a>
+      <a href="{{route('nosmissions.educations')}}" class="btn btn-primary">Voir</a>
     </div>
   </div>
 
@@ -98,9 +98,11 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
      <div class="card w-100">
       <img class="card-img-top" src="{{asset('styles/img/social/7.jpg')}}" alt="Card image">
       <div class="card-body">
-        <h1 class="card-title text-dark fst-italic mb-2" style="font-weight:700;">Le grand Titre du Centre</h1>
+        <h1 class="card-title text-dark fst-italic mb-2" style="font-weight:700;">Action Social</h1>
         <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos officia quasi harum mollitia. Molestiae vel, possimus rem magnam, placeat vero, adipisci officiis numquam in hic omnis facere repellat reiciendis iure.
+        Le Jeudi 03 novembre  2022  les membres de L’ONG SOURIRE D’AFRIQUE ont effectué une visite à la maison de correction et d’arrêt de TIASSALE pour des dons en vivre et non vivre (03 sacs de riz de 50 kg, 03 cartons de 60 savons (180), 02 sacs d’OMO (240 sachets) et des kits d’habits). 
+
+Notre priorité.
         </p>
         <a href="{{route('nosmissions.sociales')}}" class="btn btn-primary">Lire la suite</a>
       </div>
@@ -133,8 +135,8 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
 <div class="parentbloc3 row d-flex justify-content-center align-items-center">
 
   <div class="card-text w-100 m-2 container-fluid d-flex justify-content-center align-items-center flex-column"  style="text-align:center;">
-    <h1 class="card-title text-light fst-italic mb-4 mt-5" style="font-weight:700;">Le grand Titre du Centre</h1>
-    <p class="w-75 text-light h5 mb-5">le contenue Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex cupiditate quaerat veritatis illo aliquam dignissimos at, sapiente nostrum, voluptatibus beatae t</p>
+    <h1 class="card-title text-light fst-italic mb-4 mt-5" style="font-weight:700;">Plan sanitaire</h1>
+    <p class="w-75 text-light h5 mb-5">En prélude de la fête  l'indépendance 2022 , l'ONG Sourire D'Afrique a méné une opération Coup de Balai  à l'hôpital Général de TAABO en présence du Préfet , des adjoints aux maire , de la directrice de l'hôpital,  des autorités Administrative</p>
   </div>
 
 
