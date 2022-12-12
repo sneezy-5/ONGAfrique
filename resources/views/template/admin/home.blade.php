@@ -113,7 +113,7 @@
                                         <div id="totalVisitors" class="progressbar-js-circle pr-2"></div>
                                       </div>
                                       <div>
-                                        <p class="text-small mb-2">Total Visitors</p>
+                                        <p class="text-small mb-2">Total visites</p>
                                         <h4 class="mb-0 fw-bold">{{$visitors}}</h4>
                                       </div>
                                     </div>
@@ -124,8 +124,8 @@
                                         <div id="visitperday" class="progressbar-js-circle pr-2"></div>
                                       </div>
                                       <div>
-                                        <p class="text-small mb-2">Visits per day</p>
-                                        <h4 class="mb-0 fw-bold">9065</h4>
+                                        <p class="text-small mb-2">Visite pas jour</p>
+                                        <h4 class="mb-0 fw-bold">{{$visitorPerDay}}</h4>
                                       </div>
                                     </div>
                                   </div>

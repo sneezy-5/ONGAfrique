@@ -11,8 +11,8 @@ class SanteController extends Controller
     public function index()
     {
         $santes = Story::where('type', 'sante')->paginate(8);
-        
-        return view('template.nosmissions.santes', compact('santes'));
+        $stories = Story::paginate(3);
+        return view('template.nosmissions.santes', compact('santes','stories'));
     }
 
     public function show($id)

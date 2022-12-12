@@ -63,13 +63,13 @@
     <div class="pic"> 
         <img src="{{asset('storage/image/'.$stori->image)}}"  class="img-fluid imgtrans" alt=""> 
         <div class="date"> 
-            <span class="day">{{$stori->created_at}}</span> 
+            <span class="day">{{$stori->created_at->format('d-m-Y')}}</span> 
             
         </div> 
     </div> 
         <div class="content"> 
             <p class="h-1 mt-4 Titretrans">{{$stori->title}}</p> 
-            <p class="text-muted mt-3 text texttrans">{{ Str::limit($stori->description, 10) }}</p> 
+            <p class="text-muted mt-3 text texttrans">{{ Str::limit($stori->description, 20) }}</p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span></div> 
             </div>
         

@@ -22,6 +22,8 @@ class HomeController extends Controller
         $dons = Don::count();
         $events = Event::count();
         $visitors = Visitor::count();
-        return view('template/admin/home',compact('stories','newsletters','users','members','dons','events','visitors'));
+        $toDay = date('y-m-d');
+        $visitorPerDay = Visitor::where('created_at', 'LIKE', "%{$toDay}%")->count() ;
+        return view('template/admin/home',compact('stories','newsletters','users','members','dons','events','visitors','visitorPerDay'));
     }
 }

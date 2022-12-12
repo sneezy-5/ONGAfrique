@@ -11,7 +11,7 @@
                 
                 <div class="tab-pane active" id="settings">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Type</label>
+                        <label for="inputName" class="col-sm-2 col-form-label"><strong>Type</strong> </label>
                         <div class="col-sm-10">
                           <p>{{$story->type}}</p>
                         </div>
@@ -19,25 +19,25 @@
 
                   <div class="tab-pane active" id="settings">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Titre</label>
+                        <label for="inputName" class="col-sm-2 col-form-label"><strong>Titre</strong> </label>
                         <div class="col-sm-10">
                           <p>{{$story->title}}</p>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Description</label>
-                        <div class="col-sm-10">
+                        <label for="inputName" class="col-sm-2 col-form-label"> <strong>Description</strong></label>
+                        <div class="col-sm-10" style="width: 700px;">
                           <p>{{$story->description}}</p>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Nom de la mission</label>
+                        <label for="inputEmail" class="col-sm-2 col-form-label"><strong>Nom de la mission</strong></label>
                         <div class="col-sm-10">
                           <p>{{$story->mission_name}}</p>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">date de la mission</label>
+                        <label for="inputName2" class="col-sm-2 col-form-label"><strong>date de la mission</strong></label>
                         <div class="col-sm-10">
                           <p>{{$story->mission_date}}</p>
                         </div>
@@ -46,7 +46,7 @@
                       <div class="tab-pane active" id="settings">
 
 
-                      <label for="inputName" class="col-sm-2 col-form-label">Image</label>
+                      <label for="inputName" class="col-sm-2 col-form-label"><strong>Image</strong></label>
 
                         <div class="col-sm-10" >
                           <p><img src="{{asset('storage/image/'.$story->image)}}" alt="" style="width:600px; height:400px;"></p>
@@ -59,7 +59,7 @@
                   <div class="tab-pane active" id="settings">
 
                       <div class="form-group row">
-                      <label for="inputName" class="col-sm-2 col-form-label">Vidéo</label>
+                      <label for="inputName" class="col-sm-2 col-form-label"><strong>Vidéo</strong></label>
                           <p>  <video width="500px" height="500px"
                             controls="controls"/>
                       

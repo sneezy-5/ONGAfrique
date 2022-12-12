@@ -13,13 +13,13 @@
 
                   <div class="tab-pane active" id="settings">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Titre</label>
+                        <label for="inputName" class="col-sm-2 col-form-label"><strong>Titre</strong></label>
                         <div class="col-sm-10">
                           <p>{{$event->title}}</p>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Description</label>
+                        <label for="inputName" class="col-sm-2 col-form-label"><strong>Description</strong></label>
                         <div class="col-sm-10">
                           <p>{{$event->description}}</p>
                         </div>
@@ -27,7 +27,7 @@
                 
                       <div class="tab-pane active" id="settings">
 
-                      <label for="inputName" class="col-sm-2 col-form-label">Image</label>
+                      <label for="inputName" class="col-sm-2 col-form-label"><strong>Image</strong></label>
 
                         <div class="col-sm-10" >
                           <p><img src="{{asset('storage/image/'.$event->picture)}}" alt="" style="width:600px; height:400px;"></p>

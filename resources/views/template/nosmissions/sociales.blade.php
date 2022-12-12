@@ -78,7 +78,7 @@
 <div class="card-body entete">
 <h4 class="card-title Titretrans">{{$soc->title}}</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($soc->description, 10) }} 
+{{ Str::limit($soc->description, 20) }} 
 </p>
 <a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -99,10 +99,9 @@
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum delectus hic error labore at voluptatibus tempora, voluptate dolore. Quod, quo sit. Officia nihil quidem reprehenderit modi aliquid debitis quam!
-  Molestiae eveniet iste deleniti eos maxime doloremque cupiditate nam, labore hic molestias dolorum animi incidunt nemo sunt, temporibus aut, dolorem dicta qui veniam voluptatem veritatis illum dolores ducimus similique? Quas!
-  Quos officiis ratione optio neque rerum veritatis doloribus est, natus iusto exercitationem vel iure quis, libero adipisci alias omnis a velit aperiam voluptates eum iste dolorem culpa. Consequatur, facilis sint.
-  Possimus aperiam, libero vitae laudantiuIllum similique possimus et, nemo ut iste! Minus sint, illo repudiandae aut ratione iure! Cumque maxime optio suscipit ullam vitae eius corporis molestiae est iure. Maiores aut libero fugit dicta!
+Le Jeudi 03 novembre  2022  les membres de L’ONG SOURIRE D’AFRIQUE ont effectué une visite à la maison de correction et d’arrêt de TIASSALE pour des dons en vivre et non vivre (03 sacs de riz de 50 kg, 03 cartons de 60 savons (180), 02 sacs d’OMO (240 sachets) et des kits d’habits). 
+
+Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonheur à donner qu'à recevoir.
 </p>
 </div>
 
@@ -134,46 +133,29 @@
 
 <div class="row w-100 mt-0 Storydiv"> 
 
-<a href="#" class="col-md-6 cardstory border-0  m-3 p-0"> 
+
+
+@foreach($stories as $story)
+<a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
     <div class="backgroundEffect"></div> 
     <div class="pic"> 
-        <img src="{{asset('styles/img/social/19.jpg')}}"  class="img-fluid" alt=""> 
+        <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
         <div class="date"> 
-            <span class="day">26</span> 
-            <span class="month">Oct</span> 
-            <span class="year">2022</span> 
+            <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
+            <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
+            <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
         </div> 
     </div> 
         <div class="content"> 
-            <p class="h-1 mt-4">Des enfants prise en charge</p> 
-            <p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> 
+            <p class="h-1 mt-4">{{$story->title}}</p> 
+            <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
             </div> 
-            <div class="d-flex align-items-center justify-content-center foot"> <p class="admin">Admin</p> <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p> </div> 
         </div> 
     </div> 
 </a> 
+@endforeach
 
-
-<a href="#" class="col-md-6 cardstory border-0  m-3 p-0"> 
-  <div class="backgroundEffect"></div> 
-  <div class="pic"> 
-      <img src="{{asset('styles/img/social/2.jpg')}}"  class="img-fluid" alt=""> 
-      <div class="date"> 
-          <span class="day">26</span> 
-          <span class="month">Oct</span> 
-          <span class="year">2022</span> 
-      </div> 
-  </div> 
-      <div class="content"> 
-          <p class="h-1 mt-4">Aidons les plus demunis</p> 
-          <p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> 
-          <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
-          </div> 
-          <div class="d-flex align-items-center justify-content-center foot"> <p class="admin">Admin</p> <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p> </div> 
-      </div> 
-  </div> 
-</a> 
 
 
 

@@ -98,10 +98,11 @@
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum delectus hic error labore at voluptatibus tempora, voluptate dolore. Quod, quo sit. Officia nihil quidem reprehenderit modi aliquid debitis quam!
-  Molestiae eveniet iste deleniti eos maxime doloremque cupiditate nam, labore hic molestias dolorum animi incidunt nemo sunt, temporibus aut, dolorem dicta qui veniam voluptatem veritatis illum dolores ducimus similique? Quas!
-  Quos officiis ratione optio neque rerum veritatis doloribus est, natus iusto exercitationem vel iure quis, libero adipisci alias omnis a velit aperiam voluptates eum iste dolorem culpa. Consequatur, facilis sint.
-  Possimus aperiam, libero vitae laudantiuIllum similique possimus et, nemo ut iste! Minus sint, illo repudiandae aut ratione iure! Cumque maxime optio suscipit ullam vitae eius corporis molestiae est iure. Maiores aut libero fugit dicta!
+  
+
+Le sport , comme bon facteur de rassembleur, l'ONG Sourire D'Afrique s'engage à accompagner championnat et tournoi communautaire et scolaires là où besoin se fait sentir.
+
+C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE,  M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo.  Championnat qui s'étend sur 3 mois.
 </p>
 </div>
 
@@ -138,30 +139,30 @@
 <h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
-
-<a href="#" class="col-md-6 cardstory border-0  m-3 p-0"> 
+@foreach($stories as $story)
+<a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
     <div class="backgroundEffect"></div> 
     <div class="pic"> 
-        <img src="{{asset('styles/img/sport/3.jpg')}}"  class="img-fluid" alt=""> 
+        <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
         <div class="date"> 
-            <span class="day">26</span> 
-            <span class="month">Mars</span> 
-            <span class="year">2022</span> 
+            <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
+            <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
+            <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
         </div> 
     </div> 
         <div class="content"> 
-            <p class="h-1 mt-4">Participer à nos Match</p> 
-            <p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> 
+            <p class="h-1 mt-4">{{$story->title}}</p> 
+            <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
             </div> 
-            <div class="d-flex align-items-center justify-content-center foot"> <p class="admin">Admin</p> <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p> </div> 
         </div> 
     </div> 
 </a> 
-
+@endforeach
 
 
 </div>
+
 </div>
 
 </div>

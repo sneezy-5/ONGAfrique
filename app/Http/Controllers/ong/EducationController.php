@@ -13,8 +13,8 @@ class EducationController extends Controller
     public function index()
     {
         $educations = Story::where('type', 'education')->paginate(8);
-        
-        return view('template.nosmissions.educations', compact('educations'));
+        $stories = Story::paginate(3);
+        return view('template.nosmissions.educations', compact('educations','stories'));
         
     }
 

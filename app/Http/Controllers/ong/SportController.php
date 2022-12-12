@@ -13,8 +13,10 @@ class SportController extends Controller
     public function index()
     {
         $sports = Story::where('type', 'sport')->paginate(8);
-        
-        return view('template.nosmissions.sports', compact('sports'));
+
+        $stories = Story::paginate(3);
+
+        return view('template.nosmissions.sports', compact('sports','stories'));
     }
 
     public function show($id)

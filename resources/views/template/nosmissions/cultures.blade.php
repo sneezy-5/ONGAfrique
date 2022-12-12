@@ -133,47 +133,28 @@
   <h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
    
       <div class="row w-100 mt-0 Storydiv"> 
-
-        <a href="#" class="col-md-6 cardstory border-0  m-3 p-0"> 
-            <div class="backgroundEffect"></div> 
-            <div class="pic"> 
-                <img src="{{asset('styles/img/culture/14.jpg')}}"  class="img-fluid" alt=""> 
-                <div class="date"> 
-                    <span class="day">04</span> 
-                    <span class="month">Janvier</span> 
-                    <span class="year">2022</span> 
-                </div> 
-            </div> 
-                <div class="content"> 
-                    <p class="h-1 mt-4">Valorisation de la femme</p> 
-                    <p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> 
-                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
-                    </div> 
-                    <div class="d-flex align-items-center justify-content-center foot"> <p class="admin">Admin</p> <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p> </div> 
-                </div> 
-            </div> 
-          </a>
           
           
-          <a href="#" class="col-md-6 cardstory border-0  m-3 p-0"> 
-            <div class="backgroundEffect"></div> 
-            <div class="pic"> 
-                <img src="{{asset('styles/img/culture/5.jpg')}}"  class="img-fluid" alt=""> 
-                <div class="date"> 
-                    <span class="day">04</span> 
-                    <span class="month">Janvier</span> 
-                    <span class="year">2022</span> 
-                </div> 
+          @foreach($stories as $story)
+<a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
+    <div class="backgroundEffect"></div> 
+    <div class="pic"> 
+        <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
+        <div class="date"> 
+            <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
+            <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
+            <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
+        </div> 
+    </div> 
+        <div class="content"> 
+            <p class="h-1 mt-4">{{$story->title}}</p> 
+            <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
             </div> 
-                <div class="content"> 
-                    <p class="h-1 mt-4">Le commerçe</p> 
-                    <p class="text-muted mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> 
-                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
-                    </div> 
-                    <div class="d-flex align-items-center justify-content-center foot"> <p class="admin">Admin</p> <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p> </div> 
-                </div> 
-            </div> 
-          </a>
+        </div> 
+    </div> 
+</a> 
+@endforeach
 
 
       
