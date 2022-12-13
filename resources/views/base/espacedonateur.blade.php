@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/flag-icon-css/css/flag-icon.min.css')}}">
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/selectFX/css/cs-skin-elastic.css')}}">
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/jqvmap/dist/jqvmap.min.css')}}">
-
+    <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
 
     <link rel="stylesheet" href="{{asset('espacedonateur/assets/css/style.css')}}">
 

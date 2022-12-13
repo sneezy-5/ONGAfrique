@@ -15,6 +15,7 @@
   <!-- Bootstrapp only -->
   <link rel="stylesheet" href="{{asset('/styles/fontawesome-free-5.14.0-web/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
+    <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
   <title>@yield('title')</title>
 </head>
 
