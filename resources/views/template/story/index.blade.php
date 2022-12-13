@@ -63,7 +63,9 @@
     <div class="pic"> 
         <img src="{{asset('storage/image/'.$stori->image)}}"  class="img-fluid imgtrans" alt=""> 
         <div class="date"> 
-            <span class="day">{{$stori->created_at->format('d-m-Y')}}</span> 
+            <span class="day">{{date('d', strtotime($stori->mission_date))}} </span> 
+            <span class="month">{{date('m', strtotime($stori->mission_date))}}</span> 
+            <span class="year">{{date('Y', strtotime($stori->mission_date))}}</span> 
             
         </div> 
     </div> 

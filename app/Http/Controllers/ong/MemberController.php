@@ -38,15 +38,9 @@ class MemberController extends Controller
      */
     public function store(MemberRequestValidation $request)
     {
-  
-        // $validated = $request->validated();
-       
-        // //create new member
-        // Member::create([
-        //     $validated
-        // ]);
+
         $data = $request->except('_token');
-       // dd($data);
+        //dd($data);
         if ($request->hasFile('picture')) {
             $filenameWithExt = $request->file('picture')->getClientOriginalName ();
             // Get Filename
@@ -64,10 +58,20 @@ class MemberController extends Controller
             $fileNameToStore = 'noimage.jpg';
             $path = 'noimage.jpg';
             }
-            $data['picture']=$fileNameToStore;
+            Member::create([
 
-        Member::create($data);
-
+                'last_name'=>$request->nom,
+                'picture'=>$fileNameToStore,
+                'email' => $request->email,
+                'date_naissance'=>$request->date_naissance,
+                'fonction'=>$request->fonction,
+                'phone'=>$request->phone,
+                'region'=>$request->region,
+                'section'=>$request->section,
+                // 'civilite'=>$request->civilite,
+                // 'paye'=>$request->paye,
+    
+            ]);
         return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
 
     }

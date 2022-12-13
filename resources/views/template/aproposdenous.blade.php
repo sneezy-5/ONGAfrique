@@ -76,7 +76,7 @@
    <hr>
 
    <div class="card mb-4" style="width: 40rem;">
-     <h5 class="card-title text-dark  h2 m-0 mt-3" style="font-weight:700;">GADIBE RICHARD</h5>
+     <h5 class="card-title text-dark  h2 m-0 mt-3" style="font-weight:700;">M. GADIBE RICHARD</h5>
      <footer class="blockquote-footer mt-1">Président de l'ONG <cite title="Source Title">Sourire d'Afrique</cite></footer>
      
      <img src="{{asset('styles/img/président.jpg')}}" class="card-img-top w-100" alt="...">

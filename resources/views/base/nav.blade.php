@@ -108,8 +108,8 @@
           <div class="col-md-6 ">
             <img src="{{asset('styles/img/adhesion.jpg')}}" class="img-fluid w-100">
          </div>
-                <form action="{{route('adhesion.store')}}" method="POST" class="col-md-6 formadhe" id="formsadhesion" >
-
+                <form action="{{route('adhesion.store')}}" method="POST" class="col-md-6 formadhe" id="formsadhesion" enctype="multipart/form-data">
+                  @csrf
                    <div class="card text-danger border-0 ">
                     <small class="msgalert card-text"></small>
                    </div>
@@ -127,7 +127,7 @@
                     <div class="step-forms step-forms-active">
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="nom&prénoms">Nom et Prénoms</label>
-                        <input type="text" name="last_name"  class="iptadhe champadhes1 champadhes">
+                        <input type="text" name="nom"  class="iptadhe champadhes1 champadhes">
                       </div>
                       <div class="group-inputs divipts">
                         <label class="labeladhe" for="Datedenaissance">Date de naissance</label>
@@ -219,11 +219,13 @@
    </div>
    <div class="modal-body row container-fluid justify-content-center  m-0">
    
-     <div class="card m-2 mb-5 " style="width:25rem;">
+   <div class="card m-2 mb-5 " style="width:25rem;">
        <img src="{{asset('styles/img/social/11.jpg')}}" alt="" class="card-img-top">
        <div class="card-body">
-         <h5 class="card-title">Title</h5>
-         <p class="card-text">rnatur temporibus? Dolor officiis hic natus unde, saepe accusamus consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed dignissimos alias itaque maiore</p>
+         <h5 class="card-title">Aidez à sauver la vie d'enfants</h5>
+         <p class="card-text">Tous les enfants méritent de vivre en sécurité et en bonne santé.
+
+Faites un don pour donner aux enfants les plus vulnérables du monde la nutrition, l'eau et les fournitures médicales dont ils ont désespérément besoin. </p>
        </div>
      </div>
 

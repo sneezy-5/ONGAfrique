@@ -29,13 +29,13 @@ class MemberRequestValidation extends FormRequest
             'date_naissance' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255',],
             'fonction' => ['required', 'string'],
-            'picture' => ['required', 'string'],
-            'phone' => ['required', 'string'],
-            'email' => ['required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10', 'string'],
+            'picture' => ['required'],
+            'email' => ['required', 'email'],
+            'phone' => ['required','regex:/^([0-9\s\-\+\(\)]*)$/','min:10'],
             'region'=> ['required', 'string'],
-            'address'=> ['required', 'string'],
+            //'address'=> ['required', 'string'],
             'section'=> ['required', 'string'],
-            'paye'=> ['required', 'string'],
+            //'paye'=> ['required', 'string'],
         ];
     }
 }

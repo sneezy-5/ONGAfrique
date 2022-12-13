@@ -50,9 +50,10 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label"><strong>Adresse</strong></label>
+                        <label for="inputName2" class="col-sm-2 col-form-label"><strong>Image</strong></label>
                         <div class="col-sm-10">
-                          <p>{{$member->address}}</p>
+                        <p><img src="{{asset('storage/image/'.$member->picture)}}" alt="" style="width:600px; height:400px;"></p>
+
                         </div>
                       </div>
                 
