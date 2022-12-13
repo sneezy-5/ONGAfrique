@@ -13,9 +13,10 @@
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-6">
-        <h1>Le Titre</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fuga repudiandae minima iusto
-          natus ipsum,</p>
+        <h1>Aidez à sauver la vie d'enfants</h1>
+        <p>Tous les enfants méritent de vivre en sécurité et en bonne santé.
+
+Faites un don pour donner aux enfants les plus vulnérables du monde la nutrition, l'eau et les fournitures médicales dont ils ont désespérément besoin. </p>
         <img src="{{asset('styles/img/imgbanner.jpg')}}" class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -68,7 +69,7 @@
               <button type="submit" class="btn btn-primary btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Connexion
               </button>
-              <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="{{ route('register') }}"
+              <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="#"
                   class="link-danger" data-bs-toggle="" data-bs-target="#exampleModal">Inscriver-vous</a></p>
             </div>
 
