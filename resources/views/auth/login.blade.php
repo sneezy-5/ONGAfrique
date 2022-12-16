@@ -69,8 +69,8 @@ Faites un don pour donner aux enfants les plus vulnérables du monde la nutritio
               <button type="submit" class="btn btn-primary btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Connexion
               </button>
-              <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="#"
-                  class="link-danger" data-bs-toggle="" data-bs-target="#exampleModal">Inscriver-vous</a></p>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="{{route('register')}}"
+                  class="link-danger" data-bs-toggle="" data-bs-target="#exampleModal">Inscrivez-vous</a></p>
             </div>
 
         </form>

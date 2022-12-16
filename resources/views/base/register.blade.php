@@ -22,7 +22,7 @@
 <body>
   @include('base.nav')
 
-  @yield('login')
+  @yield('register')
 
 
   <footer class="py-5">
@@ -102,7 +102,7 @@
 
 
   <!-- <script src="{{asset('styles/jss/Accueil.js')}}"></script>-->
-   <script src="{{asset('styles/jss/connexion.js')}}"></script> 
+   <script src="{{asset('styles/jss/inscription.js')}}"></script> 
   <!-- <script src="{{asset('styles/jss/About.js')}}"></script> -->
   <!-- <script src="{{asset('styles/jss/description.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>

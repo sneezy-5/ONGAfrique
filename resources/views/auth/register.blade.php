@@ -1,59 +1,118 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-            <img src="{{asset('styles/img/logo.jpeg')}}" alt="" height="100" width="100">
-            </a>
-        </x-slot>
+@extends('base.register')
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+@section('title', 'ONG | SOURIRE D\'AFRIQUE')
 
-        <form method="POST" action="{{ route('register') }}">
+@section('register')
+
+     <!--CENTER-->
+
+ <div class="center row">
+
+<section class="w-100 blocconnexion p-3 h-100 gradient-form">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9  col-xl-6">
+        <h1>Aidez à sauver la vie d'enfants</h1>
+        <p>Tous les enfants méritent de vivre en sécurité et en bonne santé.
+
+Faites un don pour donner aux enfants les plus vulnérables du monde la nutrition, l'eau et les fournitures médicales dont ils ont désespérément besoin.</p>
+        <img src="{{asset('styles/img/imgbanner.jpg')}}" class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-4">
+        <form method="POST" action="{{ route('register') }}" class="formconnex">
             @csrf
+          <div
+            class="card-body row d-flex container-fluid flex-sm-row w-100 gap-2  align-items-center justify-content-center justify-content-lg-start">
+            <div class="card-title text-dark h2 mb-0  col-md" style="font-weight:700;">Inscrivez-vous</div>
 
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+
+            <!-- nom et prenom input -->
+            <div class="form-outline mb-1">
+
+              <input type="text" id="form3Example3" name="name" class="form-control  champ" placeholder="nom" />
+
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Entrez votre nom 
+              </div>
+              <div class="valid-feedback">
+                Très bien
+              </div>
+
             </div>
 
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
+          <!-- email input -->
+            <div class="form-outline mb-1">
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+              <input type="email" name="email" id="form3Example3" class="form-control champ" placeholder="Email" />
+
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Entrez votre Email
+              </div>
+              <div class="valid-feedback">
+                Très bien
+              </div>
+
             </div>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
+            <div class="form-outline mb-1">
+              <label class="form-label" for="chiffre">Combien Souhaitez-vous donner par mois ?</label>
 
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
+              <input type="text" name="amount" class="iptadhe champadhes contactsadhe">
+
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-1">
+        
+              <input id="form3Example4" class="form-control  champ"
+                placeholder="Entrer un mot de passe"   type="password"
                                 name="password"
-                                required autocomplete="new-password" />
+                                required autocomplete="new-password"/>
+
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Veuillez Entrez un mot de passe
+              </div>
+              <div class="valid-feedback">
+                Très bien
+              </div>
+
+            </div> 
+
+            <div class="form-outline mb-1">
+        
+              <input id="form3Example4" class="form-control  champ"
+                placeholder="Confimez mot de passe"   type="password"
+                                name="password_confirmation" required/>
+
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Veuillez confirmer votre mot de passe
+              </div>
+              <div class="valid-feedback">
+                Très bien
+              </div>
+
+            </div> 
+
+            <div class="text-center text-lg-start  pt-2">
+                <input type="submit" value="S'inscrire" class="btn btn-primary">
+              <p class="small fw-bold mt-2 pt-1 mb-0">Vous déjà un compte ? <a href="{{route('login')}}"
+                  class="link-danger"  data-bs-target="#exampleModal">Connexion</a></p>
             </div>
 
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
         </form>
-    </x-auth-card>
-</x-guest-layout>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+</div>
+
+<!--FIN CENTER-->
+
+
+@endsection
+

@@ -127,16 +127,16 @@ body{
   
   
   .carousel-inner .carousel-item:nth-child(1){
-    background:center/cover no-repeat url('img/social/12.jpg');
+    background:center/cover no-repeat url('../img/social/12.jpg');
     background-position:bottom
   }
   
   .carousel-inner .carousel-item:nth-child(2){
-    background:center/cover no-repeat url('img/social/5.jpg');
+    background:center/cover no-repeat url('../img/social/5.jpg');
     }
   
     .carousel-inner .carousel-item:nth-child(3){
-      background:center/cover no-repeat url('img/social/13.jpg');
+      background:center/cover no-repeat url('../img/social/13.jpg');
       }
   /**fin banner**/
   

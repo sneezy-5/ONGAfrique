@@ -32,6 +32,7 @@ class UserRequestValidation extends FormRequest
                         'max:100', 
                         Rule::unique('users', 'email')->ignore($this->user)],
             'password' => 'required|string|confirmed|min:6',
+            'amount' => ['required', 'int']
         ];
     }
 
@@ -39,6 +40,7 @@ class UserRequestValidation extends FormRequest
     {
         return [
             'first_name.required' => 'Le titre est requis',
+            'amount.required' => 'Le montant est requis',
             'first_name.string' => 'Le titre est incorrect',
             'last_name.required' => 'Le nom de la mission est requis',
             'last_name.string' => 'Le nom de la mission  est incorrect',
