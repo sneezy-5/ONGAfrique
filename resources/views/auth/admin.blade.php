@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>SMIK-SERVICES</title>
+	<title>ONG|SOURIRE D'AFRIQUE</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -69,19 +69,6 @@
 						</button>
 					</div>
 
-					<!-- <div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-                        @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Mot de passe oublié?') }}
-                    </a>
-                @endif
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div> -->
 
 				</form>
 			</div>
