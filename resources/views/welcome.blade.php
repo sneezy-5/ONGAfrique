@@ -76,7 +76,7 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
   <div class="card m-3 mb-3 mt-3" style="width:18rem;">
     <img src="{{asset('styles/img/education/3.jpg')}}" alt="" class="card-img-top">
     <div class="card-body">
-      <h5 class="card-title text-dark fst-italic h3" style="font-weight:700;">Les enfants non-scolarisé</h5>
+      <h5 class="card-title text-dark fst-italic h3" style="font-weight:700;">Les enfants non scolarisés</h5>
       <a href="{{route('nosmissions.educations')}}" class="btn btn-primary">Voir</a>
     </div>
   </div>
@@ -98,7 +98,7 @@ L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les fem
      <div class="card w-100">
       <img class="card-img-top" src="{{asset('styles/img/social/7.jpg')}}" alt="Card image">
       <div class="card-body">
-        <h1 class="card-title text-dark fst-italic mb-2" style="font-weight:700;">Action Social</h1>
+        <h1 class="card-title text-dark fst-italic mb-2" style="font-weight:700;">Action Sociale</h1>
         <p class="card-text">
         Le Jeudi 03 novembre  2022  les membres de L’ONG SOURIRE D’AFRIQUE ont effectué une visite à la maison de correction et d’arrêt de TIASSALE pour des dons en vivre et non vivre (03 sacs de riz de 50 kg, 03 cartons de 60 savons (180), 02 sacs d’OMO (240 sachets) et des kits d’habits). 
 
@@ -113,7 +113,7 @@ Notre priorité.
 
         <a href="{{route('nosmissions.cultures')}}" class="card-body col-md-3  m-1 liensous">
           <img src="{{asset('styles/img/culture/3.jpg')}}" class="card-img-top img-fluid" alt="des fillettes">
-          <h5 class="card-title h6">nos activités culturels</h5>
+          <h5 class="card-title h6">nos activités culturelles</h5>
         </a>
 
         <a href="{{route('nosmissions.economies')}}" class="card-body col-md-3  m-1 liensous">
@@ -123,7 +123,7 @@ Notre priorité.
 
         <a href="{{route('nosmissions.sports')}}" class="card-body col-md-3 m-1 liensous">
           <img src="{{asset('styles/img/sport/2.jpg')}}" class="card-img-top img-fluid" alt="des fillettes">
-          <h4 class=" card-title  h6">Nos activités sportifs</h4>
+          <h4 class=" card-title  h6">Nos activités sportives</h4>
         </a>
 
        </div>
@@ -144,7 +144,7 @@ Notre priorité.
   <div class="row mb-5 infosocial d-flex justify-content-center">
 
        <div class="col-md-5 container-fluid blocsocial m-2">
-        <h1 class="card-title text-light fst-italic mb-4 mt-5 h3" style="font-weight:700;">Participer avec nous</h1>
+        <h1 class="card-title text-light fst-italic mb-4 mt-5 h3" style="font-weight:700;">Participez avec nous</h1>
         <p class="text-light">
         recevez des informations sur nos actions et activités en remplissant la newsletter
         </p>
