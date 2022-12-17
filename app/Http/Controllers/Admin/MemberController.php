@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\MemberRequestValidation;
 use App\Models\Member;
 use Illuminate\Http\Request;
 
@@ -35,7 +36,7 @@ class MemberController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MemberRequestValidation $request)
     {
         $data = $request->except('_token');
         if ($request->hasFile('picture')) {
@@ -86,7 +87,7 @@ class MemberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(MemberRequestValidation $request, $id)
     {
         $data = Member::find($id)->update($request->except('_token'));
         return redirect()->route('members.index');
