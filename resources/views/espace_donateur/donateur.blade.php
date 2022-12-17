@@ -126,17 +126,19 @@
 
 <div class="col-lg-3 col-md-6">
     <div class="social-box facebook">
-        <i class="fa fa-facebook"></i>
-        <ul>
-            <li>
-                <span class="count">40</span> k
-                <span>friends</span>
-            </li>
-            <li>
-                <span class="count">450</span>
-                <span>feeds</span>
-            </li>
-        </ul>
+        <a href="https://web.facebook.com/profile.php?id=100086654464545">
+            <i class="fa fa-facebook"></i>
+            <ul>
+                <li>
+                    <span class="count">40</span> k
+                    <span>friends</span>
+                </li>
+                <li>
+                    <span class="count">450</span>
+                    <span>feeds</span>
+                </li>
+            </ul>
+        </a>
     </div>
     <!--/social-box-->
 </div>

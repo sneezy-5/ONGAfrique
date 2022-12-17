@@ -25,13 +25,14 @@ class DonateRequestValidation extends FormRequest
     {
         return [
             //
-            'last_name' => ['required', 'string'],
-            'first_name' => ['required', 'string'],
-            'email' => ['required', 'string', 'email', 'max:255',],
-            'country' => ['required', 'string'],
-            'city' => ['required', 'string'],
-            'address' => ['required', 'string'],
-            'amount' => ['required', 'int']
+            'last_name' => ['string'],
+            'first_name' => ['string'],
+            'email' => [ 'string', 'email', 'max:255',],
+            'country' =>  ['string'],
+            'city' => [ 'string'],
+            'address' => [ 'string'],
+            'amount' => [ 'string'],
+            'phone'=> ['string']
         ];
     }
 

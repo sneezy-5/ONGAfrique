@@ -58,7 +58,8 @@
       <div class="d-flex flex-column flex-md-row justify-content-between py-4 my-4 border-top">
         <p>&copy; 2022 Company, Created by ESO-DEV .</p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="https://web.facebook.com/profile.php?id=100086654464545"><i class="fab fa-facebook-f"></i></a></li>
+
           <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-twitter"></i></a></li>
           <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-google"></i></a></li>
         </ul>

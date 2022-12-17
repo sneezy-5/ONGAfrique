@@ -20,6 +20,9 @@ class CreateDonsTable extends Migration
             $table->string('email')->nullable();
             $table->string('country')->nullable();
             $table->string('city')->nullable();
+            $table->string('honneur')->nullable();
+            $table->string('honnoree')->nullable();
+            $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('amount');
             $table->unsignedBigInteger('user_id')->nullable();

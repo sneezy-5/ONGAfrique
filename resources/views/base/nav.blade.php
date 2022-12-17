@@ -275,7 +275,7 @@
         </div>
   
         <div class="input-group mb-3">
-          <input type="number" class="form-control casecontact"  placeholder="contacts">
+          <input type="number" name="phone" class="form-control casecontact"  placeholder="contacts">
           
          </div>
          
@@ -295,7 +295,7 @@
   
       <p>
         <div class="form-check d-flex gap-2">
-          <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+          <input class="form-check-input btncoche" type="checkbox" name="honneur" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
           <label class="form-check-label" for="flexCheckDefault">
             Donner en l'honneur ou en mémoire 
           </label>
@@ -304,7 +304,7 @@
       </p>
       <div class="collapse" id="collapseExample">
         <div class="form-group">
-         <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+         <input type="text" name="honnoree" class="form-control specialchamp" placeholder="nom d'une personne' spéciale">
         </div>
       </div>
   
@@ -333,20 +333,20 @@
             @csrf
             <div class="form-outline mb-1">
               <label class="form-label" for="nom">Nom & prénoms</label>
-              <input type="text" id="nom" class="form-control iptinscript1"/>
+              <input type="text" name="name" id="nom" class="form-control iptinscript1"/>
 
             </div>
 
             <div class="form-outline mb-1">
               <label class="form-label" for="mail">email</label>
-              <input type="email" id="mail" class="form-control iptinscript2 un"/>
+              <input type="email" name="email" id="mail" class="form-control iptinscript2 un"/>
 
             </div>
 
             <div class="form-outline mb-1">
               <label class="form-label" for="chiffre">Combien Souhaitez-vous donner par mois ?</label>
 
-              <select class="form-select chiffreinscri" aria-label="Default select example">
+              <select class="form-select chiffreinscri" name="amount" aria-label="Default select example">
 
                 <option value="10000">10000</option>
                 <option value="20000">20000</option>
@@ -357,10 +357,10 @@
 
             <div class="form-outline mb-1">
               <label class="form-label" for="pass">Entrez un mot de passe</label>
-              <input type="password" id="pass" class="form-control iptinscript3 un"/>
+              <input type="password" name="password" id="pass" class="form-control iptinscript3 un"/>
               
               <label class="form-label" for="pass">Confirmez mot de passe</label>
-              <input type="password" id="pass" class="form-control iptinscript3 un"/>
+              <input type="password" name="password_confirmation" id="pass" class="form-control iptinscript3 un"/>
 
             </div>
 

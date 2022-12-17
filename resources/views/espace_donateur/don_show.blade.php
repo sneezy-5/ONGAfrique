@@ -19,7 +19,7 @@
                                     <thead>
                                         <tr>
                                             <th>Nom</th>
-                                            <th>Ville</th>
+                                            <!-- <th>Ville</th> -->
                                             <th>Montant</th>
                                             <th>Date</th>
                                         </tr>
@@ -30,7 +30,7 @@
                                     <tbody>
                                         <tr>
                                             <td>{{auth()->user()->name}}</td>
-                                            <td>{{ $don->city }}</td>
+                                            <!-- <td>{{ $don->city }}</td> -->
                                             <td>{{ $don->amount }} fcfa</td>
                                             <td>{{ $don->created_at->format('d M Y') }}</td>
                                             
