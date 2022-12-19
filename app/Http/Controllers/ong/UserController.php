@@ -63,6 +63,7 @@ class UserController extends Controller
             $path = 'noimage.jpg';
             }
             $data['image']=$fileNameToStore;
+            //dd($request->all());
         $user = User::create([
             'name' => $request->first_name,
             'first_name'=>$request->first_name,
@@ -70,6 +71,7 @@ class UserController extends Controller
             'image'=>$request->image,
             'is_admin'=>isset($request->is_admin),
             'email' => $request->email,
+            'amount'=>$request->amount,
             'password' => Hash::make($request->password),
         ]);
        
