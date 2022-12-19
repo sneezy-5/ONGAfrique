@@ -6,10 +6,9 @@
                 <div class="card-body">
                   <h4 class="card-title">Newsletter</h4>
                   <p class="card-description">
-                    <code>Adhérants</code>
+                    <code>newsletter</code>
                   </p>
                   <div class="table-responsive">
-                  <a class="btn btn-primary" href="{{route('newletter.create')}}" role="button">Envoyer un Email</a>
                   <a class="btn btn-primary" href="{{route('newletter.export')}}" role="button">Expoter Email</a>
                     <table class="table table-striped">
                       <thead>
