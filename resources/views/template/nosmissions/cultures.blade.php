@@ -76,7 +76,7 @@
     <div class="card-body entete">
      <h4 class="card-title Titretrans">{{ $culture->title }}</h4>
         <p class="card-text text-dark texttrans txtcarac">
-        {{ Str::limit($culture->description, 10) }}       </p>
+        {{ Str::limit($culture->description, 30) }}       </p>
         <a href="{{route('voirculture',['id'=>$culture->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
         
     </div>
@@ -107,13 +107,13 @@ Le Président fondateur M.Richard Gabdibé est le    Parrain de ce grand Festiva
        <div class="carddeo row d-flex justify-content-center  mt-5">
 
   @foreach($cultures as $soc)
-        <div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
-          <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
+        <div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
+          <iframe class="container-fluid " src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
-          <div class="card-title m-3">
+          <!-- <div class="card-title m-3">
               <span>Featured Video</span>
               <h4>Set for the Ashes</h4>
-          </div>
+          </div> -->
 
         </div>
   @endforeach

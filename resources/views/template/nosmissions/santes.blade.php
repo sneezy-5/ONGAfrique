@@ -76,7 +76,7 @@
 <div class="card-body entete">
 <h4 class="card-title Titretrans">{{$san->title}}</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($san->description, 10) }} 
+{{ Str::limit($san->description, 30) }} 
 </p>
 <a href="{{route('voirsante',['id'=>$san->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -110,24 +110,14 @@ Pour nous, l'hygiène sanitaire doit être une priorité commune.
 
 
 <div class="carddeo row d-flex justify-content-center  mt-5">
-
-<div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
-  <iframe class="container-fluid " src="" frameborder="0"></iframe>
-
-  <div class="card-title m-3">
-      <span>Featured Video</span>
-      <h4>Set for the Ashes</h4>
-  </div>
-
-</div>
 @foreach($santes as $soc)
-<div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
-  <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
+<div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
+  <iframe class="container-fluid " src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
-  <div class="card-title m-3">
-      <span>Featured Video</span>
-      <h4>Set for the Ashes</h4>
-  </div>
+  <!-- <div class="card-title m-3">
+      <span>{{$soc->title}}</span>
+      <h4>{{$soc->description}}</h4>
+  </div> -->
 
 </div>
 @endforeach

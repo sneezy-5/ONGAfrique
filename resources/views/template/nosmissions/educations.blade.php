@@ -79,7 +79,7 @@
 <div class="card-body entete">
 <h4 class="card-title Titretrans">{{ $edu->title }}</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($edu->description, 10) }} 
+{{ Str::limit($edu->description, 30) }} 
 </p>
 <a href="{{route('voireducation',['id'=>$edu->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -111,13 +111,13 @@ Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'
 <div class="carddeo row d-flex justify-content-center  mt-5">
 
 @foreach($educations as $soc)
-<div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
-  <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
+<div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
+  <iframe class="container-fluid " src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
-  <div class="card-title m-3">
-      <span>Featured Video</span>
-      <h4>Set for the Ashes</h4>
-  </div>
+  <!-- <div class="card-title m-3">
+      <span>{{$soc->description}}</span>
+      <h4>{{$soc->description}}</h4>
+  </div> -->
 
 </div>
 @endforeach

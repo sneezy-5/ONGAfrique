@@ -78,7 +78,7 @@
 <div class="card-body entete">
 <h4 class="card-title Titretrans">{{$spo->type}}</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($spo->description, 10) }}
+{{ Str::limit($spo->description, 30) }}
 </p>
 <a href="{{route('voirsport',['id'=>$spo->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -114,10 +114,10 @@ C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fi
 <div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
   <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
-  <div class="card-title m-3">
+  <!-- <div class="card-title m-3">
       <span>Featured Video</span>
       <h4>Set for the Ashes</h4>
-  </div>
+  </div> -->
 
 </div>
 @endforeach

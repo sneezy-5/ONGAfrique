@@ -78,7 +78,7 @@
 <div class="card-body entete">
 <h4 class="card-title Titretrans">{{$soc->title}}</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($soc->description, 20) }} 
+{{ Str::limit($soc->description, 30) }} 
 </p>
 <a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -113,10 +113,10 @@ Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonhe
 <div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
   <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
-  <div class="card-title m-3">
+  <!-- <div class="card-title m-3">
       <span>Featured Video</span>
       <h4>Set for the Ashes</h4>
-  </div>
+  </div> -->
 
 </div>
 @endforeach
