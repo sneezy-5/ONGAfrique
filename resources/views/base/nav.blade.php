@@ -113,7 +113,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulaire d'Adhésion</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{__("foradhe")}}</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body d-flex justify-content-center">
@@ -135,72 +135,72 @@
                       
                       <div
                         class="progress-step progress-step-active"
-                        data-title="Info"></div>
+                        data-title="{{__("inf")}}"></div>
                       
-                      <div class="progress-step" data-title="Contacts"></div>
-                      <div class="progress-step" data-title="Finale"></div>
+                      <div class="progress-step" data-title="{{__("contact")}}"></div>
+                      <div class="progress-step" data-title="{{__("final")}}"></div>
                     </div>
                     <div class="step-forms step-forms-active">
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="nom&prénoms">Nom et Prénoms</label>
+                        <label class="labeladhe" for="nom&prénoms">{{__("nomP")}}</label>
                         <input type="text" name="nom"  class="iptadhe champadhes nomadhe">
                       </div>
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="Datedenaissance">Date de naissance</label>
+                        <label class="labeladhe" for="Datedenaissance">{{__("datenaiss")}}</label>
                         <input type="date" name="date_naissance" class="iptadhe champadhes dateadhe">
                       </div>
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="Fonction">Fonction</label>
+                        <label class="labeladhe" for="Fonction">{{__("fnction")}}</label>
                         <input type="text" name="fonction" class="iptadhe champadhes fonctionadhe">
                       </div>
 
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="fichier">Votre photo</label>
+                        <label class="labeladhe" for="fichier">{{__("Vphoto")}}</label>
                         <input type="file" name="picture" class="form-control-file iptadhe champadhes photoadhe">
                       </div>
 
 
 
                       <div class="">
-                        <div class="btn btn-next width-50 ml-auto btnsuive btn-outline-primary">Suivant</div>
+                        <div class="btn btn-next width-50 ml-auto btnsuive btn-outline-primary">{{__("suivnt")}}</div>
                       </div>
                     </div>
                     <div class="step-forms">
 
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="contacts">Contacts</label>
+                        <label class="labeladhe" for="contacts">{{__("contact")}}</label>
                         <input type="number" name="phone" class="iptadhe champadhes contactsadhe">
                       </div>
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="email">Mail</label>
+                        <label class="labeladhe" for="email">{{__("mail")}}</label>
                         <input type="email" name="email" id="email" class="iptadhe champadhes mailadhe">
                       </div>
 
                       <div class="btns-group divipts">
-                        <a href="#" class="btn btn-prev btnsuive btn-outline-primary">Précédent</a>
-                        <a href="#" class="btn btn-next btnsuive btn-outline-primary">Suivant</a>
+                        <a href="#" class="btn btn-prev btnsuive btn-outline-primary">{{__("prece")}}</a>
+                        <a href="#" class="btn btn-next btnsuive btn-outline-primary">{{__("suivnt")}}</a>
                       </div>
                     </div>
                     <div class="step-forms">
 
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="Région/district">Région/district</label>
+                        <label class="labeladhe" for="Région/district">{{__("region")}}</label>
                         <input type="text" name="region" class="iptadhe champadhes regionadhe">
                       </div>
               
                       <div class="group-inputs divipts">
-                        <label class="labeladhe" for="section">section</label>
+                        <label class="labeladhe" for="section">{{__("section")}}</label>
                         <input type="text" name="section" class="iptadhe champadhes sectionadhe">
                       </div>
               
 
                       <div class="form-check form-switch ">
                         <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
-                        <label class="labeladhe" class="form-check-label" for="flexSwitchCheckCheckedDisabled">Frais d'adhésion 2000 fr</label>
+                        <label class="labeladhe" class="form-check-label" for="flexSwitchCheckCheckedDisabled">{{__("frais")}}</label>
                       </div>
 
                       <div class="btns-group">
-                        <div class="btn btn-prev btn-outline-primary d-flex justify-content-center align-items-center">Précédent</div>
+                        <div class="btn btn-prev btn-outline-primary d-flex justify-content-center align-items-center">{{__("prece")}}</div>
                         <input type="submit" value="Adhérez" id="submit-form" class="btnsuive btn-success champadhes">
                       </div>
 
@@ -212,7 +212,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">{{__("fermer")}}</button>
       </div>
     </div>
   </div>
@@ -230,7 +230,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <img src="{{asset('styles/img/logo.jpeg')}}" class="img-container" alt="" width="70" height="70">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Faites un don </h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{__("FuD")}} </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body row container-fluid justify-content-center  m-0">
@@ -238,10 +238,8 @@
         <div class="card m-2 mb-5 " style="width:25rem;">
           <img src="{{asset('styles/img/social/11.jpg')}}" alt="" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Aidez à sauver la vie d'enfants</h5>
-            <p class="card-text">Tous les enfants méritent de vivre en sécurité et en bonne santé.
-
-              Faites un don pour donner aux enfants les plus vulnérables du monde la nutrition, l'eau et les fournitures médicales dont ils ont désespérément besoin.</p>
+            <h5 class="card-title">{{__("titrespecial")}}</h5>
+            <p class="card-text">{{__("textspecial")}}</p>
           </div>
         </div>
   
@@ -250,11 +248,11 @@
         <!-- Nav pills -->
         <ul class="nav nav-pills bg-light justify-content-between">
           <li class="nav-item w-50 justify-content-center">
-            <a class="nav-link active " data-bs-toggle="pill" href="#home">Donner une fois</a>
+            <a class="nav-link active " data-bs-toggle="pill" href="#home">{{__("Dnf")}}</a>
           </li>
           @guest
           <li class="nav-item w-50 ">
-            <a class="nav-link text-align-center" data-bs-toggle="pill" href="#menu1">mensuel</a>
+            <a class="nav-link text-align-center" data-bs-toggle="pill" href="#menu1">{{__("mensuel")}}</a>
           </li>
           @endguest
         
@@ -295,7 +293,7 @@
         <input type="number" name="amount" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="500">
         
         <div id="validationServerUsernameFeedback" class="invalid-feedback" style="text-align:start;">
-          Entrez un montant superieur ou égale à 500fr
+        {{__("montantSup")}}
         </div>
         <div class="valid-feedback" style="text-align:start;">
           Très bien
@@ -308,7 +306,7 @@
         <div class="form-check d-flex gap-2">
           <input class="form-check-input btncoche" type="checkbox" name="honneur" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
           <label class="form-check-label" for="flexCheckDefault">
-            Donner en l'honneur ou en mémoire 
+          {{__("honneur")}} 
           </label>
         </div>
   
@@ -337,25 +335,25 @@
           class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
           alt="Sample photo">
         <div class="card-body ">
-          <h3>Inscrivez-Vous</h3>
+          <h3>{{__("Inscription")}}</h3>
            <small class="m-0 p-0  alertinscri" style="color: red;"></small>
 
           <form action="{{route('register')}}" method="post" class="px-md-2 mt-2 forminscrimodal">
             @csrf
             <div class="form-outline mb-1">
-              <label class="form-label" for="nom">Nom & prénoms</label>
+              <label class="form-label" for="nom">{{__("nomP")}}</label>
               <input type="text" name="name" id="nom" class="form-control iptinscript1"/>
 
             </div>
 
             <div class="form-outline mb-1">
-              <label class="form-label" for="mail">email</label>
+              <label class="form-label" for="mail">{{__("mail")}}</label>
               <input type="email" name="email" id="mail" class="form-control iptinscript2 un"/>
 
             </div>
 
             <div class="form-outline mb-1">
-              <label class="form-label" for="chiffre">Combien Souhaitez-vous donner par mois ?</label>
+              <label class="form-label" for="chiffre">{{__("choix")}}</label>
 
               <select class="form-select chiffreinscri" name="amount" aria-label="Default select example">
 
@@ -367,15 +365,15 @@
             </div>
 
             <div class="form-outline mb-1">
-              <label class="form-label" for="pass">Entrez un mot de passe</label>
+              <label class="form-label" for="pass">{{__("password")}}</label>
               <input type="password" name="password" id="pass" class="form-control iptinscript3 un"/>
               
-              <label class="form-label" for="pass">Confirmez mot de passe</label>
+              <label class="form-label" for="pass">{{__("confirm_pass")}}</label>
               <input type="password" name="password_confirmation" id="pass" class="form-control iptinscript3 un"/>
 
             </div>
 
-            <button type="submit" class="btn btn-success mb-1">S'incrire</button>
+            <button type="submit" class="btn btn-success mb-1">{{__("Inscription")}}</button>
 
           </form>
 
@@ -393,7 +391,7 @@
   
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__("Fermer")}}</button>
       </div>
     </div>
   </div>

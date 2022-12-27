@@ -63,5 +63,35 @@
     "description4":"Dans sa vision de rallumer la joie et le bonheur dans les cœurs, L'ONG Sourire D'Afrique L'ONG Sourire D'Afrique accompagne le festival N’GOHA de Taabo organisé par l'alliance des jeunes leaders pour le Développement de Taabo ( AJLD). Le Président fondateur M.Richard Gabdibé est le Parrain de ce grand Festival qui réunit les fils et filles du département de Taabo autour d'un idéal commun. Celui du vivre ensemble et de la cohésion sociale.",
     "description5":"Le sport , comme bon facteur de rassembleur, l'ONG Sourire D'Afrique s'engage à accompagner championnat et tournoi communautaire et scolaires là où besoin se fait sentir. C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE, M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo. Championnat qui s'étend sur 3 mois.",
     "description6":"À le projet Ya Mangé, dès l'année 2023 , L'ONG Sourire D'Afrique envisage créer de l'emploi pour les jeunes filles déscolarisées. Nous voulons financer de micro projets générateur de revenus. Accorder des prêts aux associations et groupements biens structurés. Créer des projets au nom de L'ONG Sourire D'Afrique.",
-    "nosstories":"Nos story"
+    "nosstories":"Nos story",
+
+
+    "foradhe":"Formulaire d'Adhésion",
+    "nomP":"Nom & Prénoms",
+    "datenaiss":"Date de naissance",
+    "fnction":"Fonction",
+    "Vphoto":"Votre photo",
+    "suivnt":"Suivant",
+    "prece":"Précédent",
+    "contact":"Contact",
+    "mail":"e-Mail",
+    "region":"Région/district",
+    "section":"section",
+    "frais":"Frais d'adhésion 2000 fr",
+    "fermer":"fermer",
+    "titrespecial":"Aidez à sauver la vie d'enfants",
+    "textspecial":"Tous les enfants méritent de vivre en sécurité et en bonne santé. Faites un don pour donner aux enfants les plus vulnérables du monde la nutrition, l'eau et les fournitures médicales dont ils ont désespérément besoin.",
+    "Dnf":"Donner une fois",
+    "mensuel":"mensuel",
+    "montantSup":"Entrez un montant superieur ou égale à 500fr",
+    "honneur":"Donner en l'honneur ou en mémoire",
+    "choix":"Combien Souhaitez-vous donner par mois ?",
+    "password":"Entrez un mot de passe",
+    "confirm_pass":"Confirmez mot de passe",
+
+    "inf":"Info",
+    "final":"Finale"
+
+
+
 }

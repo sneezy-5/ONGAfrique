@@ -61,7 +61,34 @@
     "description4": "In its vision to rekindle joy and happiness in the hearts, the NGO Sourire D'Afrique The NGO Sourire D'Afrique accompanies the festival N'GOHA of Taabo organized by the alliance of young leaders for the Development of Taabo ( AJLD). The President and Founder, Mr. Richard Gabdibé, is the sponsor of this great festival which brings together the sons and daughters of the department of Taabo around a common ideal. That of living together and social cohesion",
     "description5": "Sport, as a good unifying factor, the NGO Sourire D'Afrique is committed to accompanying championships and community and school tournaments where needed. That is why, in order to prevent early school vacations during this end of the year, the President and Founder of the NGO SOURIRE D'AFRIQUE, Mr. Richard Gabdibé had the honor to sponsor the Handball Championship of the middle and high schools of Taabo. Championship that extends over 3 months.",
     "description6": "With the Ya Mangé project, from the year 2023, the NGO Sourire D'Afrique plans to create employment for young girls out of school. We want to finance income generating micro projects. To grant loans to associations and well-structured groups. Create projects in the name of the NGO Sourire D'Afrique",
-    "nosstories": "Our story"
+    "nosstories": "Our story",
+
+
+    "foradhe": "Membership Form",
+    "lastname": "Lastname & Firstname",
+    "datenaiss": "Date of birth",
+    "fnction": "Position",
+    "Vphoto": "Your photo",
+    "suivnt": "Next",
+    "prece": "Previous",
+    "contact": "Contact",
+    "mail": "e-Mail",
+    "region": "Region/district",
+    "section": "section",
+    "frais": "Membership fee 2000 fr",
+    "fermer": "close",
+    "titrespecial": "Aidez à sauver la vie d'enfants",
+    "textspecial": "All children deserve to live safe and healthy. Donate to give the world's most vulnerable children the nutrition, water and medical supplies they desperately need.",
+    "Dnf": "Give once",
+    "monthly": "monthly",
+    "montantSup": "Enter an amount greater than or equal to 500fr",
+    "honneur": "Give in honor or in memory",
+    "choix": "How much would you like to give per month?",
+    "password": "Enter a password",
+    "confirm_pass": "Confirm password",
+
+    "inf": "Info",
+    "final": "Final"
 
 }
 
