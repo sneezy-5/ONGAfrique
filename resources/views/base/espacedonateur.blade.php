@@ -109,15 +109,15 @@
                             </span></h3> -->
                         <div class="user-menu dropdown-menu">
                             
-                        <p2 class="mb-1 mt-3 font-weight-semibold">{{auth()->user()->name}}</p2>
-                <p2 class="fw-light text-muted mb-0">{{auth()->user()->email}}</p2>
+                            <p2 class="mb-1 mt-3 font-weight-semibold">{{auth()->user()->name}}</p2>
+                            <p2 class="fw-light text-muted mb-0">{{auth()->user()->email}}</p2>
 
-                            <form action="{{route('logout')}}" method="post">
-                            @csrf
-                            <button><i class="dropdown-item-icon mdi mdi-power text-primary me-2"href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();" style="border:none ;"></i>Déconnexion</button>
-                            </form>
+                                <form action="{{route('logout')}}" method="post">
+                                @csrf
+                                <button><i class="dropdown-item-icon mdi mdi-power text-primary me-2"href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();" style="border:none ;"></i>Déconnexion</button>
+                                </form>
 
                         </div>
                     </div>

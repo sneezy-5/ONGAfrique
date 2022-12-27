@@ -13,66 +13,75 @@
         <div class="alert alert-success" style="text-align:center;height:auto; width:auto; font-size:15px">
         {{Session::get('success')}}
         </div>
-        @endif
+    @endif
+    
   </div>
 
   <div class="container-fluid w-100 ">
+
     <a class="navbar-brand img-fluid imgheader"  href="/"><img src="{{asset('styles/img/logo.jpeg')}}" alt="" height="50" width="50"></a>
+   <!----LANGUES-->
+    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+      <button type="button"  class="btn btn-outline-dark"><a href="/locale/fr" class="text-primary" style="text-decoration: none;"><img src="{{asset('styles/img/fr.png')}}" class="img-fluid" height="20px" width="20px" alt="français"></a></button>
+      <button type="button"  class="btn btn-outline-dark"><a href="/locale/en" class="text-primary" style="text-decoration: none;"><img src="{{asset('styles/img/en.png')}}" class="img-fluid" height="20px" width="20px" alt="anglais"></a></button>
+    </div>
+    <!----fin LANGUES-->
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('/')}}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{route('/')}}">{{__("Accueil")}}</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/aproposdenous">Qui sommes nous</a>
+          <a class="nav-link active" aria-current="page" href="/aproposdenous">{{__("Qsn")}}</a>
         </li>
 
         
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Nos Missions
+            {{__("Nosmissions")}}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('nosmissions.sociales')}}">Social</a></li>
-            <li><a class="dropdown-item" href="{{route('nosmissions.santes')}}">Santé</a></li>
-            <li><a class="dropdown-item" href="{{route('nosmissions.educations')}}">Education</a></li>
-            <li><a class="dropdown-item" href="{{route('nosmissions.cultures')}}">Culture</a></li>
-            <li><a class="dropdown-item" href="{{route('nosmissions.sports')}}">Sport</a></li>
-            <li><a class="dropdown-item" href="{{route('nosmissions.economies')}}">Socio-économique</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.sociales')}}">{{__("Social")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.santes')}}">{{__("Sante")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.educations')}}">{{__("Education")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.cultures')}}">{{__("Culture")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.sports')}}">{{__("Sport")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('nosmissions.economies')}}">{{__("Socio-économique")}}</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Nos Evènements
+            {{__("NosEvenements")}}
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('activites.index')}}">Nos Activités</a></li>
-            <li><a class="dropdown-item" href="{{route('actualites.index')}}">Nos Actualités</a></li>
+            <li><a class="dropdown-item" href="{{route('activites.index')}}">{{__("NosActivites")}}</a></li>
+            <li><a class="dropdown-item" href="{{route('actualites.index')}}">{{__("NosActualite")}}</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Comment Nous Aider ? 
+            {{__("CnA")}} 
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Donner par mois</a></li>
-            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#exampleModalAdhesion">Adhérer</a></li>
+            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">{{__("DPm")}}</a></li>
+            <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#exampleModalAdhesion">{{__("Adhérer")}}</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" download="{{asset('styles/img/pdf/ficheadhesion.pdf')}}" href="{{asset('styles/img/pdf/ficheadhesion.pdf')}}">Télécharger Pdf Adhésion</a></li>
+            <li><a class="dropdown-item" download="{{asset('styles/img/pdf/ficheadhesion.pdf')}}" href="{{asset('styles/img/pdf/ficheadhesion.pdf')}}">{{__("TelcPdf")}}</a></li>
           </ul>
         </li>
 
 
         @guest
 
-        <button class="btn btn-danger navbar-btn m-1 " type="button" class="btn btn-primary"><a href="{{route('register')}}" style="text-decoration:none;color:white">Inscription</a></button>
-        <button class="btn btn-primary m-1"><a class="dropdown-item" href="{{route('login')}}">Connexion</a></button>
+        <button class="btn btn-danger navbar-btn m-1 " type="button" class="btn btn-primary"><a href="{{route('register')}}" style="text-decoration:none;color:white">{{__("Inscription")}}</a></button>
+        <button class="btn btn-primary m-1"><a class="dropdown-item" href="{{route('login')}}">{{__("Connexion")}}</a></button>
         
         @endguest
 
@@ -81,13 +90,15 @@
         <button class="btn btn-primary m-1"><a class="dropdown-item" href="{{route('dashboard.index')}}">Dashboard</a></button>
 
         @endauth
+       
         
+
       </ul>
 
       <form action="{{route('newsletter.store')}}" method="post" class="d-flex formheader">
         @csrf
         <input class="form-control me-2 newsletterheader" name="email" type="email" placeholder="Newsletter">
-        <button class="btn btn-outline-success" type="submit">Envoyer</button>
+        <button class="btn btn-outline-success" type="submit">{{__("Envoyer")}}</button>
       </form>
       
     </div>

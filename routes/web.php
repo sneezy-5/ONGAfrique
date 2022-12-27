@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\ong\ContactController;
 use App\Http\Controllers\ong\CultureController;
 use App\Http\Controllers\ong\DonateController;
@@ -113,6 +113,14 @@ Route::resource('/contact', ContactController::class)->only([
 
 
 });
+
+// Traduction 
+// Route qui permet de connaître la langue active
+Route::get('locale', [LocalizationController::class, 'getlang'])->name('getlang');
+
+// Route qui permet de modifier la langue
+Route::get('locale/{lang}', [LocalizationController::class, 'setlang'])->name('setlang');
+
 
 Route::middleware(['auth',])->group(function(){
 
