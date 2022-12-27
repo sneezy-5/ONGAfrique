@@ -55,7 +55,7 @@
 
     <div class="parentbloc0 row w-100">
    
-    <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Visitez nos activités</h1>
+    <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titreevent")}}</h1>
 
 @foreach($event as $ev)
 
