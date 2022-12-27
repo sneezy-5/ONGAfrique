@@ -53,7 +53,7 @@
 
 <div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Visitez nos activités sociales</h1>
+<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titreeducation")}}</h1>
 
 
 @foreach($educations as $edu)
@@ -88,21 +88,22 @@
 </div>
 @endforeach
 
-           
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 </div>
 
 
 <div class="parentblocdeo ">
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">Journée Mondiale de la Paix</h1> 
+<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-Au plan éducatif 
-Le 22 septembre 2022 l'ONG Sourire D'Afrique a apporté le sourire aux élèves démunis et orphelins du département de Taabo à travers la distribution de 450 kits scolaires du primaire au secondaire.  
-
-Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'accompagner le gouvernement dans sa vision d'une Côte d'Ivoire Solidaire
+{{__("description3")}}
 </p>
 </div>
 
@@ -122,6 +123,12 @@ Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'
 </div>
 @endforeach
 
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
+
 
 
 
@@ -133,7 +140,7 @@ Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'
 
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 
@@ -157,7 +164,11 @@ Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'
     </div> 
 </a> 
 @endforeach
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 
 </div>

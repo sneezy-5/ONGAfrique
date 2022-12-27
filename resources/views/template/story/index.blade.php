@@ -80,6 +80,11 @@
 </a>
 @endforeach 
 
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 </div>
 
 </div>

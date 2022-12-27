@@ -52,7 +52,7 @@
 
 <div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Visitez nos activités sanitaire
+<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titresante")}}
 @foreach($santes as $san)
 <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
 <!-- Trigger the Modal -->
@@ -86,7 +86,11 @@
 
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
            
 
@@ -95,15 +99,11 @@
 
 <div class="parentblocdeo ">
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">Journée Mondiale de la Paix</h1> 
+<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-En prélude de la fête  l'indépendance 2022 , l'ONG Sourire D'Afrique a méné une opération Coup de Balai  à l'hôpital Général de TAABO en présence du Préfet , des adjoints aux maire , de la directrice de l'hôpital,  des autorités Administratives et une bonne masse de la population.
-
-En effet, nous avons lavé toutes les salles et nettoyé la cour et les alentours de l'hôpital. Et nous avons terminé au marché de la ville. 
-
-Pour nous, l'hygiène sanitaire doit être une priorité commune.
+{{__("description2")}}
 </p>
 </div>
 
@@ -121,6 +121,11 @@ Pour nous, l'hygiène sanitaire doit être une priorité commune.
 
 </div>
 @endforeach
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 
 
@@ -133,7 +138,7 @@ Pour nous, l'hygiène sanitaire doit être une priorité commune.
 
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 
@@ -160,7 +165,11 @@ Pour nous, l'hygiène sanitaire doit être une priorité commune.
 @endforeach
 
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 </div>
 </div>

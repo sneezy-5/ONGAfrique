@@ -54,7 +54,7 @@
 
 <div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Visitez nos activités sociales</h1>
+<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titresocial")}}</h1>
 @foreach($sociales as $soc)
 <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
 <!-- Trigger the Modal -->
@@ -87,7 +87,11 @@
 </div>
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
            
 
 </div>
@@ -95,13 +99,11 @@
 
 <div class="parentblocdeo ">
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">Journée Mondiale de la Paix</h1> 
+<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-Le Jeudi 03 novembre  2022  les membres de L’ONG SOURIRE D’AFRIQUE ont effectué une visite à la maison de correction et d’arrêt de TIASSALE pour des dons en vivre et non vivre (03 sacs de riz de 50 kg, 03 cartons de 60 savons (180), 02 sacs d’OMO (240 sachets) et des kits d’habits). 
-
-Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonheur à donner qu'à recevoir.
+{{__("description1")}}
 </p>
 </div>
 
@@ -121,7 +123,11 @@ Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonhe
 </div>
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 </div>
 
 
@@ -129,7 +135,7 @@ Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonhe
 
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 
@@ -158,7 +164,11 @@ Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonhe
 
 
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 
 

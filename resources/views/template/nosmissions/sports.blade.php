@@ -54,7 +54,7 @@
 
 <div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Visitez nos activités Sportifs</h1>
+<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titresport")}}</h1>
 @foreach($sports as $spo)
 <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
 <!-- Trigger the Modal -->
@@ -87,22 +87,22 @@
 </div>
 @endforeach
 
-           
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 </div>
 
 
 <div class="parentblocdeo ">
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">Journée Mondiale de la Paix</h1> 
+<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-  
-
-Le sport , comme bon facteur de rassembleur, l'ONG Sourire D'Afrique s'engage à accompagner championnat et tournoi communautaire et scolaires là où besoin se fait sentir.
-
-C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE,  M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo.  Championnat qui s'étend sur 3 mois.
+{{__("description5")}}
 </p>
 </div>
 
@@ -122,7 +122,11 @@ C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fi
 </div>
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 
 
@@ -136,7 +140,7 @@ C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fi
 
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 @foreach($stories as $story)
@@ -160,7 +164,11 @@ C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fi
 </a> 
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 </div>
 
 </div>

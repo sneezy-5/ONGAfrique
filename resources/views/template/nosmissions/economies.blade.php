@@ -54,7 +54,7 @@
 
 <div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Socio-économique</h1>
+<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titreeco")}}</h1>
 
 
 @foreach($economies as $eco)
@@ -88,21 +88,22 @@
 
 </div>
 @endforeach
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 </div>
 
 
 <div class="parentblocdeo ">
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">Journée Mondiale de la Paix</h1> 
+<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
 
 <div class="card-body w-75">
 <p class="card-text m-2 col-md">
-À le projet Ya Mangé, dès l'année 2023 , L'ONG Sourire D'Afrique envisage créer de l'emploi pour les jeunes filles déscolarisées.  Nous voulons financer de micro projets générateur de revenus. 
-
-Accorder des prêts aux associations et groupements biens structurés. 
-
-Créer des projets au nom de L'ONG Sourire D'Afrique.
+{{__("description6")}}
 </p>
 </div>
 
@@ -121,7 +122,11 @@ Créer des projets au nom de L'ONG Sourire D'Afrique.
 
 </div>
 @endforeach
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 
 </div>
@@ -131,7 +136,7 @@ Créer des projets au nom de L'ONG Sourire D'Afrique.
 
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">Nos story</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 
@@ -156,7 +161,11 @@ Créer des projets au nom de L'ONG Sourire D'Afrique.
 </a> 
 @endforeach
 
-
+<style>
+                                .w-5{
+                                    display:none
+                                }
+                               </style>
 
 </div>
 </div>
