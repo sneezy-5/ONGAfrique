@@ -65,7 +65,7 @@
 
 
     "foradhe": "Membership Form",
-    "lastname": "Lastname & Firstname",
+    "nomP": "Lastname & Firstname",
     "datenaiss": "Date of birth",
     "fnction": "Position",
     "Vphoto": "Your photo",
@@ -76,8 +76,8 @@
     "region": "Region/district",
     "section": "section",
     "frais": "Membership fee 2000 fr",
-    "fermer": "close",
-    "titrespecial": "Aidez à sauver la vie d'enfants",
+    "Fermer": "close",
+    "titrespecial": "Help save children's lives",
     "textspecial": "All children deserve to live safe and healthy. Donate to give the world's most vulnerable children the nutrition, water and medical supplies they desperately need.",
     "Dnf": "Give once",
     "monthly": "monthly",

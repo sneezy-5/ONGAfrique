@@ -64,7 +64,7 @@
             <div class="form-outline mb-1">
         
               <input id="form3Example4" class="form-control  champ"
-                placeholder="Entrer un mot de passe"   type="password"
+                placeholder="{{__("password")}}"   type="password"
                                 name="password"
                                 required autocomplete="new-password"/>
 
@@ -80,7 +80,7 @@
             <div class="form-outline mb-1">
         
               <input id="form3Example4" class="form-control  champ"
-                placeholder="Confimez mot de passe"   type="password"
+                placeholder="{{__("confirm_pass")}}"   type="password"
                                 name="password_confirmation" required/>
 
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
