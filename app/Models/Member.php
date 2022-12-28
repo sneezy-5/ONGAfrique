@@ -8,5 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+    protected $fillable = 
+    [
+        'nom' ,
+        'date_naissance' ,
+        'fonction' ,
+        'picture' ,
+        'phone' ,
+        'email',
+        'region' ,
+        'address',
+        'section',
+        'civilite'
+    ];
 }

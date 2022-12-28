@@ -41,13 +41,20 @@ class DonateController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validated = $request->validated();
+     
+        $this->validate($request,[
 
-        // Don::create([
-        //   $validated
-        // ]);
-        $this->validate($request,[]);
+            'last_name' ,
+            'first_name' ,
+            'email' ,
+            'country' ,
+            'city' ,
+            'address',
+            'amount' ,
+            'phone',
+            'honneur',
+            'honnoree'
+        ]);
         
         Don::create($request->all());
 
