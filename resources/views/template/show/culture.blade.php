@@ -1,5 +1,6 @@
 @extends('base.voirplus')
 
+@section('title', 'ONG | SOURIRE D\'AFRIQUE')
 @section('voirplus')
 
      <!--CENTER-->

@@ -29,10 +29,10 @@
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form3Example3">{{__("mail")}}</label>
-              <input type="email" name="email" id="form3Example3" class="form-control form-control-lg champ" placeholder="Entrer votre email" />
+              <input type="email" name="email" id="form3Example3" class="form-control form-control-lg champ" placeholder="{{__("mail")}}" />
 
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              {{__("password")}}
+              {{__("mail")}}
               </div>
               <div class="valid-feedback">
                 Très bien
@@ -44,7 +44,7 @@
             <div class="form-outline mb-3">
               <label class="form-label" for="form3Example4">{{__("password")}}</label>
               <input type="password" name="password" id="form3Example4" class="form-control form-control-lg champ"
-                placeholder="Entrer votre mot passe" />
+                placeholder="{{__("password")}}" />
 
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
               {{__("password")}}
@@ -58,7 +58,7 @@
             <div class="d-flex justify-content-between align-items-center">
 
             @if (Route::has('password.request'))
-              <a href="{{ route('password.request') }}" class="text-body">Mot de pass oublier ?</a>
+              <a href="{{ route('password.request') }}" class="text-body">{{__("oubl")}}</a>
             @endif
               
             </div>
@@ -67,7 +67,7 @@
               <button type="submit" class="btn btn-primary btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;">{{__("Connexion")}}
               </button>
-              <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="{{route('register')}}"
+              <p class="small fw-bold mt-2 pt-1 mb-0">{{__("pasCom")}}<a href="{{route('register')}}"
                   class="link-danger" data-bs-toggle="" data-bs-target="#exampleModal">{{__("Inscription")}}</a></p>
             </div>
 

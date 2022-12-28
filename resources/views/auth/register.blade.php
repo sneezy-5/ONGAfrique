@@ -28,7 +28,7 @@
             <!-- nom et prenom input -->
             <div class="form-outline mb-1">
 
-              <input type="text" id="form3Example3" name="name" class="form-control  champ" placeholder="nom" />
+              <input type="text" id="form3Example3" name="name" class="form-control  champ" placeholder="{{__("nomP")}} " />
 
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
               {{__("nomP")}} 
@@ -42,7 +42,7 @@
           <!-- email input -->
             <div class="form-outline mb-1">
 
-              <input type="email" name="email" id="form3Example3" class="form-control champ" placeholder="Email" />
+              <input type="email" name="email" id="form3Example3" class="form-control champ" placeholder="{{__("mail")}}" />
 
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
               {{__("mail")}}
@@ -94,7 +94,7 @@
 
             <div class="text-center text-lg-start  pt-2">
                 <input type="submit" value="{{__("Inscription")}}" class="btn btn-primary">
-              <p class="small fw-bold mt-2 pt-1 mb-0">Vous avez déjà un compte ? <a href="{{route('login')}}"
+              <p class="small fw-bold mt-2 pt-1 mb-0">{{__("cmptex")}} <a href="{{route('login')}}"
                   class="link-danger"  data-bs-target="#exampleModal">{{__("Connexion")}}</a></p>
             </div>
 

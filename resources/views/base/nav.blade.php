@@ -7,7 +7,7 @@
     
   <div class="top-container w-100 d-flex-md">
    
-    <h2 class="m-2" style="font-weight:900">ONG Sourire d'Afrique</h2><figcaption class="blockquote-footer minititle">Toujours avec vous.</figcaption>
+    <h2 class="m-2" style="font-weight:900">ONG Sourire d'Afrique</h2><figcaption class="blockquote-footer minititle">{{__("slogan")}}</figcaption>
     @include('base.errors')
     @if(Session::has('success'))
         <div class="alert alert-success" style="text-align:center;height:auto; width:auto; font-size:15px">
@@ -280,11 +280,11 @@
       @csrf
 
         <div class="input-group mb-3">
-         <input type="text" name="last_name" class="form-control casenom" placeholder="Nom et Prénoms">
+         <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
         </div>
   
         <div class="input-group mb-3">
-          <input type="number" name="phone" class="form-control casecontact"  placeholder="contacts">
+          <input type="number" name="phone" class="form-control casecontact"  placeholder="{{__("contact")}}">
           
          </div>
          
@@ -313,13 +313,13 @@
       </p>
       <div class="collapse" id="collapseExample">
         <div class="form-group">
-         <input type="text" name="honnoree" class="form-control specialchamp" placeholder="nom d'une personne' spéciale">
+         <input type="text" name="honnoree" class="form-control specialchamp" placeholder="{{__("honneur")}}">
         </div>
       </div>
   
      </div>
   
-      <input type="submit" value="faire un don" class="btn btn-primary w-100 mt-5 btnapi1">
+      <input type="submit" value="{{__("FuD")}}" class="btn btn-primary w-100 mt-5 btnapi1">
     </form>
   </div>
   

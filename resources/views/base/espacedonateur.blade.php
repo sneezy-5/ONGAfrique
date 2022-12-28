@@ -49,7 +49,7 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="/"> <i class="menu-icon fa fa-home"></i>Aller à l'acceuil </a>
+                        <a href="/"> <i class="menu-icon fa fa-home"></i>{{__("Accueil")}}</a>
                         <a href="{{route('dashboard.index')}}"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
                     <!-- <h3 class="menu-title">UI elements</h3>/.menu-title -->
@@ -64,9 +64,9 @@
                         </ul>
                     </li> -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Don</a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>{{__("Don")}}</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="{{route('voirmesdons.index')}}">Voir mes dons</a></li>
+                            <li><i class="fa fa-table"></i><a href="{{route('voirmesdons.index')}}">{{__("voirDon")}}</a></li>
                         </ul>
                     </li>
 
@@ -102,7 +102,7 @@
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="img-md rounded-circle" src="{{asset('storage/image/'.auth()->user()->image)}}" alt="Profile image" style="height: 80; width:80px;" >
+                        <img class="img-xs rounded-circle" src="{{asset('storage/image/'.auth()->user()->image)}}" alt="Profile image">
 
                         </a>
                         <!-- <h3 class="welcome-text">Good Morning, <span class="text-black fw-bold">{{auth()->user()->name}}
@@ -116,7 +116,7 @@
                                 @csrf
                                 <button><i class="dropdown-item-icon mdi mdi-power text-primary me-2"href="route('logout')"
                                         onclick="event.preventDefault();
-                                                    this.closest('form').submit();" style="border:none ;"></i>Déconnexion</button>
+                                                    this.closest('form').submit();" style="border:none ;"></i>{{__("Deconnexion")}}</button>
                                 </form>
 
                         </div>

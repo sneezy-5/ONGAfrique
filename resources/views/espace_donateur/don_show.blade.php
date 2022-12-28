@@ -18,10 +18,10 @@
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Nom</th>
+                                            <th>{{__("nom")}}</th>
                                             <!-- <th>Ville</th> -->
-                                            <th>Montant</th>
-                                            <th>Date</th>
+                                            <th>{{__("montant")}}</th>
+                                            <th>{{__("date")}}</th>
                                         </tr>
                                     </thead>
                             
@@ -38,7 +38,7 @@
                                 
                                     </tbody>
                                     @empty
-                                    <p style="color: red;">Il n'y a pas de don pour <strong style="color: black;">{{auth()->user()->name}}</strong>, faites un don maintenant ! </p>
+                                    <p style="color: red;">{{__("padn")}} <strong style="color: black;">{{auth()->user()->name}}</strong>, {{__("fmai")}} </p>
                                 @endforelse
                         
                                 </table>
