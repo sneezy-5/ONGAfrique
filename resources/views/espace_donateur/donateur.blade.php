@@ -25,7 +25,7 @@
             <h4 class="mb-0">
                 <span class="count">{{$countdon}}</span>
             </h4>
-            <p class="text-light">Nombre de dons </p>
+            <p class="text-light">{{__("nmbdon")}}</p>
 
             <div class="chart-wrapper px-0" style="height:70px;" height="70">
                 <canvas id="widgetChart1"></canvas>
@@ -55,7 +55,7 @@
             <h4 class="mb-0">
                 <span class="count">{{$sumdon}}</span>
             </h4>
-            <p class="text-light">Sommes totale des dons</p>
+            <p class="text-light">{{__("smmdon")}}</p>
 
             <div class="chart-wrapper px-0" style="height:70px;" height="70">
                 <canvas id="widgetChart2"></canvas>
@@ -84,7 +84,7 @@
             <h4 class="mb-0">
                 <span class="count">0</span>
             </h4>
-            <p class="text-light">chargement...</p>
+            <p class="text-light">{{__("chargemt")}}</p>
 
         </div>
 
@@ -113,7 +113,7 @@
             <h4 class="mb-0">
                 <span class="count">0 </span>
             </h4>
-            <p class="text-light">chargement...</p>
+            <p class="text-light">{{__("chargemt")}}</p>
 
             <div class="chart-wrapper px-3" style="height:70px;" height="70">
                 <canvas id="widgetChart4"></canvas>

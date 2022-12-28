@@ -93,7 +93,7 @@
 
 
     "slogan": "Always with you.",
-    "viewDon": "View my donations",
+    "voirDon": "View my donations",
     "montant": "amount",
     "nom": "name",
     "date": "date",
@@ -102,7 +102,10 @@
     "pasCom": "Don't have an account? ",
     "cmptex": "Do you already have an account?",
     "padn":"There is no donation for",
-    "fmai":"donate now!"
+    "fmai":"donate now!",
+    "nmbdon": "number of donations",
+    "smmdon": "total amount of donations",
+    "chargemt": "load..."
 
 }
 

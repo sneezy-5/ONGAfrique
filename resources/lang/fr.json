@@ -102,6 +102,10 @@
     "oubl":"Mot de pass oublier ?",
     "pasCom":"Vous n'avez pas de compte ? ",
     "cmptex":"Vous avez déjà un compte ?",
-    "padn":"There is no donation for",
-    "fmai":"donate now!"
+    "padn":"Il n'y a pas de don pour",
+    "fmai":"faites un don maintenant !",
+    "nmbdon":"nombre de dons",
+    "smmdon":"sommes totale des dons",
+    "chargemt":"chargement"
+    
 }
