@@ -24,10 +24,11 @@ class StoryValidation extends FormRequest
     public function rules()
     {
         return [
+            'title_fr'=>['required','string','max:50','min:5'],
             'title_en'=>['required','string','max:50','min:5'],
-            'title_en'=>['required','string','max:50','min:5'],
+            'description_fr'=>['required','string'],
             'description_en'=>['required','string'],
-            'description_en'=>['required','string'],
+            'image'=>['required'],
             #'mission_name'=>['required','string'],
             'mission_date'=>['required','date'],
         ];
