@@ -139,7 +139,7 @@ class StoryController extends Controller
         // Else add a dummy image
         else {
             $fileNameToStore = 'noimage.jpg';
-            $data['image']=Story::find($id)->video;
+            $data['image']=Story::find($id)->image;
             }
     
             if ($request->hasFile('video')) {

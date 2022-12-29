@@ -33,12 +33,20 @@
                    <input type="file" name="video" >
                  </div>
                     <div class="form-group">
-                      <label for="exampleInputCity1">Titre</label>
-                      <input type="text" class="form-control" id="exampleInputCity1" placeholder="Le tritre" name="title"  style="width:1000px;">
+                      <label for="exampleInputCity1">Titre_fr</label>
+                      <input type="text" class="form-control" id="exampleInputCity1" placeholder="Le tritre" name="title_fr"  style="width:1000px;">
                     </div>
                     <div class="form-group">
-                      <label for="exampleTextarea1">Description</label>
-                  <textarea class="form-control" id="exampleTextarea1" rows="4" name="description" style="height:100px; width:1000px;"></textarea>
+                      <label for="exampleInputCity1">Titre_en</label>
+                      <input type="text" class="form-control" id="exampleInputCity1" placeholder="Le tritre" name="title_en"  style="width:1000px;">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea1">Description_fr</label>
+                  <textarea class="form-control" id="exampleTextarea1" rows="4" name="description_fr" style="height:100px; width:1000px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleTextarea1">Description_en</label>
+                  <textarea class="form-control" id="exampleTextarea1" rows="4" name="description_en" style="height:100px; width:1000px;"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Envoyer</button>
                     <button class="btn btn-light"><a href="{{route('events.index')}}">Annuler</a></button>

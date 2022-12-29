@@ -76,9 +76,9 @@
 </div>
 
 <div class="card-body entete">
-<h4 class="card-title Titretrans">{{$soc->title}}</h4>
+<h4 class="card-title Titretrans">@if (app()->getLocale()=="fr") {{$soc->title_fr}} @else  {{$soc->title_en}} @endif</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($soc->description, 30) }} 
+ @if (app()->getLocale()=="fr") {{Str::limit( $soc->description_fr, 50)}} @else {{Str::limit( $soc->description_en, 50)}}  @endif
 </p>
 <a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -112,8 +112,8 @@
 <div class="carddeo row d-flex justify-content-center  mt-5">
 
 @foreach($sociales as $soc)
-<div class="card col-md-6 m-1" style="max-width:20rem; border: none; background: none;">
-  <iframe class="container-fluid videoiframe" src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
+<div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
+  <iframe class="container-fluid " src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
 
   <!-- <div class="card-title m-3">
       <span>Featured Video</span>
@@ -153,15 +153,14 @@
         </div> 
     </div> 
         <div class="content"> 
-            <p class="h-1 mt-4">{{$story->title}}</p> 
-            <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
+            <p class="h-1 mt-4"> @if (app()->getLocale()=="fr"){{ $story->title_fr}} @else  {{$story->title_en}} @endif</p> 
+            <p class="text-muted mt-3">@if (app()->getLocale()=="fr") {{Str::limit( $story->description_fr, 50)}} @else {{Str::limit( $story->description_en, 50)}}  @endif </p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
             </div> 
         </div> 
     </div> 
 </a> 
 @endforeach
-
 
 
 <style>

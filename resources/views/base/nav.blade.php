@@ -124,7 +124,7 @@
           <div class="col-md-6 ">
             <img src="{{asset('styles/img/adhesion.jpg')}}" class="img-fluid w-100">
          </div>
-                  <form action="{{route('adhesion.store')}}" class="col-md-6 formadhe" id="formsadhesion" enctype="multipart/form-data">
+                  <form action="{{route('adhesion.store')}}" method="POST" class="col-md-6 formadhe" id="formsadhesion" enctype="multipart/form-data">
                     @csrf
                    <div class="card text-danger border-0 ">
                     <small class="msgalert card-text"></small>

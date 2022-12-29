@@ -33,10 +33,10 @@
                         @foreach($events as $event)
                         <tr>
                           <td class="py-1">
-                          {{ $event->title }}
+                          {{ $event->title_fr }}
                           </td>
                           <td>
-                         {{ Str::limit($event->description, 50) }}   
+                         {{ Str::limit($event->description_fr, 50) }}   
                           </td>
                           <td>
                           <img src="{{asset('storage/image/'.$event->picture)}}" alt="">

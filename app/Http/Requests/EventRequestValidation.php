@@ -24,8 +24,9 @@ class EventRequestValidation extends FormRequest
     public function rules()
     {
         return [
-            'title'=>['required','string','max:50','min:5'],
-            'description'=>['required','string',]
+            'title_en'=>['required','string','max:50','min:5'],
+            'description_en'=>['required','string',],
+            'description_en'=>['required','string'],
         ];
     }
 
