@@ -64,7 +64,7 @@
                             controls="controls"/>
                       
                            
-                            <source src="{{asset('storage/vidéo/'.$story->video)}}" type="video/mp4">
+                            <source src="{{asset('storage/video/'.$story->video)}}" type="video/mp4">
                            
                          
                     </video>

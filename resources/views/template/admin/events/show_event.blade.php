@@ -46,7 +46,7 @@
                             controls="controls"/>
                       
                            
-                            <source src="{{asset('storage/vidéo/'.$event->video)}}" type="video/mp4">
+                            <source src="{{asset('storage/video/'.$event->video)}}" type="video/mp4">
                            
                         
                     

@@ -135,7 +135,7 @@ class EventController extends Controller
         // Else add a dummy image
         else {
             $fileNameToStore = 'noimage.jpg';
-            $data['picture']=Event::find($id)->video;
+            $data['picture']=Event::find($id)->picture;
             }
     
             if ($request->hasFile('video')) {

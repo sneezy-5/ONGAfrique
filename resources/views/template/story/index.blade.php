@@ -70,8 +70,8 @@
         </div> 
     </div> 
         <div class="content"> 
-            <p class="h-1 mt-4 Titretrans">{{$stori->title}}</p> 
-            <p class="text-muted mt-3 text texttrans">{{ Str::limit($stori->description, 20) }}</p> 
+            <p class="h-1 mt-4 Titretrans">@if (app()->getLocale()=="fr"){{ $stori->title_fr}} @else {{ $stori->title_en}} @endif</p> 
+            <p class="text-muted mt-3 text texttrans">@if (app()->getLocale()=="fr") {{Str::limit( $stori->description_fr, 50)}} @else {{Str::limit( $stori->description_en, 50)}}  @endif </p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span></div> 
             </div>
         

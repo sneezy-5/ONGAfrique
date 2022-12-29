@@ -80,9 +80,9 @@
    </div>
 
     <div class="card-body entete">
-     <h4 class="card-title Titretrans">{{ $ev->title }}</h4>
+     <h4 class="card-title Titretrans">@if (app()->getLocale()=="fr"){{ $ev->title_fr}} @else {{ $ev->title_en}} @endif</h4>
         <p class="card-text text-dark texttrans txtcarac">
-        {{ Str::limit($ev->description, 10) }}
+        @if (app()->getLocale()=="fr") {{Str::limit( $ev->description_fr, 50)}} @else {{Str::limit( $ev->description_en, 50)}}  @endif 
        </p>
         <a href="{{route('voiractualite',['id'=>$ev->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 

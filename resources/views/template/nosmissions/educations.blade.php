@@ -77,9 +77,9 @@
 </div>
 
 <div class="card-body entete">
-<h4 class="card-title Titretrans">{{ $edu->title }}</h4>
+<h4 class="card-title Titretrans"> @if (app()->getLocale()=="fr"){{ $edu->title_fr}} @else {{ $edu->title_en}} @endif</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($edu->description, 30) }} 
+ @if (app()->getLocale()=="fr") {{Str::limit( $edu->description_fr, 50)}} @else {{Str::limit( $edu->description_en, 50)}}  @endif 
 </p>
 <a href="{{route('voireducation',['id'=>$edu->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
@@ -148,8 +148,8 @@
         </div> 
     </div> 
         <div class="content"> 
-            <p class="h-1 mt-4">{{$story->title}}</p> 
-            <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
+            <p class="h-1 mt-4"> @if (app()->getLocale()=="fr"){{ $story->title_fr}} @else  {{$story->title_en}} @endif</p> 
+            <p class="text-muted mt-3">@if (app()->getLocale()=="fr") {{Str::limit( $story->description_fr, 50)}} @else {{Str::limit( $story->description_en, 50)}}  @endif </p> 
             <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
             </div> 
         </div> 

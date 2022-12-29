@@ -39,10 +39,10 @@
                           {{ $story->type }}
                           </td>
                           <td>
-                            {{$story->title}}
+                            {{$story->title_fr}}
                           </td>
                           <td>
-                          {{$story->mission_name}}
+                          {{$story->mission_name_fr}}
                           </td>
                           <td>
                           {{$story->mission_date}}

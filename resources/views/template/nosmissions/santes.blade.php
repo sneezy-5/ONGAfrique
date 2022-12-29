@@ -78,14 +78,12 @@
             <div class="caption"></div>
         </div>
 
-        <div class="card-body entete">
-            <h4 class="card-title Titretrans">{{$san->title}}</h4>
-
-            <p class="card-text text-dark texttrans txtcarac">
-            {{ Str::limit($san->description, 30) }} 
-            </p>
-
-            <a href="{{route('voirsante',['id'=>$san->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
+<div class="card-body entete">
+<h4 class="card-title Titretrans">{{$san->title}}</h4>
+<p class="card-text text-dark texttrans txtcarac">
+{{ Str::limit($san->description, 30) }} 
+</p>
+<a href="{{route('voirsante',['id'=>$san->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
         </div>
 
@@ -144,27 +142,27 @@
         <div class="row w-100 mt-0 Storydiv"> 
 
 
-            @foreach($stories as $story)
-            <a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
-                <div class="backgroundEffect"></div> 
-                <div class="pic"> 
-                    <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
-                    <div class="date"> 
-                        <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
-                        <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
-                        <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
-                    </div> 
-                </div> 
-                    <div class="content"> 
-                        <p class="h-1 mt-4">{{$story->title}}</p> 
-                        <p class="text-muted mt-3">{{ Str::limit($story->description, 20) }}</p> 
-                        <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
-                        </div> 
-                    </div> 
-                </div> 
-            </a> 
-            @endforeach
-          
+@foreach($stories as $story)
+<a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
+    <div class="backgroundEffect"></div> 
+    <div class="pic"> 
+        <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
+        <div class="date"> 
+            <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
+            <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
+            <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
+        </div> 
+    </div> 
+    <div class="content"> 
+            <p class="h-1 mt-4"> @if (app()->getLocale()=="fr"){{ $story->title_fr}} @else  {{$story->title_en}} @endif</p> 
+            <p class="text-muted mt-3">@if (app()->getLocale()=="fr") {{Str::limit( $story->description_fr, 50)}} @else {{Str::limit( $story->description_en, 50)}}  @endif </p> 
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
+            </div> 
+        </div> 
+    </div> 
+</a> 
+@endforeach
+
 
         </div>
         

@@ -32,6 +32,18 @@
                         </div>
                       </div>
                       <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Phone</label>
+                        <div class="col-sm-10">
+                          <p>{{$don->phone}}</p>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">honneur de</label>
+                        <div class="col-sm-10">
+                          <p>{{$don->honneur}}</p>
+                        </div>
+                      </div>
+                      <div class="form-group row">
                         <label for="inputEmail" class="col-sm-2 col-form-label">Pays</label>
                         <div class="col-sm-10">
                           <p>{{$don->country}}</p>

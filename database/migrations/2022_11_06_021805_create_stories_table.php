@@ -16,11 +16,14 @@ class CreateStoriesTable extends Migration
         Schema::create('stories', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->string('title');
+            $table->string('title_fr');
+            $table->string('title_en');
             $table->string('image')->nullable();
-            $table->text('description');
-            $table->string('mission_name');
-            $table->string('mission_date');
+            $table->text('description_fr');
+            $table->text('description_en');
+            $table->string('mission_name_fr')->nullable();
+            $table->string('mission_name_en')->nullable();
+            $table->string('mission_date')->nullable();
             $table->string('video')->nullable();
             $table->timestamps();
         });
