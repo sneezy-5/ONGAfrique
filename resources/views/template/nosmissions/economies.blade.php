@@ -60,7 +60,7 @@
 @foreach($economies as $eco)
 <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
 <!-- Trigger the Modal -->
-<img class="myImg imgtrans" src="{{asset('storage/image/'.$stori->image)}}" alt="Snow" style="width:100%;max-width:300px">
+<img class="myImg imgtrans" src="{{asset('storage/image/'.$eco->image)}}" alt="Snow" style="width:100%;max-width:300px">
 
 
 <!-- The Modal -->
@@ -87,7 +87,9 @@
 </div>
 
 </div>
+
 @endforeach
+{{$economies->links()}}
 <style>
                                 .w-5{
                                     display:none
@@ -122,11 +124,7 @@
 
 </div>
 @endforeach
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
+
 
 
 </div>
@@ -161,11 +159,6 @@
 </a> 
 @endforeach
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
 
 </div>
 </div>

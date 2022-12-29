@@ -18,7 +18,6 @@ class DonateController extends Controller
     {
         //
         $donner = Don::paginate(8);
-        // $countdon = Auth::user()->dons->where('amount',);
         return view('espace_donateur/don_show', compact('donner'));
     }
 

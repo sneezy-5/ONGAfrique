@@ -86,6 +86,8 @@
 
 </div>
 @endforeach
+{{$sports->links()}}
+
 
 <style>
                                 .w-5{
@@ -122,11 +124,6 @@
 </div>
 @endforeach
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
 
 
 
@@ -164,11 +161,6 @@
 </a> 
 @endforeach
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
 </div>
 
 </div>

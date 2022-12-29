@@ -87,6 +87,7 @@
 
 </div>
 @endforeach
+{{$educations->links()}}
 
 <style>
                                 .w-5{
@@ -123,15 +124,6 @@
 </div>
 @endforeach
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
-
-
-
-
 
 </div>
 
@@ -164,11 +156,7 @@
     </div> 
 </a> 
 @endforeach
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
+
 
 
 </div>

@@ -52,7 +52,7 @@
 <div class="center row">
 
 <div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("titreactivite")}}</h1> 
+<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("titreevent")}}</h1> 
 
 <div class="row w-100 mt-0 Storydiv"> 
 
@@ -80,11 +80,15 @@
 </a>
 @endforeach 
 
+{{$storys->links()}}
+
 <style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
+  .w-5{
+       display:none;
+       
+    }
+</style>
+
 </div>
 
 </div>

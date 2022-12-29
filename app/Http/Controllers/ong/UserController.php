@@ -63,7 +63,7 @@ class UserController extends Controller
             $path = 'noimage.jpg';
             }
             $data['image']=$fileNameToStore;
-            //dd($request->all());
+           
         $user = User::create([
             'name' => $request->first_name,
             'first_name'=>$request->first_name,

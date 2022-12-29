@@ -21,7 +21,7 @@ class CreateDonsTable extends Migration
             $table->string('country');
             $table->string('city');
             $table->string('honneur');
-            $table->string('honnoree');
+            $table->string('honnoree')->nullable();
             $table->string('phone');
             $table->string('address');
             $table->string('amount');

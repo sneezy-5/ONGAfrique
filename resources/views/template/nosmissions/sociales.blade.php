@@ -55,37 +55,40 @@
 <div class="parentbloc0 row w-100">
 
 <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titresocial")}}</h1>
+
 @foreach($sociales as $soc)
-<div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
-<!-- Trigger the Modal -->
-<img class="myImg imgtrans" src="{{asset('storage/image/'.$stori->image)}}" alt="Snow" style="width:100%;max-width:300px">
+    <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
+    <!-- Trigger the Modal -->
+    <img class="myImg imgtrans" src="{{asset('storage/image/'.$soc->image)}}" alt="Snow" style="width:100%;max-width:300px">
 
 
-<!-- The Modal -->
-<div class="myModal modalimg">
+    <!-- The Modal -->
+    <div class="myModal modalimg">
 
-<!-- The Close Button -->
-<span class="close">&times;</span>
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
 
-<!-- Modal Content (The Image) -->
-<img class="modal-contentimg img01" src="#">
+    <!-- Modal Content (The Image) -->
+    <img class="modal-contentimg img01" src="#">
 
 
-<!-- Modal Caption (Image Text) -->
-<div class="caption"></div>
-</div>
+    <!-- Modal Caption (Image Text) -->
+    <div class="caption"></div>
+    </div>
 
-<div class="card-body entete">
-<h4 class="card-title Titretrans">{{$soc->title}}</h4>
-<p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($soc->description, 30) }} 
-</p>
-<a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
+    <div class="card-body entete">
+    <h4 class="card-title Titretrans">{{$soc->title}}</h4>
+    <p class="card-text text-dark texttrans txtcarac">
+    {{ Str::limit($soc->description, 30) }} 
+    </p>
+    <a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
-</div>
+    </div>
 
-</div>
+    </div>
 @endforeach
+
+{{$sociales->links()}}
 
 <style>
                                 .w-5{
@@ -123,11 +126,6 @@
 </div>
 @endforeach
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
 </div>
 
 
@@ -162,13 +160,6 @@
 </a> 
 @endforeach
 
-
-
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
 
 
 

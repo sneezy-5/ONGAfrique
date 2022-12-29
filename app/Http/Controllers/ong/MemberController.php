@@ -40,7 +40,7 @@ class MemberController extends Controller
     {
 
         $data = $request->except('_token');
-        dd($data);
+        // 
         if ($request->hasFile('picture')) {
             $filenameWithExt = $request->file('picture')->getClientOriginalName ();
             // Get Filename

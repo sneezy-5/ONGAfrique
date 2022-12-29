@@ -43,8 +43,7 @@ class NewsletterController extends Controller
     public function store(NewsletterRequestValidation $request)
     {
 
-        // $url="http://google.com";
-        // dd($request);
+        
 
         $this->validate($request,[]);
         Newsletter::create($request->all());

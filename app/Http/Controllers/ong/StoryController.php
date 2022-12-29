@@ -17,7 +17,7 @@ class StoryController extends Controller
     public function index()
     {
         //
-        $storys= Story::paginate(8);
+        $storys= Story::paginate(6);
         return view('template.story.index',compact('storys'));
     }
 

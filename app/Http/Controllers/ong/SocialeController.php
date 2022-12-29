@@ -11,8 +11,8 @@ class SocialeController extends Controller
     //
     public function index()
     {
-        $sociales = Story::where('type', 'sociale')->paginate(8);
-        $stories = Story::paginate(3);
+        $sociales = Story::where('type', 'social')->paginate(6);
+        $stories = Story::where('type', 'social')->take(2)->get();
         return view('template.nosmissions.sociales', compact('sociales','stories'));
     }
 
