@@ -19,7 +19,7 @@
                             Prénom
                           </th>
                           <th>
-                          Email
+                          honneur
                           </th>
                           <th>
                           amount
@@ -40,7 +40,7 @@
                             {{$don->first_name}}
                           </td>
                           <td>
-                          {{$don->email}}
+                          {{$don->honneur}}
                           </td>
                           <td>
                           {{$don->amount}}

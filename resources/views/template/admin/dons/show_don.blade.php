@@ -20,17 +20,12 @@
 
                   <div class="tab-pane active" id="settings">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Prénom</label>
+                        <label for="inputName" class="col-sm-2 col-form-label">Honnoree</label>
                         <div class="col-sm-10">
-                          <p>{{$don->first_name}}</p>
+                          <p>{{$don->honnoree}}</p>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                          <p>{{$don->email}}</p>
-                        </div>
-                      </div>
+                  
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Phone</label>
                         <div class="col-sm-10">
@@ -43,24 +38,7 @@
                           <p>{{$don->honneur}}</p>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Pays</label>
-                        <div class="col-sm-10">
-                          <p>{{$don->country}}</p>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Ville</label>
-                        <div class="col-sm-10">
-                          <p>{{$don->city}}</p>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Adresse</label>
-                        <div class="col-sm-10">
-                          <p>{{$don->address}}</p>
-                        </div>
-                      </div>
+                     
                       <div class="form-group row">
                         <label for="inputName2" class="col-sm-2 col-form-label">Montant</label>
                         <div class="col-sm-10">
