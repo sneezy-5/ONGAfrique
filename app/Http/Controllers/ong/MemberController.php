@@ -60,7 +60,7 @@ class MemberController extends Controller
             }
             Member::create([
 
-                'last_name'=>$request->nom,
+                'nom'=>$request->nom,
                 'picture'=>$fileNameToStore,
                 'email' => $request->email,
                 'date_naissance'=>$request->date_naissance,

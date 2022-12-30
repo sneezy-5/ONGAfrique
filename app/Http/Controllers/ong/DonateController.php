@@ -46,11 +46,6 @@ class DonateController extends Controller
         $this->validate($request,[
 
             'last_name'=>'required',
-            // 'first_name' ,
-            // 'email' ,
-            // 'country' ,
-            // 'city' ,
-            // 'address',
             'amount'=>'required' ,
             'phone'=>'required',
             'honneur',
