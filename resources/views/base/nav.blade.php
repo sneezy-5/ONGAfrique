@@ -280,7 +280,15 @@
       @csrf
 
         <div class="input-group mb-3">
-         <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
+          
+         @if($user = Auth::user())
+          <input type="text" name="last_name" value="{{$user->name}}" class="form-control casenom" placeholder="{{__("nomP")}}">
+           @else
+          <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
+
+         @endif
+         
+
         </div>
   
         <div class="input-group mb-3">

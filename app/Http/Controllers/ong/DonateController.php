@@ -5,6 +5,7 @@ namespace App\Http\Controllers\ong;
 use App\Models\Don;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\DonateRequestValidation;
 
 class DonateController extends Controller
@@ -40,19 +41,20 @@ class DonateController extends Controller
      */
     public function store(Request $request)
     {
-     
+        
+
         $this->validate($request,[
 
-            'last_name' ,
-            'first_name' ,
-            'email' ,
-            'country' ,
-            'city' ,
-            'address',
-            'amount' ,
-            'phone',
+            'last_name'=>'required',
+            // 'first_name' ,
+            // 'email' ,
+            // 'country' ,
+            // 'city' ,
+            // 'address',
+            'amount'=>'required' ,
+            'phone'=>'required',
             'honneur',
-            'honnoree'
+            'honnoree'=>'nullable'
         ]);
         
         Don::create($request->all());

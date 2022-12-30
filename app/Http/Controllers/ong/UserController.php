@@ -68,7 +68,7 @@ class UserController extends Controller
             'name' => $request->first_name,
             'first_name'=>$request->first_name,
             'last_name'=>$request->last_name,
-            'image'=>$request->image,
+            // 'image'=>$request->image,
             'is_admin'=>isset($request->is_admin),
             'email' => $request->email,
             'amount'=>$request->amount,
