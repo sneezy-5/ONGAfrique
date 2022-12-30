@@ -14,10 +14,6 @@
                         <tr>
                           <th>
                             Nom
-                          </th>
-                          <th>
-                            Prénom
-                          </th>
                           <th>
                           honneur
                           </th>
@@ -35,9 +31,6 @@
                         <tr>
                           <td class="py-1">
                           {{ $don->last_name }}
-                          </td>
-                          <td>
-                            {{$don->first_name}}
                           </td>
                           <td>
                           {{$don->honneur}}
