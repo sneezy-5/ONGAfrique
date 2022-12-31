@@ -77,9 +77,9 @@
     </div>
 
 <div class="card-body entete">
-<h4 class="card-title Titretrans">{{$soc->title}}</h4>
+<h4 class="card-title Titretrans">@if (app()->getLocale()=="fr"){{ $soc->title_fr}} @else  {{$soc->title_en}} @endif</h4>
 <p class="card-text text-dark texttrans txtcarac">
-{{ Str::limit($soc->description, 30) }} 
+@if (app()->getLocale()=="fr") {{Str::limit( $soc->description_fr, 50)}} @else {{Str::limit( $soc->description_en, 50)}}  @endif
 </p>
 <a href="{{route('voirsociale',['id'=>$soc->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
 
