@@ -67,20 +67,9 @@
 <!--/.col-->
 
 <div class="col-sm-6 col-lg-3">
-    <div class="card text-white bg-flat-color-3">
+    <!-- <div class="card text-white bg-flat-color-3">
         <div class="card-body pb-0">
-            <!-- <div class="dropdown float-right">
-                <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">
-                    <i class="fa fa-cog"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                    <div class="dropdown-menu-content">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div> -->
+            
             <h4 class="mb-0">
                 <span class="count">0</span>
             </h4>
@@ -91,25 +80,14 @@
         <div class="chart-wrapper px-0" style="height:70px;" height="70">
             <canvas id="widgetChart3"></canvas>
         </div>
-    </div>
+    </div> -->
 </div>
 <!--/.col-->
 
 <div class="col-sm-6 col-lg-3">
-    <div class="card text-white bg-flat-color-4">
+    <!-- <div class="card text-white bg-flat-color-4">
         <div class="card-body pb-0">
-            <!-- <div class="dropdown float-right">
-                <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
-                    <i class="fa fa-cog"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                    <div class="dropdown-menu-content">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div> -->
+            
             <h4 class="mb-0">
                 <span class="count">0 </span>
             </h4>
@@ -120,7 +98,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 </div>
 <!--/.col-->
 
@@ -128,24 +106,21 @@
     <div class="social-box facebook">
         <a href="https://web.facebook.com/profile.php?id=100086654464545">
             <i class="fa fa-facebook"></i>
-            <ul>
-                <li>
-                    <span class="count">40</span> k
-                    <span>friends</span>
-                </li>
-                <li>
-                    <span class="count">450</span>
-                    <span>feeds</span>
-                </li>
-            </ul>
+            <p style="color: black;">Suivez nos actualités sur Facebook</p>
         </a>
     </div>
     <!--/social-box-->
 </div>
 <!--/.col-->
-
-
 <div class="col-lg-3 col-md-6">
+    <div class="social-box google-plus">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p style="color: black;">Laissez nous un mail</p>
+    </div>
+    <!--/social-box-->
+</div>
+
+<!-- <div class="col-lg-3 col-md-6">
     <div class="social-box twitter">
         <i class="fa fa-twitter"></i>
         <ul>
@@ -159,9 +134,9 @@
             </li>
         </ul>
     </div>
-    <!--/social-box-->
-</div>
-<!--/.col-->
+    /social-box
+</div> 
+
 
 
 <div class="col-lg-3 col-md-6">
@@ -178,27 +153,12 @@
             </li>
         </ul>
     </div>
-    <!--/social-box-->
-</div>
+    /social-box-
+</div> -->
 <!--/.col-->
 
 
-<div class="col-lg-3 col-md-6">
-    <div class="social-box google-plus">
-        <i class="fa fa-google-plus"></i>
-        <ul>
-            <li>
-                <span class="count">94</span> k
-                <span>followers</span>
-            </li>
-            <li>
-                <span class="count">92</span>
-                <span>circles</span>
-            </li>
-        </ul>
-    </div>
-    <!--/social-box-->
-</div>
+
 <!--/.col-->
 
 

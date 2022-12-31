@@ -22,7 +22,6 @@ class UserController extends Controller
         //
         $countdon = auth()->user()->dons->count('amount');
         $sumdon = auth()->user()->dons->sum('amount');
-    
         return view('espace_donateur.donateur', compact('countdon', 'sumdon'));
     }
 
