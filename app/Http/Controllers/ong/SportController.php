@@ -14,7 +14,7 @@ class SportController extends Controller
     {
         $sports = Story::where('type', 'sport')->paginate(6);
 
-        $stories = Story::where('type', 'sante')->take(2)->get();
+        $stories = Story::where('type', 'sante')->take(3)->get();
 
         return view('template.nosmissions.sports', compact('sports','stories'));
     }
