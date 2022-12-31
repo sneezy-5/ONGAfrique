@@ -124,7 +124,7 @@ return [
     ],
     'starts_with' => 'The :attribute must start with one of the following: :values.',
     'string' => 'Le :attribute doit être une chaine de caratère.',
-    'timezone' => 'Le :attributedoit être un timezone valide.',
+    'timezone' => 'Le :attribute doit être un timezone valide.',
     'unique' => 'Le :attribute est deja utilisé.',
     'uploaded' => 'Le chargement :attribute a echoué.',
     'url' => 'Le :attribute doit être une URL valide.',

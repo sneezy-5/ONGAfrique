@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/flag-icon-css/css/flag-icon.min.css')}}">
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/selectFX/css/cs-skin-elastic.css')}}">
     <link rel="stylesheet" href="{{asset('espacedonateur/vendors/jqvmap/dist/jqvmap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/csss/sociale.css')}}">
     <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
 
     <link rel="stylesheet" href="{{asset('espacedonateur/assets/css/style.css')}}">
@@ -31,6 +32,8 @@
 </head>
 
 <body>
+
+
 
 
     <!-- Left Panel -->
@@ -67,8 +70,11 @@
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>{{__("Don")}}</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="{{route('voirmesdons.index')}}">{{__("voirDon")}}</a></li>
+                            <li><i class="fa fa-money"></i><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">{{__("FuD")}}</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">{{__("DPm")}}</a></li>
                         </ul>
                     </li>
+
 
                     <!-- <li class="menu-item-has-children dropdown">
                         <a href="/profil" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Profil</a>
@@ -166,6 +172,8 @@
     <script src="{{asset('vendors/jqvmap/dist/jquery.vmap.min.js')}}"></script>
     <script src="{{asset('espacedonateur/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
     <script src="{{asset('espacedonateur/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
+    <!-- <script src="{{asset('styles/jss/social.js')}}"></script> -->
+
     <script>
         (function($) {
             "use strict";

@@ -21,7 +21,7 @@ class CreateDonsTable extends Migration
             $table->string('phone');
             
             $table->string('amount');
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')
                  ->onUpdate('cascade')

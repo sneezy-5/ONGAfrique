@@ -283,7 +283,7 @@ formadhe.addEventListener('submit',function(e){
         });
         CinetPay.getCheckout({
           transaction_id: Math.floor(Math.random() * 100000000).toString(), // YOUR TRANSACTION ID
-          amount:100,
+          amount:2000,
           currency: 'XOF',
           channels: 'ALL',
           description: 'Test de paiement',   

@@ -10,8 +10,8 @@ class SanteController extends Controller
 {
     public function index()
     {
-        $santes = Story::where('type', 'sante',)->paginate(6);
-        $stories = Story::where('type', 'sante')->take(2)->get();
+        $santes = Story::where('type', 'sante',)->paginate(3);
+        $stories = Story::where('type', 'sport')->take(3)->get();
         // $storiess = Story::where('video')->take(2)->get();
         return view('template.nosmissions.santes', compact('santes','stories',));
     }
