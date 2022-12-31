@@ -94,7 +94,7 @@
      </div>
 
      <div class="card w-100">
-      <img class="card-img-top" src="{{asset('styles/img/social/7.jpg')}}" alt="Card image">
+      <img class="card-img-top" src="{{asset('styles/img/social/medium-shot-community-painting-wood.jpg')}}" alt="Card image">
       <div class="card-body">
         <h1 class="card-title text-dark fst-italic mb-2" style="font-weight:700;">{{__("ActSo")}}</h1>
         <p class="card-text">
