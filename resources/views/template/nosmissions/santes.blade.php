@@ -127,14 +127,19 @@
 <div class="carddeo row d-flex justify-content-center  mt-5">
 
 @foreach($santes as $san)
-<div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
-  <iframe class="container-fluid" @if($soc->video==null) src="" @else src="{{asset('storage/video/'. $soc->video)}}" @endif frameborder="0"></iframe>
-  <!-- <div class="card-title m-3">
-      <span>Featured Video</span>
-      <h4>Set for the Ashes</h4>
-  </div> -->
+@if($san->video!="novideo.jpg") 
+        <div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
+          <iframe class="container-fluid"  src="{{asset('storage/video/'. $san->video)}}" frameborder="0"></iframe>
 
-</div>
+          <!-- <div class="card-title m-3">
+              <span>Featured Video</span>
+              <h4>Set for the Ashes</h4>
+          </div> -->
+
+        </div>
+  @else
+     
+  @endif
 @endforeach
 
 </div>
