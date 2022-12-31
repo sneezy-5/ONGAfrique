@@ -18,8 +18,8 @@ class DonateController extends Controller
     public function index()
     {
         //
-        // $donner = Don::where('user_id', Auth::id())->paginate(10);
-        $donner = auth()->user()->dons;
+         $donner = Don::where('user_id', auth()->user()->id)->get();
+        #$donner = auth()->user()->dons;
         return view('espace_donateur/don_show', compact('donner'));
     }
 
@@ -53,7 +53,12 @@ class DonateController extends Controller
             'honnoree'=>'nullable'
         ]);
         
-        Don::create($request->all());
+        $data = $request->except('_token');
+        if(auth()->check){
+            $data['user']=auth()->user()->id;
+        }
+        Don::create($data);
+        
 
         return redirect()->route('/')->with('success', 'Votre don a été effectué avec succès');
     }

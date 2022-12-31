@@ -110,7 +110,7 @@
 
   @foreach($cultures as $soc)
         <div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
-          <iframe class="container-fluid " src="{{asset('storage/video/'. $soc->video)}}" frameborder="0"></iframe>
+          <iframe class="container-fluid" @if($soc->video==null) src="" @else src="{{asset('storage/video/'. $soc->video)}}" @endif frameborder="0"></iframe>
 
           <!-- <div class="card-title m-3">
               <span>Featured Video</span>

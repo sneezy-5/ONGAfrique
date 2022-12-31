@@ -69,7 +69,7 @@ class MemberController extends Controller
                 'region'=>$request->region,
                 'section'=>$request->section,
                 // 'civilite'=>$request->civilite,
-                // 'paye'=>$request->paye,
+                'paye'=>true,
     
             ]);
         return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
