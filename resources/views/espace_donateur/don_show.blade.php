@@ -44,7 +44,7 @@
                         
                                 </table>
 
-                               {{$donner->link()}}
+                                
                                <style>
                                 .w-5{
                                     display:none

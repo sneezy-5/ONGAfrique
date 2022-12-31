@@ -18,8 +18,8 @@ class DonateController extends Controller
     public function index()
     {
         //
-        $donner = Don::where('user_id', Auth::id())->paginate(10);
-        // $donner = auth()->user()->dons;
+        // $donner = Don::where('user_id', Auth::id())->paginate(10);
+        $donner = auth()->user()->dons;
         return view('espace_donateur/don_show', compact('donner'));
     }
 
