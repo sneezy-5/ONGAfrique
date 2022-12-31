@@ -102,7 +102,7 @@
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="img-xs rounded-circle" src="{{asset('storage/image/'.auth()->user()->image)}}" alt="Profile image">
+                        <img class="img-xs rounded-circle" style="height:20px; width:20px" src="{{asset('storage/image/'.auth()->user()->image)}}" alt="Profil image">
 
                         </a>
                         <!-- <h3 class="welcome-text">Good Morning, <span class="text-black fw-bold">{{auth()->user()->name}}
