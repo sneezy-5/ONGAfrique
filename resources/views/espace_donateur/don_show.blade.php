@@ -25,11 +25,12 @@
                                         </tr>
                                     </thead>
                             
-                                @forelse(auth()->user()->dons as $don )
+                                @forelse($donner as $don )
 
                                     <tbody>
                                         <tr>
-                                            <td>{{auth()->user()->name}}</td>
+                                            
+                                            <td>{{Auth()->user()->name}}</td>
                                             <!-- <td>{{ $don->city }}</td> -->
                                             <td>{{ $don->amount }} fcfa</td>
                                             <td>{{ $don->created_at->format('d M Y') }}</td>
@@ -43,7 +44,7 @@
                         
                                 </table>
 
-                               {{$donner->links()}}
+                               {{$donner->link()}}
                                <style>
                                 .w-5{
                                     display:none

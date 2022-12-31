@@ -25,7 +25,7 @@ class CreateMembersTable extends Migration
             $table->string('address')->nullable();
             $table->string('section');
             $table->string('civilite')->nullable();
-            $table->boolean('payer')->nullable()->default(0);
+            $table->boolean('payer')->nullable()->default(true);
             $table->timestamps();
         });
     }

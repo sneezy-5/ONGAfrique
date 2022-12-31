@@ -20,9 +20,9 @@ class UserController extends Controller
     public function index()
     {
         //
-        $countdon = Auth::user()->dons->count('amount');
-        $sumdon = Auth::user()->dons->sum('amount');
-        // $users = User::count();
+        $countdon = auth()->user()->dons->count('amount');
+        $sumdon = auth()->user()->dons->sum('amount');
+    
         return view('espace_donateur.donateur', compact('countdon', 'sumdon'));
     }
 
