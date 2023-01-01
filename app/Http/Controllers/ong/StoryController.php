@@ -36,7 +36,12 @@ class StoryController extends Controller
     public function show($id)
     {
         //
-        $story = Story::find($id);
+        if( story::where('id',$id)->exists()){
+            $story = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
         return view('template.show.story',compact('story'));
     }
 

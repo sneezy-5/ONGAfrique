@@ -18,8 +18,13 @@ class SocialeController extends Controller
 
     public function show($id)
     {
-        $sociale = story::find($id);
-        
+        if( story::where('id',$id)->exists()){
+            $sociale = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
+       
         return view('template.show.sociale', compact('sociale'));
     }
 }

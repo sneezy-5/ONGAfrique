@@ -18,7 +18,13 @@ class SanteController extends Controller
 
     public function show($id)
     {
-        $sante = story::find($id);
+        if( story::where('id',$id)->exists()){
+            $sante = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
+       
         
         return view('template.show.sante', compact('sante'));
     }

@@ -21,7 +21,12 @@ class SportController extends Controller
 
     public function show($id)
     {
-        $sport = story::find($id);
+        if( story::where('id',$id)->exists()){
+            $sport = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
         
         return view('template.show.sport', compact('sport'));
     }

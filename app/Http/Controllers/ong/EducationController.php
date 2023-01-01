@@ -20,7 +20,13 @@ class EducationController extends Controller
 
     public function show($id)
     {
-        $education = Story::find($id);
+        if( story::where('id',$id)->exists()){
+            $education = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
+        
         
         return view('template.show.education', compact('education'));
     }

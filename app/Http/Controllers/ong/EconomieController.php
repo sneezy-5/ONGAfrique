@@ -19,7 +19,12 @@ class EconomieController extends Controller
 
     public function show($id)
     {
-        $economie = Story::find($id);
+        if( story::where('id',$id)->exists()){
+            $economie = story::find($id);
+            dd($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
         
         return view('template.show.economie', compact('economie'));
     }
