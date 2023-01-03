@@ -1,4 +1,4 @@
-@extends('base.cultureapp')
+@extends('base.exception')
 
 
 @section('title', 'ONG | SOURIRE D\'AFRIQUE')
