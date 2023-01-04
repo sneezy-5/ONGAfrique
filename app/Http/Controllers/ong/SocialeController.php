@@ -20,7 +20,7 @@ class SocialeController extends Controller
     {
         if( story::where('id',$id)->exists()){
             $sociale = story::find($id);
-            dd($id);
+            // dd($id);
         }else{
             return response()->view('404', [], 404);
         }

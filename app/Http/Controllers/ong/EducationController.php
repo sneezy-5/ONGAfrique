@@ -22,7 +22,7 @@ class EducationController extends Controller
     {
         if( story::where('id',$id)->exists()){
             $education = story::find($id);
-            dd($id);
+            // dd($id);
         }else{
             return response()->view('404', [], 404);
         }

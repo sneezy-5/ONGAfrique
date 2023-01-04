@@ -22,7 +22,12 @@ class CultureController extends Controller
 
     public function show($id)
     {
-        $culture = story::find($id);
+        if( story::where('id',$id)->exists()){
+
+            $culture = story::find($id);
+        }else{
+            return response()->view('404', [], 404);
+        }
         
         return view('template.show.culture', compact('culture'));
     }

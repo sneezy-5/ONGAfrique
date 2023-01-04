@@ -21,7 +21,7 @@ class EconomieController extends Controller
     {
         if( story::where('id',$id)->exists()){
             $economie = story::find($id);
-            dd($id);
+            // dd($id);
         }else{
             return response()->view('404', [], 404);
         }

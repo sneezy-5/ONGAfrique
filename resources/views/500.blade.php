@@ -51,16 +51,23 @@
  <div class="center row">
 
     <div class="parentbloc0 row w-100">
+    <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center row">
+                <div class=" col-md-6">
+                    <img src="{{('styles/img/5221808.jpg')}}">
+                </div>
+                <div class=" col-md-6 mt-5">
+                    <p class="fs-3"> <span class="text-danger">Opps!</span> Erreur 500 actualiser la page ou contacter le concepteur</p>
+                  
+                    <a href="{{route('/')}}" class="btn btn-primary">Go Home</a>
+                </div>
+
+            </div>
+        </div>
    
-      <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Erreur 500 actualiser la page ou contacter l'admin</h1>
+      <!-- <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">Erreur 500 actualiser la page ou contacter l'admin</h1> -->
 
-<style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>        
 
-    </div>
 
 
 

@@ -23,7 +23,7 @@ class SportController extends Controller
     {
         if( story::where('id',$id)->exists()){
             $sport = story::find($id);
-            dd($id);
+            // dd($id);
         }else{
             return response()->view('404', [], 404);
         }
