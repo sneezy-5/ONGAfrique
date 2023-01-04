@@ -55,7 +55,7 @@ class DonateController extends Controller
         
         $data = $request->except('_token');
         if(auth()->check()){
-            $data['user']=auth()->user()->id;
+            $data['user_id']=auth()->user()->id;
         }
         Don::create($data);
         
