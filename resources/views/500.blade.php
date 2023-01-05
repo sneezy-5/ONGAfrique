@@ -54,10 +54,10 @@
     <div class="d-flex align-items-center justify-content-center vh-100">
             <div class="text-center row">
                 <div class=" col-md-6">
-                    <img src="{{('styles/img/5221808.jpg')}}">
+                    <img src="{{asset('styles/img/5221808.jpg')}}">
                 </div>
                 <div class=" col-md-6 mt-5">
-                    <p class="fs-3"> <span class="text-danger">Opps!</span> Erreur 500 actualiser la page ou contacter le concepteur</p>
+                    <p class="fs-3"> <span class="text-danger">Opps!</span> Erreur 500 actualisez la page ou contactez le concepteur</p>
                   
                     <a href="{{route('/')}}" class="btn btn-primary">Go Home</a>
                 </div>
