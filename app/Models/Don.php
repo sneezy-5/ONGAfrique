@@ -19,13 +19,7 @@ class Don extends Model
         'honnoree'
     ];
 
-    public static function boot()
-    {
-        parent::boot();
-        self::creating(function ($don) {
-            $don->user()->associate(auth()->user()->id);
-        });
-    }
+
 
     public function user()
     {
