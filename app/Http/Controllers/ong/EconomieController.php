@@ -11,7 +11,7 @@ class EconomieController extends Controller
     //
     public function index()
     {
-        $economies = Story::where('type', 'economie')->paginate(6);
+        $economies = Story::where('type', 'economie')->paginate(8);
         $stories = Story::where('type', 'education')->take(3)->get();
         return view('template.nosmissions.economies', compact('economies','stories'));
         

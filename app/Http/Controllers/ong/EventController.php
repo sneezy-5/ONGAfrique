@@ -16,7 +16,7 @@ class EventController extends Controller
     public function index()
     {
         //
-        $event = Event::paginate(6);
+        $event = Event::paginate(8);
        
         return view('template.event.index', compact('event'));
     }

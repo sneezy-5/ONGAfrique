@@ -12,7 +12,7 @@ class SportController extends Controller
 
     public function index()
     {
-        $sports = Story::where('type', 'sport')->paginate(6);
+        $sports = Story::where('type', 'sport')->paginate(8);
 
         $stories = Story::where('type', 'sante')->take(3)->get();
 
