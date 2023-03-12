@@ -75,7 +75,7 @@ class MemberController extends Controller
 
             $apn =  env('APP_URL')."/ipn";
             $succes =  env('APP_URL')."/succespayement";
-            $cancel =  env('APP_URL').":8000"."/cancelpayment/".$member->id;
+            $cancel =  env('APP_URL')."/cancelpayment/".$member->id;
             $postFields = array(
                 "item_name"    =>$request['nom'],
             "item_price"   => 2000,
@@ -150,9 +150,9 @@ class MemberController extends Controller
 
 
     public function cancelMember($id){
-        $don =Member::find($id)->delete();
+        Member::find($id)->delete();
         // dd($don);
-         return redirect()->route('/')->with('message', 'Votre payement a échoué');
+        return redirect()->route('/')->with('message', 'Votre payement a échoué');
      }
  
      public function succesMember(){

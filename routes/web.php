@@ -124,11 +124,11 @@ Route::get('/canceldon/{id}',[ DonateController::class,'deleteDonCancel']);
 Route::get('/succesDon', [DonateController::class, 'succesDon']);
 
 
-// don cancel
-Route::get('/cancelmember/{id}',[ DonateController::class,'cancelMember']);
+// member cancel
+Route::get('/cancelmember/{id}',[ MemberController::class,'cancelMember']);
 
-// don succes
-Route::get('/succesMember', [DonateController::class, 'succesMember']);
+// member succes
+Route::get('/succesMember', [MemberController::class, 'succesMember']);
 });
 
 
