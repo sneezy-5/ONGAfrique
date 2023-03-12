@@ -15,11 +15,10 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title text-dark h1 titredesc" style="font-weight:700;">{{$education->title}}</h5>
+                <h5 class="card-title text-dark h1 titredesc" style="font-weight:700;">@if (app()->getLocale()=="fr") {{$education->title_fr }} @else  {{$education->title_en}} </h5>
                 <footer class="blockquote-footer mt-0">Partager le<cite title="Source Title" class="fw-bold text-dark"> <span> {{$education->created_at}}</span> </cite></footer>
                <p class="card-text textedesc">
-               
-               {{$education->description}}
+               @if (app()->getLocale()=="fr") {{ $education->description_fr}} @else {{$education->description_en}} @endif
               </p>
               
             </div>
