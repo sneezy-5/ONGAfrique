@@ -74,8 +74,8 @@ class MemberController extends Controller
             ]);
 
             $apn =  env('APP_URL')."/ipn";
-            $succes =  env('APP_URL')."/succesMember";
-            $cancel =  env('APP_URL')."/cancelmember/".$member->id;
+            $succes =  env('APP_URL')."succesMember";
+            $cancel =  env('APP_URL')."cancelmember/".$member->id;
             $postFields = array(
                 "item_name"    =>$request['nom'],
             "item_price"   => 2000,

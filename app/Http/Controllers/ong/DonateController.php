@@ -60,8 +60,8 @@ class DonateController extends Controller
 
         $don =Don::create($data);
         $apn =  env('APP_URL')."/ipn";
-        $succes =  env('APP_URL')."/succesDon";
-        $cancel =  env('APP_URL')."/canceldon/".$don->id;
+        $succes =  env('APP_URL')."succesDon";
+        $cancel =  env('APP_URL')."canceldon/".$don->id;
         $postFields = array(
             "item_name"    =>$request['last_name'],
         "item_price"   => $request['amount'],
