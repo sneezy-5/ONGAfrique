@@ -15,7 +15,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title text-dark h1 titredesc" style="font-weight:700;">@if (app()->getLocale()=="fr") {{$sport->title_fr }} @else  {{$sport->title_en}} </h5>
+                <h5 class="card-title text-dark h1 titredesc" style="font-weight:700;">@if (app()->getLocale()=="fr") {{$sport->title_fr }} @else  {{$sport->title_en}} @endif</h5>
                 <footer class="blockquote-footer mt-0">Partager le<cite title="Source Title" class="fw-bold text-dark"> <span> {{$sport->created_at}}</span> </cite></footer>
                <p class="card-text textedesc">
                
