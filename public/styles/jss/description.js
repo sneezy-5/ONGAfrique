@@ -97,7 +97,7 @@ var msgalertcontact=document.querySelector('.msgalertcontact')
         msgalertcontact.innerHTML=""
         caseprix.classList.remove("is-invalid")
         caseprix.classList.add("is-valid")
-
+        document.querySelector('.formprixmodal').submit()
 
      
 

@@ -27,7 +27,15 @@
         </h1>
     </div>
     <p class="fst-italic">
-              Le sport , comme bon facteur de rassembleur, l'ONG Sourire D'Afrique s'engage à accompagner championnat et tournoi communautaire et scolaires là où besoin se fait sentir.
+    Le sport est un élément essentiel de notre bien-être physique et mental. Il peut aider à améliorer notre santé cardiaque, notre endurance, notre force musculaire, notre souplesse et notre coordination. En outre, le sport peut également contribuer à réduire le stress, à améliorer notre humeur et à renforcer notre confiance en nous-mêmes.
+
+Malgré les nombreux avantages du sport, de nombreux obstacles peuvent limiter l'accès des populations africaines à une pratique sportive régulière. Les coûts élevés des équipements et des installations sportives, le manque d'infrastructures adéquates, les barrières linguistiques et culturelles, ainsi que les préjugés et la stigmatisation liés au genre peuvent empêcher les populations de s'engager dans une pratique sportive.
+
+L'éducation peut jouer un rôle important dans la promotion du sport en Afrique. Une meilleure éducation peut aider à sensibiliser les populations aux avantages du sport pour la santé et le bien-être, et à encourager une pratique sportive régulière. Les programmes éducatifs peuvent également aider à surmonter les barrières linguistiques et culturelles en facilitant la compréhension mutuelle entre les différentes communautés.
+
+En outre, l'éducation peut aider à former des entraîneurs et des professionnels de la santé qualifiés pour soutenir les populations dans leur pratique sportive. Ces professionnels peuvent aider à fournir des conseils sur la nutrition, la récupération et la prévention des blessures, ainsi que des soins de santé de qualité pour les athlètes en cas de blessure.
+
+En conclusion, le sport est un élément important de la santé et du bien-être en Afrique. L'éducation peut jouer un rôle crucial dans la promotion du sport en Afrique, en sensibilisant les populations aux avantages du sport, en surmontant les barrières linguistiques et culturelles et en formant des professionnels qualifiés pour soutenir les athlètes et les populations en général.
             </p>
             <ul>
               <li><i class="bi bi-check-circle"></i>C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE,  M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo.  Championnat qui s'étend sur 3 mois.</li>

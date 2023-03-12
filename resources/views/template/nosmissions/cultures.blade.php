@@ -27,7 +27,17 @@
         </h1>
     </div>
     <p class="fst-italic">
-      Dans sa vision de rallumer la joie et le bonheur dans les cœurs,  L'ONG Sourire D'Afrique L'ONG Sourire D'Afrique accompagne le festival N’GOHA de Taabo organisé par l'alliance des jeunes leaders pour le Développement de Taabo ( AJLD). 
+    La culture est un élément essentiel de l'identité et de la diversité en Afrique. Elle peut prendre différentes formes, telles que la musique, la danse, la littérature, les arts visuels, la cuisine et bien d'autres encore. La culture est également un moteur important de l'économie, offrant des emplois et des opportunités pour les artistes et les créateurs.
+
+Cependant, de nombreux obstacles peuvent limiter l'accès des populations africaines à la culture, notamment le manque d'éducation artistique, le manque d'infrastructures culturelles, les coûts élevés des événements culturels et la stigmatisation liée à certaines formes d'expression artistique.
+
+L'éducation peut jouer un rôle important dans la promotion de la culture en Afrique. Une meilleure éducation peut aider à sensibiliser les populations aux avantages de la culture pour l'identité, la créativité et le bien-être. Les programmes éducatifs peuvent également aider à former des artistes et des créateurs qualifiés pour soutenir la création artistique locale.
+
+En outre, l'éducation peut aider à améliorer l'accès aux infrastructures culturelles, telles que les salles de spectacle, les bibliothèques et les musées. Les programmes éducatifs peuvent également aider à surmonter les barrières linguistiques et culturelles en favorisant la compréhension mutuelle entre les différentes communautés.
+
+Enfin, l'éducation peut également aider à promouvoir la diversité culturelle en Afrique en célébrant les différentes formes d'expression artistique et en encourageant l'échange et la collaboration entre les artistes et les communautés.
+
+En conclusion, la culture est un élément important de l'identité et de la diversité en Afrique. L'éducation peut jouer un rôle crucial dans la promotion de la culture, en sensibilisant les populations aux avantages de la culture, en formant des artistes qualifiés et en améliorant l'accès aux infrastructures culturelles.
       </p>
       <ul>
       <li><i class="bi bi-check-circle"></i>Le Président fondateur M.Richard Gabdibé est le    Parrain de ce grand Festival qui réunit les fils et filles du département de Taabo autour d'un idéal commun.  Celui du vivre ensemble et de la cohésion sociale.</li>

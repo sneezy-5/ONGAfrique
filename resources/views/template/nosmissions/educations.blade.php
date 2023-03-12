@@ -27,11 +27,42 @@
         </h1>
     </div>
     <p class="fst-italic">
-              Le 22 septembre 2022 l'ONG Sourire D'Afrique a apporté le sourire aux élèves démunis et orphelins du département de Taabo à travers la distribution de 450 kits scolaires du primaire au secondaire.  
+    L'éducation des filles est une priorité en Afrique et dans le reste du monde, car les femmes sont souvent considérées comme des charges et victimes de discrimination. Cependant, les progrès réalisés ces dernières années ont été inégaux, en particulier dans les zones rurales et périphériques des villes, où les résultats ne sont pas satisfaisants. Les raisons de cette sous-scolarisation des filles sont multiples, notamment le manque de moyens, car l'école publique n'est jamais totalement gratuite, et les frais d'inscription et d'uniformes peuvent être un obstacle. De plus, lorsque l'école est située à une distance considérable et qu'il peut être dangereux pour une fille de s'y rendre à pied, les parents préfèrent la garder à la maison plutôt que de l'exposer à des violences telles que l'enlèvement et le viol. En conséquence, une femme instruite peut jouer un rôle crucial pour encourager l'éducation de ses enfants et transmettre ses connaissances à sa famille.
+
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i>Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'accompagner le gouvernement dans sa vision d'une Côte d'Ivoire Solidaire.</li>
+              <li><i class="bi bi-check-circle"></i>Les filles sont sous-représentées dans l'éducation, ne représentant que 30% des enfants scolarisés dans le monde. Environ 900 millions de personnes analphabètes sont recensées, dont les deux tiers sont des femmes.</li>
+              <li> Au Cambodge, 30% des femmes sont illettrées, contre 15% des hommes. Dans les zones rurales, plus de 65% des femmes travaillent sans être rémunérées pour leurs activités agricoles, tandis que 40% d'entre elles rencontrent des difficultés pour accéder aux soins médicaux.</li>
+              <li>Les enfants dont les mères sont capables de lire ou d'écrire ont 50% de chances supplémentaires de survivre après l'âge de 5 ans.</li>
+              <!-- <li>    Pourquoi est-il important de prioriser l'éducation des filles en Afrique ?
+    a. Parce que les filles sont considérées comme des charges pour les familles.
+    b. Parce que les femmes sont statistiquement moins instruites que les hommes.
+    c. Parce que les femmes sont vulnérables à la discrimination.
+    d. Toutes les réponses ci-dessus.
 
+    Comment la pauvreté peut-elle contribuer à la sous-scolarisation des filles ?
+    a. En les obligeant à travailler pour aider leur famille.
+    b. En les poussant à se marier ou à tomber enceintes précocement.
+    c. En limitant l'accès aux écoles publiques en raison des frais d'inscription et d'uniformes.
+    d. Toutes les réponses ci-dessus.
+
+    Pourquoi les filles des zones rurales et périphériques sont-elles moins scolarisées ?
+    a. Parce que les écoles publiques sont souvent loin de leur domicile.
+    b. Parce qu'il peut être dangereux pour elles de se rendre à l'école.
+    c. Parce que les parents préfèrent les garder à la maison pour les protéger de la violence.
+    d. Toutes les réponses ci-dessus.
+
+    Pourquoi une femme instruite peut-elle être un pivot important pour l'éducation de ses enfants ?
+    a. Parce qu'elle peut leur transmettre ce qu'elle a appris.
+    b. Parce qu'elle est mieux équipée pour lutter contre la discrimination à l'égard de l'éducation des filles.
+    c. Parce qu'elle peut mieux comprendre l'importance de l'éducation pour l'avenir de ses enfants.
+    d. Toutes les réponses ci-dessus.
+
+    Quelles sont les conséquences possibles de la sous-scolarisation des filles en Afrique ?
+    a. Une faible participation des femmes à la vie économique et politique.
+    b. Une augmentation du taux de grossesses précoces et de mariages forcés.
+    c. Une diminution des opportunités d'emploi et des revenus pour les femmes.
+    d. Toutes les réponses ci-dessus.</li> -->
             </ul>
           </div>
         </div>

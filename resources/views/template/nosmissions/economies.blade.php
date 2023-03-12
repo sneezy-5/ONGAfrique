@@ -31,7 +31,15 @@
         </h1>
     </div>
     <p class="fst-italic">
-              À le projet Ya Mangé, dès l'année 2023 , L'ONG Sourire D'Afrique envisage créer de l'emploi pour les jeunes filles déscolarisées.  Nous voulons financer de micro projets générateur de revenus 
+    La socio-économie est l'étude des relations entre les facteurs sociaux et économiques, et de leur impact sur le bien-être des populations. En Afrique, les défis socio-économiques sont nombreux, notamment la pauvreté, le chômage, l'inégalité des revenus, la corruption et l'accès limité aux services de base tels que l'éducation et la santé.
+
+L'éducation peut jouer un rôle clé dans la résolution de ces défis. En effet, une meilleure éducation peut aider à renforcer les compétences et les connaissances des individus, ce qui peut à son tour stimuler la croissance économique et réduire la pauvreté. Les programmes éducatifs peuvent également aider à promouvoir une plus grande égalité des chances en donnant aux individus les compétences nécessaires pour réussir sur le marché du travail.
+
+En outre, l'éducation peut contribuer à la lutte contre la corruption. Les programmes éducatifs peuvent aider à sensibiliser les populations aux coûts élevés de la corruption, ainsi qu'à la nécessité d'un gouvernement transparent et responsable. Les individus éduqués sont également mieux équipés pour participer à la vie publique et pour demander des comptes aux responsables gouvernementaux.
+
+Enfin, l'éducation peut aider à promouvoir une croissance économique durable en favorisant l'innovation et l'entrepreneuriat. Les programmes éducatifs peuvent aider à développer les compétences nécessaires pour créer de nouveaux produits et services, ainsi que pour gérer efficacement une entreprise.
+
+En conclusion, la socio-économie est un enjeu important en Afrique, et l'éducation peut jouer un rôle clé dans la résolution des défis socio-économiques. L'éducation peut aider à renforcer les compétences et les connaissances des individus, à promouvoir une plus grande égalité des chances, à lutter contre la corruption et à favoriser une croissance économique durable.
             </p>
             <ul>
               <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. </li>
