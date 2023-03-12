@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\ong;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\NewsletterRequestValidation;
 use App\Mail\EnvoiMail;
 use App\Models\Newsletter;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
-
-
+use Illuminate\Auth\Events\Registered;
+use App\Http\Requests\NewsletterRequestValidation;
+use App\Jobs\SendNotifyNewsletterJob;
 
 class NewsletterController extends Controller
 {
@@ -46,9 +46,11 @@ class NewsletterController extends Controller
         
 
         $this->validate($request,[]);
-        Newsletter::create($request->all());
-        $newsletter = $request->email;
-        Mail::to($newsletter)->send(new EnvoiMail());
+        $newsletter =  Newsletter::create($request->all());
+       
+        SendNotifyNewsletterJob::dispatch($newsletter);
+        // $newsle = $request->email;
+        
         return back()->with('success', 'Votre abonnement a été effectué avec succès');
     }
 

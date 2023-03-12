@@ -17,8 +17,8 @@ class StoryController extends Controller
     public function index()
     {
         //
-        $storys= Story::paginate(6);
-        return view('template.story.index',compact('storys'));
+        $actualite = story::orderBy('created_at','desc')->get();
+        return view('template.story.index',compact('actualite'));
     }
 
     /**

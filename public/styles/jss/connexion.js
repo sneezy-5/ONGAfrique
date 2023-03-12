@@ -18,24 +18,6 @@ var formconnex=document.querySelector('.formconnex')
 
 
 
-    /*newletter header */
-
-
-var formheader=document.querySelector('.formheader')
-var newsletterheader=document.querySelector('.newsletterheader')
-
-
-formheader.addEventListener('submit', function(e){
-     if(newsletterheader.value===""){
-        e.preventDefault()
-        newsletterheader.classList.add("is-invalid")
-     }else{
-        newsletterheader.classList.add("is-valid")
-     }
-})
-
-/*fin newletter header */
-
 
 
 /*newletter footer */

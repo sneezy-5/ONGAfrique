@@ -27,7 +27,7 @@ class StorieRequestValidation extends FormRequest
             'type' => ['required', 'string'],
             'first_name' => ['required', 'string'],
             'last_name' => ['required', 'string'],
-            'email' => ['required', 'string', 'email', 'max:255',],
+            // 'email' => ['required', 'string', 'email', 'max:255', 'unique:members'],
             'story_one_sentence_description' => ['required', 'string'],
             'other' => ['required', 'string'],
 

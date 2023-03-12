@@ -28,7 +28,7 @@ class EnvoiMail extends Mailable
      */
     public function build()
     {
-        return $this->from('adingranarcisse2@gmail.com')
+        return $this->from('ongafrique@ongsouriredafrique.com')
                     ->subject('ONG SOURIRE D\'AFRIQUE')
                     ->view('emails.envoimail');
     }

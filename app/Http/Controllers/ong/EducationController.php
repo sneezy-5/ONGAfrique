@@ -12,7 +12,7 @@ class EducationController extends Controller
 
     public function index()
     {
-        $educations = Story::where('type', 'education')->paginate(8);
+        $educations = Story::where('type', 'education')->take(6)->orderBy('created_at', 'desc')->get();
         $stories = Story::where('type', 'economie')->take(3)->get();
         return view('template.nosmissions.educations', compact('educations','stories'));
         

@@ -19,7 +19,7 @@ class DonateController extends Controller
     {
         //
          $donner = Don::where('user_id', auth()->user()->id)->get();
-        #$donner = auth()->user()->dons;
+        
         return view('espace_donateur/don_show', compact('donner'));
     }
 

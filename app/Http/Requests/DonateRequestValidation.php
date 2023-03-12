@@ -27,7 +27,8 @@ class DonateRequestValidation extends FormRequest
             //
             'last_name' => ['string'],
             'first_name' => ['string'],
-            'email' => [ 'string', 'email', 'max:255',],
+            // 'email' => [ 'string', 'email', 'max:255',],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:dons'],
             'country' =>  ['string'],
             'city' => [ 'string'],
             'address' => [ 'string'],

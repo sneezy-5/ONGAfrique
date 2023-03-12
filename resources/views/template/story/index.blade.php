@@ -3,99 +3,114 @@
 
 @section('title', 'ONG | SOURIRE D\'AFRIQUE')
 @section('actualite')
+     <!--CENTER-->
 
-   <!---BANNER-->
-
-
-     
-   <div id="carouselExampleControls" class="carousel banner slide w-100" data-bs-ride="carousel">
-
-   
-
-<img src="{{asset('styles/img/cercle ong.webp')}}" class="img-fluid cerclebanner" alt="" height="200" width="200">
+     <div class="center row">
 
 
+<section id="about" class="about">
+  <div>
+
+    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+    <div class="col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="2000">
+      <div class="about-img">
+      <img src="{{asset('styles/img/adhesion.jpg')}}" alt="">
+      </div>
+    </div>
+    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-down" data-aos-duration="2000">
+      <div class="text-center text-md-start pb-3 pb-md-0 wow" style="max-width: 500px;" >
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 ">
+          Nos actualités
+        </h1>
+    </div>
+    <p class="fst-italic">
+      L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Taabo-Village à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... 
+      </p>
+      <ul>
+      <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. </li>
+      <li><i class="bi bi-check-circle"></i>Créer des projets au nom de L'ONG Sourire D'Afrique.
+      </li>
+      </ul>
+    </div>
+    </div>
+
+  </div>
+  </section><!-- End About Section -->
+  
 
 
-
-<div class="carousel-inner">
-
-
-<div class="carousel-item container-fluid active">
-  <div class="d-block w-100 img" ></div>
-</div>
-<div class="carousel-item container-fluid">
-  <div class="d-block w-100 img" ></div>
-</div>
-<div class="carousel-item container-fluid">
-  <div class="d-block w-100 img" ></div>
-</div>
-
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!---FIN BANNER-->
-
-
-
-
-
-<!--CENTER-->
-
-<div class="center row">
-
-<div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("titreevent")}}</h1> 
-
-<div class="row w-100 mt-0 Storydiv"> 
-
-
-@foreach($storys as $stori)
-<a href="{{route('voiractualite',['id'=>$stori->id])}}" class="col-md-6 cardstory border-0  m-3 p-0 lienactu"> 
-    <div class="backgroundEffect"></div> 
-    <div class="pic"> 
-        <img src="{{asset('storage/image/'.$stori->image)}}"  class="img-fluid imgtrans" alt=""> 
-        <div class="date"> 
-            <span class="day">{{date('d', strtotime($stori->mission_date))}} </span> 
-            <span class="month">{{date('m', strtotime($stori->mission_date))}}</span> 
-            <span class="year">{{date('Y', strtotime($stori->mission_date))}}</span> 
-            
-        </div> 
-    </div> 
-        <div class="content"> 
-            <p class="h-1 mt-4 Titretrans">@if (app()->getLocale()=="fr"){{ $stori->title_fr}} @else {{ $stori->title_en}} @endif</p> 
-            <p class="text-muted mt-3 text texttrans">@if (app()->getLocale()=="fr") {{Str::limit( $stori->description_fr, 50)}} @else {{Str::limit( $stori->description_en, 50)}}  @endif </p> 
-            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span></div> 
+      <!-- Project Start -->
+    <div class="container-xxl contentdefile bg-light">
+        <div>
+            <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+                <p class="fs-5 fw-medium text-primary">Nos Actualités</p>
+                <h1 class="display-5 mb-5">
+                  Nos Actualités Récente
+                </h1>
             </div>
-        
-            
-        </div> 
-</a>
-@endforeach 
+            <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+               
+             
 
-{{$storys->links()}}
+               @foreach ($actualite as $actu)
+               <div class="project-item mb-5">
+                  <div class="position-relative">
+                      <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$actu->image)}}" alt="">
+                      <div class="project-overlay">
+                          <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$actu->image)}}"
+                              data-lightbox="project"><i class="fa fa-eye"></i></a>
 
-<style>
-  .w-5{
-       display:none;
-       
-    }
-</style>
+                      </div>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="d-block h5 Titretrans">{{$actu->type}}</h4>
+                    <span class="texttrans">{{$actu->description_fr}}</span>
+                  </div>
+                  <a href="{{route('actualites.show', $actu)}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+              </div>
+               @endforeach
 
+             
+  
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+
+
+  <!-- Video -->
+  <div class="basic-2 ">
+    <div>
+        <div class="row m-0 p-0">
+            <div class="col-lg">
+              <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
+                <h2 class="section-title text-light">Nos actualités</h2>
+                <h3 class="section-sub-title text-light">Youtube</h3>
+              </div>
+
+                <!-- Video Preview -->
+                <div class="image-container" data-aos="fade-up" data-aos-duration="2000">
+                  <iframe class="container-fluid col-md" width="560" height="500" src="https://www.youtube.com/embed/8UiOxY4KuUs?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div> <!-- end of image-container -->
+                <!-- end of video preview -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div>
+    <!-- end of video -->
+
+
+
+
+ 
 </div>
 
-</div>
+   <!--FIN CENTER-->
 
-</div>
-
-<!--FIN CENTER-->
 
 
 @endsection()

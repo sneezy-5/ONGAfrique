@@ -2,188 +2,114 @@
 
 @section('title', 'ONG | SOURIRE D\'AFRIQUE')
 @section('sante')
- <!---BANNER-->
-
-
-     
- <div id="carouselExampleControls" class="carousel banner slide w-100" data-bs-ride="carousel">
-
-   
-
-<img src="{{asset('styles/img/cercle ong.webp')}}" class="img-fluid cerclebanner" alt="" height="200" width="200">
 
 
 
 
 
-<div class="carousel-inner">
-
-
-<div class="carousel-item container-fluid active">
-  <div class="d-block w-100 img" ></div>
-</div>
-<div class="carousel-item container-fluid">
-  <div class="d-block w-100 img" ></div>
-</div>
-<div class="carousel-item container-fluid">
-  <div class="d-block w-100 img" ></div>
-</div>
-
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!---FIN BANNER-->
-
-
-
-
-
-<!--CENTER-->
+<<!--CENTER-->
 
 <div class="center row">
 
-<div class="parentbloc0 row w-100">
 
-<h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titresante")}}</h1>
+<section id="about" class="about">
+  <div>
 
-@foreach($santes as $san)
-    <div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
-    <!-- Trigger the Modal -->
-    <img class="myImg imgtrans" src="{{asset('storage/image/'.$san->image)}}" alt="Snow" style="width:100%;max-width:300px">
+    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+    <div class="col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="2000">
+      <div class="about-img">
+      <img src="{{asset('styles/img/sante/san (7).jpeg')}}" alt="">
+      </div>
+    </div>
+    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-down" data-aos-duration="2000">
+      <div class="text-center text-md-start pb-3 pb-md-0 wow" style="max-width: 500px;" >
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 ">
+          Activités Sanitaires
+        </h1>
+    </div>
+    <p class="fst-italic">
+      En prélude de la fête  l'indépendance 2022 , l'ONG Sourire D'Afrique a méné une opération Coup de Balai  à l'hôpital Général de TAABO en présence du Préfet , des adjoints aux maire , de la directrice de l'hôpital,  des autorités Administratives et une bonne masse de la population.  
+      </p>
+      <ul>
+      <li><i class="bi bi-check-circle"></i>Pour nous, l'hygiène sanitaire doit être une priorité commune.</li>
 
-
-    <!-- The Modal -->
-    <div class="myModal modalimg">
-
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-contentimg img01" src="#">
-
-
-    <!-- Modal Caption (Image Text) -->
-    <div class="caption"></div>
+      </ul>
+    </div>
     </div>
 
-<div class="card-body entete">
-<h4 class="card-title Titretrans">@if (app()->getLocale()=="fr"){{ $san->title_fr}} @else  {{$san->title_en}} @endif</h4>
-<p class="card-text text-dark texttrans txtcarac">
-@if (app()->getLocale()=="fr") {{Str::limit( $san->description_fr, 50)}} @else {{Str::limit( $san->description_en, 50)}}  @endif
-</p>
-<a href="{{route('voirsociale',['id'=>$san->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
-
-    </div>
-
-    </div>
-@endforeach
-
-{{$santes->links()}}
-
-<!-- <nav aria-label="...">
-  <ul class="pagination">
-    <li class="page-item disabled">
-      <a class="page-link">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item active" aria-current="page">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav> -->
-<style>
-    .w-5{
-        display:none
-          }
-</style>
-           
-
-</div>
+  </div>
+  </section><!-- End About Section -->
+  
 
 
-<div class="parentblocdeo ">
+      <!-- Project Start -->
+    <div class="container-xxl contentdefile bg-light">
+        <div>
+            <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+                <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+                <h1 class="display-5 mb-5">
+                  Visitez nos activités Sanitaires"
+                </h1>
+            </div>
+            <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+               
+              @foreach ($santes as $san)
+              <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$san->image)}}" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$san->image)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
 
-<h1 class=" m-4 text-dark" style="font-weight:700 ; text-align: center;">{{__("Paix")}}</h1> 
+                        </div>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="d-block h5 Titretrans">{{$san->type}}</h4>
+                      <span class="texttrans">{{$san->type}}</span>
+                    </div>
+                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                </div>
+              @endforeach
 
-<div class="card-body w-75">
-<p class="card-text m-2 col-md">
-{{__("description2")}}
-</p>
-</div>
-
-
-
-<div class="carddeo row d-flex justify-content-center  mt-5">
-
-@foreach($santes as $san)
-@if($san->video!="novideo.jpg") 
-        <div class="card col-md-6 m-1 videoiframe" style="max-width:20rem; border: none; background: none;">
-          <iframe class="container-fluid"  src="{{asset('storage/video/'. $san->video)}}" frameborder="0"></iframe>
-
-          <!-- <div class="card-title m-3">
-              <span>Featured Video</span>
-              <h4>Set for the Ashes</h4>
-          </div> -->
-
+               
+  
+            </div>
         </div>
-  @else
-     
-  @endif
-@endforeach
+    </div>
+    <!-- Project End -->
 
+
+
+
+  <!-- Video -->
+  <div class="basic-2 ">
+    <div>
+        <div class="row m-0 p-0">
+            <div class="col-lg">
+              <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
+                <h2 class="section-title text-light">Nos actualités</h2>
+                <h3 class="section-sub-title text-light">Youtube</h3>
+              </div>
+
+                <!-- Video Preview -->
+                <div class="image-container" data-aos="fade-up" data-aos-duration="2000">
+                  <iframe class="container-fluid col-md" width="560" height="500" src="https://www.youtube.com/embed/jD70pYIKLl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                  
+                </div> <!-- end of image-container -->
+                <!-- end of video preview -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div>
+    <!-- end of video -->
+
+
+
+
+ 
 </div>
 
-
-</div>
-
-
-<div class=" w-100  parentblocstory">
-<h1 class=" m-4 text-dark h2" style="font-weight:700;text-align:center;">{{__("nosstories")}}</h1> 
-
-<div class="row w-100 mt-0 Storydiv"> 
-
-
-
-@foreach($stories as $story)
-<a href="{{route('actualites.index')}}" class="col-md-6 cardstory border-0  m-3 p-0"> 
-    <div class="backgroundEffect"></div> 
-    <div class="pic"> 
-        <img src="{{asset('storage/image/'.$story->image)}}"  class="img-fluid" alt=""> 
-        <div class="date"> 
-            <span class="day">{{date('d', strtotime($story->mission_date))}} </span> 
-            <span class="month">{{date('m', strtotime($story->mission_date))}}</span> 
-            <span class="year">{{date('Y', strtotime($story->mission_date))}}</span> 
-        </div> 
-    </div> 
-        <div class="content"> 
-            <p class="h-1 mt-4"> @if (app()->getLocale()=="fr"){{ $story->title_fr}} @else  {{$story->title_en}} @endif</p> 
-            <p class="text-muted mt-3">@if (app()->getLocale()=="fr") {{Str::limit( $story->description_fr, 50)}} @else {{Str::limit( $story->description_en, 50)}}  @endif </p> 
-            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"> <div class="btn btn-primary">Voir plus<span class="fas fa-arrow-right"></span>
-            </div> 
-        </div> 
-    </div> 
-</a> 
-@endforeach
-
-
-
-</div>
-</div>
-
-</div>
-
-<!--FIN CENTER-->
-
-
+   <!--FIN CENTER-->
 @endsection

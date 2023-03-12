@@ -11,14 +11,14 @@ class welcomeController extends Controller
     //
     public function index()
     {
-        $cultures = Story::where('type', 'culture')->first();
-        $economies = Story::where('type', 'economie')->first();
-        $educations = Story::where('type', 'education')->first();
-        $santes = Story::where('type', 'sante')->first();
-        $sociales = Story::where('type', 'sociale')->first();
-        $sports = Story::where('type', 'sport')->first();
+        $all =story::orderBy('created_at','desc')->get();
+        $sociale = Story::where('type', 'social')->take(3)->orderBy("created_at", "desc")->get();
+        $education = Story::where('type', 'education')->take(3)->orderBy("created_at", "desc")->get();
+        $sante = Story::where('type', 'sante')->take(3)->orderBy("created_at", "desc")->get();
+        $sport = Story::where('type', 'sport')->take(3)->orderBy("created_at", "desc")->get();
+        $economie = Story::where('type', 'economie')->take(3)->orderBy("created_at", "desc")->get();
+        $culture = Story::where('type', 'culture')->take(3)->orderBy("created_at", "desc")->get();
         
-        return view('welcome', compact('cultures','economies','educations',
-                                        'santes','sociales','sports',));
+        return view('welcome', compact('sport','sociale','education','sante','economie','culture'));
     }
 }

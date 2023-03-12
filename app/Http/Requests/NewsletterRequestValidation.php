@@ -25,7 +25,7 @@ class NewsletterRequestValidation extends FormRequest
     {
         return [
             //
-            'email' => ['required', 'string', 'email', 'max:255',]
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:newsletters'],
         ];
     }public function meassage()
     {

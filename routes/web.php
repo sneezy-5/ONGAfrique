@@ -7,6 +7,7 @@ use App\Http\Controllers\ong\DonateController;
 use App\Http\Controllers\ong\EconomieController;
 use App\Http\Controllers\ong\EducationController;
 use App\Http\Controllers\ong\EventController;
+use App\Http\Controllers\ong\GalleryController;
 use App\Http\Controllers\ong\MemberController;
 use App\Http\Controllers\ong\NewsletterController;
 use App\Http\Controllers\ong\SanteController;
@@ -41,6 +42,10 @@ Route::get('/', [welcomeController::class, 'index'])->name('/');
 Route::get('/aproposdenous', function(){
     return view('template.aproposdenous');
 });
+
+//route gallery
+
+Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
 
 ////route du menu deroulant nos missions
 

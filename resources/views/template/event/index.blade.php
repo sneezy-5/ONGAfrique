@@ -3,113 +3,269 @@
 
 @section('title', 'ONG | SOURIRE D\'AFRIQUE')
 @section('activite')
-  
-  
-  
-     <!---BANNER-->
-
-
-     
-     <div id="carouselExampleControls" class="carousel banner slide w-100" data-bs-ride="carousel">
-
-   
-
-        <img src="{{asset('styles/img/cercle ong.webp')}}" class="img-fluid cerclebanner" alt="" height="200" width="200">
-
- 
-      
-      
-
-      <div class="carousel-inner">
-        
-
-        <div class="carousel-item container-fluid active">
-          <div class="d-block w-100 img" ></div>
-        </div>
-        <div class="carousel-item container-fluid">
-          <div class="d-block w-100 img" ></div>
-        </div>
-        <div class="carousel-item container-fluid">
-          <div class="d-block w-100 img" ></div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-     <!---FIN BANNER-->
-
-
-
-
 
      <!--CENTER-->
 
- <div class="center row">
-
-    <div class="parentbloc0 row w-100">
-   
-    <h1 class=" m-4 text-dark " style="font-weight:700 ;text-align: center;">{{__("titreactivite")}}</h1>
-
-@foreach($event as $ev)
-
-<div class="imgzoom card m-3 mb-3 mt-3 p-1"  style="width:18rem;">
-    <!-- Trigger the Modal -->
-    
-    <img class="myImg imgtrans" src="{{asset('storage/image/'.$ev->picture)}}" alt="Snow" style="width:100%;max-width:300px">
-   
-
-     <!-- The Modal -->
-    <div class="myModal modalimg">
-
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-contentimg img01" src="#">
+     <div class="center row">
 
 
-    <!-- Modal Caption (Image Text) -->
-    <div class="caption"></div>
-   </div>
+<section id="about" class="about">
+  <div>
 
-    <div class="card-body entete">
-     <h4 class="card-title Titretrans">@if (app()->getLocale()=="fr"){{ $ev->title_fr}} @else {{ $ev->title_en}} @endif</h4>
-        <p class="card-text text-dark texttrans txtcarac">
-        @if (app()->getLocale()=="fr") {{Str::limit( $ev->description_fr, 50)}} @else {{Str::limit( $ev->description_en, 50)}}  @endif 
-       </p>
-        <a href="{{route('voiractualite',['id'=>$ev->id])}}" class="btn btn-primary btntrans">Voir plus..</a>
-
-        <footer class="blockquote-footer mt-1 mb-0">ok<cite title="Source Title" class="fw-bold text-dark"> <span>10</span> <span>Nov</span> <span>2022</span> </cite></footer>
-        
+    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+    <div class="col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="2000">
+      <div class="about-img">
+      <img src="{{asset('styles/img/adhesion.jpg')}}" alt="">
+      </div>
     </div>
-  
+    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-down" data-aos-duration="2000">
+      <div class="text-center text-md-start pb-3 pb-md-0 wow" style="max-width: 500px;" >
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 ">
+          Nos Activités 
+        </h1>
+    </div>
+    <p class="fst-italic">
+      L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Taabo-Village à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... 
+      </p>
+      <ul>
+      <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. 
+      </li>
+      <li><i class="bi bi-check-circle"></i>Créer des projets au nom de L'ONG Sourire D'Afrique.
+      </li>
+      </ul>
+    </div>
+    </div>
+
   </div>
+  </section><!-- End About Section -->
+  
 
-@endforeach
-{{$event->links()}}
+
+ <!-- Project social -->
+    <div class="container-xxl contentdefile bg-light">
+        <div>
+            <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+                <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+                <h1 class="display-5 mb-5">
+                  Visitez nos activités Sociales"
+                </h1>
+            </div>
+            <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+               
+            @foreach ($sociales as $soc)
+              <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$soc->image)}}" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$soc->image)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="d-block h5 Titretrans">{{$soc->type}}</h4>
+                      <span class="texttrans">{{$soc->type}}</span>
+                    </div>
+                    <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                </div>
+              @endforeach
+
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+<!-- Project educ -->
+ <div class="container-xxl contentdefile bg-light">
+              <div>
+                  <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+                      <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+                      <h1 class="display-5 mb-5">
+                        Visitez nos activités Educatifs"
+                      </h1>
+                  </div>
+                  <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+                     
+                  @foreach ($educations as $edu)
+             <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$edu->image)}}" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$edu->image)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="d-block h5 Titretrans">{{$edu->type}}</h4>
+                      <span class="texttrans">{{$edu->description_fr}}</span>
+                    </div>
+                    <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                </div>
+             @endforeach
+    
+                  </div>
+              </div>
+  </div>
+   <!-- Project End -->
 
 
-                               <style>
-                                .w-5{
-                                    display:none
-                                }
-                               </style>
-  <!--  -->
+<!-- Project sanitaire -->
+<div class="container-xxl contentdefile bg-light">
+<div>
+    <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 mb-5">
+          Visitez nos activités Sanitaires"
+        </h1>
+    </div>
+    <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+       
+    @foreach ($santes as $san)
+              <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$san->image)}}" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$san->image)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
 
-                   
+                        </div>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="d-block h5 Titretrans">{{$san->type}}</h4>
+                      <span class="texttrans">{{$san->type}}</span>
+                    </div>
+                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                </div>
+              @endforeach
 
     </div>
+</div>
+</div>
+<!-- Project End -->     
 
+
+
+<!-- Project Sport -->
+<div class="container-xxl contentdefile bg-light">
+<div>
+    <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 mb-5">
+          Visitez nos activités Sportifs"
+        </h1>
+    </div>
+    <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+       
+    @foreach ($sports as $spo)
+            <div class="project-item mb-5">
+                  <div class="position-relative">
+                      <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$spo->image)}}" alt="">
+                      <div class="project-overlay">
+                          <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$spo->image)}}"
+                              data-lightbox="project"><i class="fa fa-eye"></i></a>
+
+                      </div>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="d-block h5 Titretrans">{{$spo->type}}</h4>
+                    <span class="texttrans">{{$spo->type}}</span>
+                  </div>
+                  <a href="{{route('voirsport', ['id'=>$spo->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+              </div>
+            @endforeach
+
+        
+
+
+    </div>
+</div>
+</div>
+<!-- Project End -->
+
+
+<!-- Project culture -->
+<div class="container-xxl contentdefile bg-light">
+<div>
+    <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 mb-5">
+          Visitez nos activités Culturelles"
+        </h1>
+    </div>
+    <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+       
+    @foreach ($cultures as $cul)
+                 
+               
+                 <div class="project-item mb-5">
+                       <div class="position-relative">
+                           <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$cul->image)}}" alt="">
+                           <div class="project-overlay">
+                               <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$cul->image)}}"
+                                   data-lightbox="project"><i class="fa fa-eye"></i></a>
    
+                           </div>
+                       </div>
+                       <div class="p-4">
+                         <h4 class="d-block h5 Titretrans">{{$cul->type}}</h4>
+                         <span class="texttrans">{{$cul->description_fr}}</span>
+                       </div>
+                       <a href="{{route('voirculture', ['id'=>$cul->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                   </div>
+   
+                   @endforeach
+
+       
+
+      
+
+    </div>
+</div>
+</div>
+<!-- Project End -->
+
+
+<!-- Project eco -->
+<div class="container-xxl contentdefile bg-light">
+<div>
+    <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
+        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <h1 class="display-5 mb-5">
+          Visitez nos activités Socio-économique"
+        </h1>
+    </div>
+    <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
+       
+    @foreach ($economies as $eco )
+             <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid imgtrans" src="{{asset('storage/image/'.$eco->image)}}" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('storage/image/'.$eco->image)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="p-4">
+                      <h4 class="d-block h5 Titretrans">{{$eco->type}}</h4>
+                      <span class="texttrans">{{$eco->description_fr}}</span>
+                    </div>
+                    <a href="{{route('coireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                </div>
+             @endforeach
+
+    </div>
+</div>
+</div>
+<!-- Project End -->
+
+
+ 
 </div>
 
-     <!--FIN CENTER-->
+   <!--FIN CENTER-->
+ 
 
-  @endsection()
+@endsection()

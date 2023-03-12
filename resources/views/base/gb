@@ -1,0 +1,476 @@
+<form action="{{route('adhesion.store')}}" method="POST" class="col-md-6 formadhe" id="formsadhesion" enctype="multipart/form-data">
+  @csrf
+ <div class="card text-danger border-0 ">
+  <small class="msgalert card-text"></small>
+ </div>
+
+  <div class="progressbar">
+    <div class="progress" id="progress"></div>
+    
+    <div
+      class="progress-step progress-step-active"
+      data-title="{{__("inf")}}"></div>
+    
+    <div class="progress-step" data-title="{{__("contact")}}"></div>
+    <div class="progress-step" data-title="{{__("final")}}"></div>
+  </div>
+  <div class="step-forms step-forms-active">
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="nom&prénoms">{{__("nomP")}}</label>
+      <input type="text" name="nom"  class="iptadhe champadhes nomadhe">
+    </div>
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="Datedenaissance">{{__("datenaiss")}}</label>
+      <input type="date" name="date_naissance" class="iptadhe champadhes dateadhe">
+    </div>
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="Fonction">{{__("fnction")}}</label>
+      <input type="text" name="fonction" class="iptadhe champadhes fonctionadhe">
+    </div>
+
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="fichier">{{__("Vphoto")}}</label>
+      <input type="file" name="picture" class="form-control-file iptadhe champadhes photoadhe">
+    </div>
+
+
+
+    <div class="">
+      <div class="btn btn-next width-50 ml-auto btnsuive btn-outline-primary">{{__("suivnt")}}</div>
+    </div>
+  </div>
+  <div class="step-forms">
+
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="contacts">{{__("contact")}}</label>
+      <input type="number" name="phone" class="iptadhe champadhes contactsadhe">
+    </div>
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="email">{{__("mail")}}</label>
+      <input type="email" name="email" id="email" class="iptadhe champadhes mailadhe">
+    </div>
+
+    <div class="btns-group divipts">
+      <a href="#" class="btn btn-prev btnsuive btn-outline-primary">{{__("prece")}}</a>
+      <a href="#" class="btn btn-next btnsuive btn-outline-primary">{{__("suivnt")}}</a>
+    </div>
+  </div>
+  <div class="step-forms">
+
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="Région/district">{{__("region")}}</label>
+      <input type="text" name="region" class="iptadhe champadhes regionadhe">
+    </div>
+
+    <div class="group-inputs divipts">
+      <label class="labeladhe" for="section">{{__("section")}}</label>
+      <input type="text" name="section" class="iptadhe champadhes sectionadhe">
+    </div>
+
+
+    <div class="form-check form-switch ">
+      <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+      <label class="labeladhe" class="form-check-label" for="flexSwitchCheckCheckedDisabled">{{__("frais")}}</label>
+    </div>
+
+    <div class="btns-group">
+      <div class="btn btn-prev btn-outline-primary d-flex justify-content-center align-items-center">{{__("prece")}}</div>
+      <input type="submit" value="Adhérez" id="submit-form" class="btnsuive btn-success champadhes">
+    </div>
+
+
+  </div>
+</form>
+
+
+
+///
+
+<form action="{{route('faireundon.store')}}" method="POST" class="mt-3 m-1 justify-content-between formprixmodal">
+  @csrf
+
+    <div class="input-group mb-3">
+      
+     @if($user = Auth::user())
+      <input type="text" name="last_name" value="{{$user->name}}" class="form-control casenom" placeholder="{{__("nomP")}}">
+       @else
+      <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
+
+     @endif
+     
+
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="number" name="phone" class="form-control casecontact"  placeholder="{{__("contact")}}">
+      
+     </div>
+     
+  <div class="input-group mb-3">
+    <span class="input-group-text">F CFA</span>
+    <input type="number" name="amount" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="500">
+    
+    <div id="validationServerUsernameFeedback" class="invalid-feedback" style="text-align:start;">
+    {{__("montantSup")}}
+    </div>
+    <div class="valid-feedback" style="text-align:start;">
+      Très bien
+    </div>
+  </div>
+
+ <div>
+
+  <p>
+    <div class="form-check d-flex gap-2">
+      <input class="form-check-input btncoche" type="checkbox" name="honneur" id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+      <label class="form-check-label" for="flexCheckDefault">
+      {{__("honneur")}} 
+      </label>
+    </div>
+
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="form-group">
+     <input type="text" name="honnoree" class="form-control specialchamp" placeholder="{{__("honneur")}}">
+    </div>
+  </div>
+
+ </div>
+
+  <input type="submit" value="{{__("FuD")}}" class="btn btn-primary w-100 mt-5 btnapi1">
+</form>
+
+
+  
+      
+          
+      
+@foreach (sociale as $soc)
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;social&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/social/socia (2).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/social/socia (2).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Ghum Touch Hospital</a>
+    </h3>
+    <p class="project-cat">Healthcare</p>
+    </div>
+  </div>
+  </div>
+</div>
+@endforeach<!-- shuffle item 2 end -->
+
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sport&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sport/spor (11).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sport/spor (11).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Sport</a>
+    </h3>
+    <p class="project-cat">Healthcare</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 2 end -->
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sante&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sante/san (7).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sante/san (7).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Santé</a>
+    </h3>
+    <p class="project-cat">Government</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 3 end -->
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;culturel&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/culture/17.jpg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/culture/17.jpg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Narriot Headquarters</a>
+    </h3>
+    <p class="project-cat">Infrastructure</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 4 end -->
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sport&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sport/spor (3).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sport/spor (3).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Sport</a>
+    </h3>
+    <p class="project-cat">Infrastructure</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 5 end -->
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;Social&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/social/socia (1).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/social/socia (1).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">Ancraft Avenue House</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/education/educ (9).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/education/educ (9).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;social&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/social/socia (5).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/social/socia (5).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">social</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/education/educ (12).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/education/educ (12).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sante&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sante/san (2).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sante/san (2).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">sante</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/education/educ (11).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/education/educ (11).jpeg"')}} alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/education/educ (14).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/education/educ (14).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sante&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sante/san (5).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sante/san (5).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sante&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/sante/san (8).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/sante/san (8).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">education</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->
+
+
+<div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;social&quot;]">
+  <div class="project-img-container">
+  <a class="gallery-popup" href="{{asset('styles/img/social/socia (4).jpeg')}}" aria-label="project-img">
+    <img class="img-fluid" src="{{asset('styles/img/social/socia (4).jpeg')}}" alt="project-img">
+    <span class="gallery-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </span>
+  </a>
+  <div class="project-item-info">
+    <div class="project-item-info-content">
+    <h3 class="project-item-title">
+      <a href="gallery.html">social</a>
+    </h3>
+    <p class="project-cat">Residential</p>
+    </div>
+  </div>
+  </div>
+</div><!-- shuffle item 6 end -->

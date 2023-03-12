@@ -16,6 +16,7 @@ class ContactController extends Controller
     public function index()
     {
         //
+        return view('template.contact.contact');
 
     }
 
@@ -27,7 +28,7 @@ class ContactController extends Controller
     public function create()
     {
         //
-        return view('template.contact.conatct');
+        // return view('template.contact.conatct');
     }
 
     /**
@@ -38,15 +39,23 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         //ajput des regles ici
         $this->validate($request, [
-            'prenomNom' => 'required',
-            'email' => 'required|email',
+            'prenomNom' => 'required','max:50',
+            // 'email' => 'required|email',
+            'email' => ['required', 'string', 'email', 'max:255'],
             'telephone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            'message' => 'required',
+            'message' => 'required','max:500',
          ]);
         
-        Contact::create($request->all());
+        Contact::create([
+                'prenomNom'=>$request->prenomNom,
+                'email' => $request->email,
+                'telephone'=>$request->telephone,
+                'message'=>$request->message,
+               
+        ]);
 
         return back()->with('success', 'Votre message a été envoyé avec succès');
     }

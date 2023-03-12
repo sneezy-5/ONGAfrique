@@ -1,8 +1,30 @@
+
+/*newletter footer */
+
+var formfooter=document.querySelector('.formfooter')
+var newsletterfooter=document.querySelector('.newsletterfooter')
+
+formfooter.addEventListener('submit', function(e){
+    
+   if(newsletterfooter.value===""){
+       e.preventDefault()
+       newsletterfooter.classList.add("is-invalid")
+    }else{
+      newsletterfooter.classList.add("is-valid")
+    }
+})
+
+/*fin newletter footer */
+
+
+
+
+
+
+
 var imgdesc=document.querySelector('.imgdesc')
 var titredesc=document.querySelector('.titredesc')
 var textedesc=document.querySelector('.textedesc')
-
-
 
 
 

@@ -25,16 +25,17 @@ class MemberRequestValidation extends FormRequest
     {
         return [
             //
-            'nom' => ['required', 'string'],
+            'nom' => ['required', 'string','max:50'],
             'date_naissance' => ['required'],
-            'email' => ['required', 'string', 'email', 'max:255',],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:members'],
+            // 'email' => ['required', 'string', 'email', 'max:255',],
             'fonction' => ['required', 'string'],
             'picture' => ['required'],
-            'email' => ['required', 'email'],
+            // 'email' => ['required', 'email'],
             'phone' => ['required','regex:/^([0-9\s\-\+\(\)]*)$/','min:10'],
-            'region'=> ['required', 'string'],
+            'region'=> ['required', 'string','max:50'],
             //'address'=> ['required', 'string'],
-            'section'=> ['required', 'string'],
+            'section'=> ['required', 'string','max:50'],
             //'paye'=> ['required', 'string'],
         ];
     }
