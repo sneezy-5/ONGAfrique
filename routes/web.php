@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DonController;
 use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\ong\ContactController;
 use App\Http\Controllers\ong\CultureController;
@@ -116,8 +117,21 @@ Route::resource('/contact', ContactController::class)->only([
     'index','create', 'store'
 ]);
 
+// don cancel
+Route::get('/canceldon/{id}',[ DonateController::class,'deleteDonCancel']);
 
+// don succes
+Route::get('/succesDon', [DonateController::class, 'succesDon']);
+
+
+// don cancel
+Route::get('/cancelmember/{id}',[ DonateController::class,'cancelMember']);
+
+// don succes
+Route::get('/succesMember', [DonateController::class, 'succesMember']);
 });
+
+
 
 // Traduction 
 // Route qui permet de connaître la langue active

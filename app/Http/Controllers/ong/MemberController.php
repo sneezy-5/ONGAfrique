@@ -58,7 +58,7 @@ class MemberController extends Controller
             $fileNameToStore = 'noimage.jpg';
             $path = 'noimage.jpg';
             }
-            Member::create([
+          $member=  Member::create([
 
                 'nom'=>$request->nom,
                 'picture'=>$fileNameToStore,
@@ -72,7 +72,34 @@ class MemberController extends Controller
                 'paye'=>true,
     
             ]);
-        return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
+
+            $apn =  env('APP_URL')."/ipn";
+            $succes =  env('APP_URL')."/succespayement";
+            $cancel =  env('APP_URL').":8000"."/cancelpayment/".$member->id;
+            $postFields = array(
+                "item_name"    =>$request['nom'],
+            "item_price"   => 2000,
+            "currency"     => "xof",
+            "ref_command"  => date("Hs"),
+            "command_name" =>  "test",
+            "env"=>"test",
+            "ipn_url" =>"https://domaine.com/ipn",
+            "success_url" => $succes,
+            "cancel_url" => $cancel,
+            "custom_field" =>  "zefezf"
+        );
+    
+        
+        $api_key="386c30e32715a54b2beba9a5306242a6621545961f8152b18aca4372ba19ece6";
+        $api_secret="94af82652ae929fd60b3a26e2e2e96e310871e3362f75455402cb229da8863e0";
+        $jsonResponse =$this->payement('https://paytech.sn/api/payment/request-payment', $postFields, [
+            "API_KEY: ".$api_key,
+            "API_SECRET: ".$api_secret
+        ]);
+        //dd($postFields, $jsonResponse);
+        return redirect(json_decode($jsonResponse,true)['redirect_url']);
+    
+        // return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
 
     }
 
@@ -119,5 +146,34 @@ class MemberController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function cancelMember($id){
+        $don =Member::find($id)->delete();
+        // dd($don);
+         return redirect()->route('/')->with('message', 'Votre payement a échoué');
+     }
+ 
+     public function succesMember(){
+        return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
+
+     }
+      private function payement($url, $data = [], $header = [])
+    {
+        $strPostField = http_build_query($data);
+
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $strPostField);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array_merge($header, [
+            'Content-Type: application/x-www-form-urlencoded;charset=utf-8',
+            'Content-Length: ' . mb_strlen($strPostField)
+        ]));
+
+        return curl_exec($ch);
     }
 }
