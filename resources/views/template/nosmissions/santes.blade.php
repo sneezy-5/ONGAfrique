@@ -7,7 +7,7 @@
 
 
 
-<<!--CENTER-->
+<!--CENTER-->
 
 <div class="center row">
 
@@ -74,7 +74,7 @@ En conclusion, la santé est un enjeu majeur en Afrique, et l'accès à des soin
                     </div>
                     <div class="p-4">
                       <h4 class="d-block h5 Titretrans">{{$san->type}}</h4>
-                      <span class="texttrans">{{$san->type}}</span>
+                      <span class="texttrans">{{ str::limit($san->description_fr, 75)}}</span>
                     </div>
                     <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                 </div>

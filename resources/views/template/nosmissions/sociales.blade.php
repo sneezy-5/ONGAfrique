@@ -74,7 +74,7 @@ En conclusion, le développement social est un enjeu majeur en Afrique, et l'éd
                     </div>
                     <div class="p-4">
                       <h4 class="d-block h5 Titretrans">{{$soc->type}}</h4>
-                      <span class="texttrans">{{$soc->type}}</span>
+                      <span class="texttrans">{{ Str::limit($soc->description_fr, 75)}}</span>
                     </div>
                     <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                 </div>
