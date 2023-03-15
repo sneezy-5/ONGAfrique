@@ -118,7 +118,7 @@
 
   </div>
 
-  <script src="{{asset('styles/jss/actualites.js')}}"></script>
+  <script src="{{asset('styles/jss/social.js')}}"></script>
  @include('base.jsapp')
 
 </body>

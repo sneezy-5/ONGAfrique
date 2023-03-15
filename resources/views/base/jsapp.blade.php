@@ -1,4 +1,6 @@
+@if (! route::is('gallery'))
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+@endif
     <script>
       var typingEffect= new Typed(".texttype",{
         strings: ["Accompagnons", "Aidons", "Soutenons"],

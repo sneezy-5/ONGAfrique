@@ -121,7 +121,7 @@
 
  
 
-  <script src="{{asset('styles/jss/activites.js')}}"></script>
+  <script src="{{asset('styles/jss/social.js')}}"></script>
  @include('base.jsapp')
 
 </body>

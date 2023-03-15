@@ -55,7 +55,7 @@ En conclusion, le sport est un élément important de la santé et du bien-être
             <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
                 <p class="fs-5 fw-medium text-primary">Nos Missions</p>
                 <h1 class="display-5 mb-5">
-                  Visitez nos activités sportifs"
+                  Visitez nos activités Sportives"
                 </h1>
             </div>
             <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">

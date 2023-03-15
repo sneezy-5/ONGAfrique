@@ -20,7 +20,7 @@ class EventController extends Controller
         $cultures = Story::where('type', 'culture')->take(6)->orderBy('created_at', 'desc')->get();
         $economies = Story::where('type', 'economie')->take(6)->orderBy('created_at', 'desc')->get();
         $educations = Story::where('type', 'education')->take(6)->orderBy('created_at', 'desc')->get();
-        $santes = Story::where('type', 'education')->take(6)->orderBy('created_at', 'desc')->get();
+        $santes = Story::where('type', 'sante')->take(6)->orderBy('created_at', 'desc')->get();
         $sociales = Story::where('type', 'social')->take(6)->orderBy('created_at', 'desc')->get();
         $sports = Story::where('type', 'sport')->take(6)->orderBy('created_at', 'desc')->get();
         return view('template.event.index', compact('cultures','economies','educations','santes','sociales','sports'));
