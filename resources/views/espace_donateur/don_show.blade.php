@@ -30,7 +30,7 @@
                                     <tbody>
                                         <tr>
                                             
-                                            <td>{{Auth()->user()->name}}</td>
+                                            <td>{{$don->user_id}}</td>
                                             <!-- <td>{{ $don->city }}</td> -->
                                             <td>{{ $don->amount }} fcfa</td>
                                             <td>{{ $don->created_at->format('d M Y') }}</td>

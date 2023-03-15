@@ -1,6 +1,6 @@
 @extends('base.galleryapp')
 
-@section('title',)
+@section('title', 'ONG | SOURIRE D\'AFRIQUE')
 
 @section('gallery')
     
@@ -65,9 +65,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="">{{$edu->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$edu->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -89,9 +89,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="gallery.html">{{$soc->typr}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$soc->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -113,9 +113,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="gallery.html">{{$san->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$san->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -137,9 +137,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="gallery.html">{{$spo->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$spo->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -161,9 +161,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="gallery.html">{{$eco->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$eco->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -185,9 +185,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="gallery.html">{{$cul->type}}s</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$cul->title_fr}}</p>
               </div>
             </div>
             </div>

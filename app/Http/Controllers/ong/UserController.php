@@ -20,8 +20,35 @@ class UserController extends Controller
     public function index()
     {
         //
-        $countdon = auth()->user()->dons->count('amount');
-        $sumdon = auth()->user()->dons->sum('amount');
+        // Obtenir l'utilisateur connecté
+        // $user = auth()->user();
+
+        // // Compter le nombre de dons de l'utilisateur
+        // $countdon = $user->dons()->where('user_id','amount')->count();
+
+        // // Obtenir la somme des dons de l'utilisateur
+        // $sumdon = $user->dons()->where('user_id', 'amount')->sum('amount');
+
+//
+        // Obtenez l'utilisateur connecté
+        $user = Auth::user();
+
+        // Obtenez tous les dons de l'utilisateur connecté
+        $dons = $user->dons;
+
+        // Comptez le nombre de dons de l'utilisateur connecté
+        $countdon = $dons->count();
+
+        // Calculez la somme de tous les dons de l'utilisateur connecté
+        $sumdon = $dons->sum('montant');
+
+
+
+
+
+
+        // $countdon = auth()->user()->dons->count('amount');
+        // $sumdon = auth()->user()->dons->sum('amount');
         return view('espace_donateur.donateur', compact('countdon', 'sumdon'));
     }
 

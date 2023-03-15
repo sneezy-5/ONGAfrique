@@ -18,7 +18,10 @@ class DonateController extends Controller
     public function index()
     {
         //
-         $donner = Don::where('user_id', auth()->user()->id)->get();
+        // Récupérez l'utilisateur connecté
+        $user = Auth::user();
+
+         $donner = Don::where('user_id', $user->id)->get();
         
         return view('espace_donateur/don_show', compact('donner'));
     }
