@@ -17,7 +17,7 @@
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Accueil</title>
+
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
 
 <!-- Autres -->
@@ -33,8 +33,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   
 
-
- 
 <title>@yield('title')</title>
 </head>
 <body>

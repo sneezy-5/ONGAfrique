@@ -74,7 +74,7 @@ En conclusion, la culture est un élément important de l'identité et de la div
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$cul->type}}</h4>
+                      <h4 class="d-block h5 Titretrans">{{$cul->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($cul->description_fr, 75)}}</span>
                     </div>
                     <a href="{{route('voirculture', ['id'=>$cul->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>

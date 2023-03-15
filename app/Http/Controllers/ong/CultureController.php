@@ -16,8 +16,8 @@ class CultureController extends Controller
     public function index()
     {
         $cultures = story::where('type', 'culture')->take(6)->orderBy('created_at', 'desc')->get();
-        $stories = Story::where('type', 'social')->take(3)->get();
-        return view('template.nosmissions.cultures', compact('cultures','stories'));
+        // $stories = Story::where('type', 'social')->take(3)->get();
+        return view('template.nosmissions.cultures', compact('cultures',));
     }
 
     public function show($id)

@@ -71,7 +71,7 @@ En conclusion, le sport est un élément important de la santé et du bien-être
                       </div>
                   </div>
                   <div class="p-4">
-                    <h4 class="d-block h5 Titretrans">{{$spo->type}}</h4>
+                    <h4 class="d-block h5 Titretrans">{{$spo->title_fr}}</h4>
                     <span class="texttrans">{{ Str::limit($spo->description_fr, 75)}}</span>
                   </div>
                   <a href="{{route('voirsport', ['id'=>$spo->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>

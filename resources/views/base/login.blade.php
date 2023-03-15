@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    
+    <!-- Bootstrapp only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Bootstrapp only -->
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
 
-  <!-- Bootstrapp only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Bootstrapp only -->
-  <link rel="stylesheet" href="{{asset('/styles/fontawesome-free-5.14.0-web/css/all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
-    <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
-       <!--cinepay-->
-       <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+   <!--cinepay-->
+   <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}"> -->
+
+<!-- Autres -->
+    <link href="{{asset('styles/css/templatemo-nomad-force.css')}}" rel="stylesheet">
+    <link href="{{asset('styles/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('styles/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+  
+  <link rel="stylesheet" href="{{asset('styles/plugins/fontawesome/css/all.min.css')}}">
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="{{asset('styles/plugins/colorbox/colorbox.css')}}">
+  <!-- Template styles-->
+  <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  
  
   <title>@yield('title')</title>
 </head>

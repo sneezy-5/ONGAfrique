@@ -76,7 +76,7 @@ En conclusion, la socio-économie est un enjeu important en Afrique, et l'éduca
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$eco->type}}</h4>
+                      <h4 class="d-block h5 Titretrans">{{$eco->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($eco->description_fr,75)}}</span>
                     </div>
                     <a href="{{route('coireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>

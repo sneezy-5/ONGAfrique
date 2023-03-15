@@ -32,9 +32,9 @@
                       <div class="d-inline-block rounded-pill mt-3 bg-primary text-light py-1 px-3 mb-3">Qui Sommes Nous ?</div>
                       <h3 class=" text-dark mb-2">Ong Sourire d'afrique</h3>
                       <div class="bg-light border-bottom border-5 border-primary rounded p-2 mb-4">
-                          <p class="text-dark mb-0">L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés...</p>
+                          <p class="text-dark mb-0">L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés...</p>
                     
-                          <span class="text-primary mt-2">Jhon Doe, Founder</span>
+                          <span class="text-primary mt-2">Richard GABDIBE</span>
                       </div>
 
                       <a class="btn btnabout btn-primary btnprimaryabout" href="/aproposdenous">
@@ -424,7 +424,7 @@
           <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
               <p class="fs-5 fw-medium text-primary">Nos Missions</p>
               <h1 class="display-5 mb-5">
-                Visitez nos missions à travers "Côte d'Ivoire"
+                Visitez nos missions à travers "la Côte d'Ivoire"
               </h1>
           </div>
           <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">

@@ -14,9 +14,9 @@ class SportController extends Controller
     {
         $sports = Story::where('type', 'sport')->take(6)->orderBy('created_at', 'desc')->get();
 
-        $stories = Story::where('type', 'sante')->take(3)->get();
+        // $stories = Story::where('type', 'sante')->take(3)->get();
 
-        return view('template.nosmissions.sports', compact('sports','stories'));
+        return view('template.nosmissions.sports', compact('sports',));
     }
 
     public function show($id)

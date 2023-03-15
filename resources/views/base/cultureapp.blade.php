@@ -17,7 +17,6 @@
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Accueil</title>
     <link rel="stylesheet" href="{{asset('styles/csss/culture.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
 

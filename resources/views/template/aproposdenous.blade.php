@@ -24,7 +24,7 @@
         </h1>
     </div>
     <p class="fst-italic">
-      ONG SOURIRE D'AFRIQUE</span> crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Côte d'Ivoire à pour mission de venir en aide aux 
+      ONG SOURIRE D'AFRIQUE</span> crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux 
       personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... 
   </p>
   <ul>
