@@ -411,7 +411,7 @@
   <!--fin modal-->
 
 @if (!Route::is('login','register','contact.index','gallery','voirculture','actualites.show','activites.show',
-                'voireconomie', 'voireducation','voirante','voirsociale','voirsport',))
+                'voireconomie', 'voireducation','voirsante','voirsociale','voirsport',))
   
          <!---BANNER-->
    

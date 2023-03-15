@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$soc->type}}</h4>
+                      <h4 class="d-block h5 Titretrans">{{$soc->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($soc->description_fr,75)}}</span>
                     </div>
                     <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
@@ -98,8 +98,8 @@
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$edu->type}}</h4>
-                      <span class="texttrans">{{$edu->description_fr}}</span>
+                      <h4 class="d-block h5 Titretrans">{{$edu->title_fr}}</h4>
+                      <span class="texttrans">{{Str::limit($edu->description_fr,75)}}</span>
                     </div>
                     <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                 </div>
@@ -133,8 +133,8 @@
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$san->type}}</h4>
-                      <span class="texttrans">{{$san->type}}</span>
+                      <h4 class="d-block h5 Titretrans">{{$san->title_fr}}</h4>
+                      <span class="texttrans">{{Str::limit($san->description_fr,75)}}</span>
                     </div>
                     <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                 </div>
@@ -169,8 +169,8 @@
                       </div>
                   </div>
                   <div class="p-4">
-                    <h4 class="d-block h5 Titretrans">{{$spo->type}}</h4>
-                    <span class="texttrans">{{$spo->type}}</span>
+                    <h4 class="d-block h5 Titretrans">{{$spo->title_fr}}</h4>
+                    <span class="texttrans">{{Str::limit($spo->description_fr,75)}}</span>
                   </div>
                   <a href="{{route('voirsport', ['id'=>$spo->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
               </div>
@@ -209,8 +209,8 @@
                            </div>
                        </div>
                        <div class="p-4">
-                         <h4 class="d-block h5 Titretrans">{{$cul->type}}</h4>
-                         <span class="texttrans">{{$cul->description_fr}}</span>
+                         <h4 class="d-block h5 Titretrans">{{$cul->title_fr}}</h4>
+                         <span class="texttrans">{{Str::limit($cul->description_fr,75)}}</span>
                        </div>
                        <a href="{{route('voirculture', ['id'=>$cul->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                    </div>
@@ -249,10 +249,10 @@
                         </div>
                     </div>
                     <div class="p-4">
-                      <h4 class="d-block h5 Titretrans">{{$eco->type}}</h4>
-                      <span class="texttrans">{{$eco->description_fr}}</span>
+                      <h4 class="d-block h5 Titretrans">{{$eco->title_fr}}</h4>
+                      <span class="texttrans">{{Str::limit($eco->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('coireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
                 </div>
              @endforeach
 
