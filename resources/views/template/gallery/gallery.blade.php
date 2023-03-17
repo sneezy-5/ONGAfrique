@@ -89,7 +89,7 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">{{$soc->typr}}</a>
+                <a href="#">{{$soc->type}}</a>
               </h3>
               <p class="project-cat">{{$soc->title_fr}}</p>
               </div>
@@ -113,7 +113,7 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">{{$san->type}}</a>
+                <a href="#">{{$san->type}}</a>
               </h3>
               <p class="project-cat">{{$san->title_fr}}</p>
               </div>
@@ -137,7 +137,7 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">{{$spo->type}}</a>
+                <a href="#">{{$spo->type}}</a>
               </h3>
               <p class="project-cat">{{$spo->title_fr}}</p>
               </div>
@@ -161,7 +161,7 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">{{$eco->type}}</a>
+                <a href="#">{{$eco->type}}</a>
               </h3>
               <p class="project-cat">{{$eco->title_fr}}</p>
               </div>
@@ -185,7 +185,7 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">{{$cul->type}}s</a>
+                <a href="#">{{$cul->type}}</a>
               </h3>
               <p class="project-cat">{{$cul->title_fr}}</p>
               </div>

@@ -89,55 +89,77 @@
           <div class="col-lg-6 col-12 p-0 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">  
               <section id="myCarousel" class="carousel slide carousel-fade h-100 pointer-event" data-bs-ride="carousel">
                   <div class="carousel-inner h-100">
+                      @foreach ($accuEdu as $acc)
                       <div class="carousel-item h-100">
-                          <img src="{{asset('styles/img/education/educ (13).jpeg')}}" class="img-fluid team-image h-100" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image h-100" alt="">
 
                           <div class="team-thumb bg-warning" style="text-align:start;">
-                              <h3 class="text-white mb-0">Education</h3>
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
                               <a href="{{route('nosmissions.educations')}}" class="text-light mb-0">Voir Plus</a>
                           </div>
                       </div>
+                      @endforeach
 
+                      @foreach ($accuSan as $acc)
                       <div class="carousel-item h-100">
-                          <img src="{{asset('styles/img/sante/san (7).jpeg')}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-primary" style="text-align:start;">
-                              <h3 class="text-white mb-0">Santé</h3>
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
                               <a href="{{route('nosmissions.santes')}}" class="text-light mb-0">Voir Plus</a>
                           </div>
                       </div>
+                      @endforeach
 
+                      @foreach ($accuSoc as $acc)
                       <div class="carousel-item h-100">
-                          <img src="{{asset('styles/img/social/socia (2).jpeg')}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-success" style="text-align:start;">
-                              <h3 class="text-white mb-0">Social</h3>
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
                               <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">Voir Plus</a>
                           </div>
                       </div>
+                      @endforeach
 
-                      <div class="carousel-item h-100">
-                          <img src="{{asset('styles/img/sport/spor (8).jpeg')}}" class="img-fluid team-image" alt="">
+                     @foreach ($accuSpo as $acc)
+                     <div class="carousel-item h-100">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-info" style="text-align:start;">
-                              <h3 class="text-white mb-0">Sport</h3>
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
                               <a href="{{route('nosmissions.sports')}}" class="text-light mb-0">Voir Plus</a>
                           </div>
                       </div>
+                     @endforeach
 
+                      @foreach ($accuCul as $acc)
                       <div class="carousel-item h-100 active">
-                          <img src="{{asset('styles/img/imgs/visite (8).jpeg')}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-danger" style="text-align:start;">
-                              <h3 class="text-white mb-0">Social</h3>
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
                               <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">Voir Plus</a>
                           </div>
                       </div>
+                      @endforeach
+
+                      @foreach ($accuEco as $acc)
+                      <div class="carousel-item h-100 active">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+
+                          <div class="team-thumb bg-danger" style="text-align:start;">
+                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+
+                              <a href="{{route('nosmissions.economies')}}" class="text-light mb-0">Voir Plus</a>
+                          </div>
+                      </div>
+                      @endforeach
                   </div>
 
             <div class="col-md m-3 bg-danger">
@@ -271,9 +293,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="">{{$edu->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$edu->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -282,7 +304,7 @@
          @endforeach
 
          @foreach ($sociale as $soc )
-         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;social&quot;]">
+         <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sociale&quot;]">
             <div class="project-img-container">
             <a class="gallery-popup" href=" {{asset('storage/image/'.$soc->image)}}" aria-label="project-img">
               <img class="img-fluid" src="{{asset('storage/image/'.$soc->image)}}" alt="project-img">
@@ -295,9 +317,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="#">{{$soc->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$soc->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -319,9 +341,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="#">{{$san->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$san->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -343,9 +365,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="#">{{$spo->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$spo->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -367,9 +389,9 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="#">{{$eco->type}}</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$eco->title_fr}}</p>
               </div>
             </div>
             </div>
@@ -391,15 +413,16 @@
             <div class="project-item-info">
               <div class="project-item-info-content">
               <h3 class="project-item-title">
-                <a href="gallery.html">Don de matériels</a>
+                <a href="#">{{$cul->type}}s</a>
               </h3>
-              <p class="project-cat">à Madame la sous-préfet</p>
+              <p class="project-cat">{{$cul->title_fr}}</p>
               </div>
             </div>
             </div>
           </div><!-- shuffle item 1 end -->
              
-         @endforeach<!-- shuffle item 6 end -->
+         @endforeach
+         <!-- shuffle item 6 end -->
           </div><!-- shuffle end -->
         </div>
       
