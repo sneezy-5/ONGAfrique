@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactezNousController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DonController;
 use App\Http\Controllers\Admin\HomeController;
@@ -50,7 +51,8 @@ Route::middleware(['auth','admin','visitor'])->group(function(){
     Route::get('/admin/member/create_member',[MemberController::class, 'create'])->name('members.create');
     Route::get('/admin/member/show_member/{member}/show_member',[MemberController::class, 'show'])->name('members.show');
     Route::resource('admin/newletter',NewsletterController::class);
-     Route::get('/admin/newletter_download',[NewsletterController::class, 'export'])->name('newletter.export');
+    Route::get('/admin/newletter_download',[NewsletterController::class, 'export'])->name('newletter.export');
+    Route::get('/admin/contacez-nous',[ContactezNousController::class, 'index'])->name('contactez-nous.index');
     });
 
 

@@ -334,6 +334,14 @@
               <span class="menu-title">New letter</span>
             </a>
           </li>
+
+          <li class="nav-item nav-category">Contactez-nous</li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('contactez-nous.index')}}">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Contactez-nous</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- partial -->
