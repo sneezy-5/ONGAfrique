@@ -16,19 +16,20 @@ class Don extends Model
         'amount' ,
         'phone',
         'honneur',
-        'honnoree'
+        'honnoree',
+        'user_id'
     ];
 
-    public static function boot ()
-    {
-        parent::boot();
+    // public static function boot ()
+    // {
+    //     parent::boot();
 
-        self::creating(function($don)
-    {
-       $don->user()->associate(auth()->user()->dons->amount);
-       $don->dons()->associate(request()->amount);
-    });
-    }
+    //     self::creating(function($don)
+    // {
+    //    $don->user()->associate(auth()->user()->dons->amount);
+    //    $don->dons()->associate(request()->amount);
+    // });
+    // }
 
     public function user()
     {

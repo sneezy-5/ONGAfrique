@@ -59,8 +59,9 @@ class DonateController extends Controller
         $data = $request->except('_token');
         if(auth()->check()){
             $data['user_id']=auth()->user()->id;
+            
         }
-
+      
         $don =Don::create($data);
         $apn =  env('APP_URL')."/ipn";
         $succes =  env('APP_URL')."succesDon";
