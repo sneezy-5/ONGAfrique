@@ -59,13 +59,12 @@ class DonateController extends Controller
         $data = $request->except('_token');
         if(auth()->check()){
             $data['user_id']=auth()->user()->id;
-            
         }
-      
-        $don =Don::create($data);
+
+       
         $apn =  env('APP_URL')."/ipn";
-        $succes =  env('APP_URL')."succesDon";
-        $cancel =  env('APP_URL')."canceldon/".$don->id;
+        $succes =  env('APP_URL')."succesDon/".http_build_query($data);
+        $cancel =  env('APP_URL')."canceldon";
         $postFields = array(
             "item_name"    =>$request['last_name'],
         "item_price"   => $request['amount'],
@@ -142,13 +141,14 @@ class DonateController extends Controller
     }
 
 
-    public function deleteDonCancel($id){
-       $don =Don::find($id)->delete();
-       // dd($don);
+    public function deleteDonCancel(){
+     
         return redirect()->route('/')->with('message', 'Votre payement a échoué');
     }
 
-    public function succesDon(){
+    public function succesDon($id){
+        parse_str($id, $params);
+        $don =Don::create($params);
         return redirect()->route('/')->with('success', 'Votre don a été effectué avec succès');
     }
 

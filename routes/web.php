@@ -118,17 +118,17 @@ Route::resource('/contact', ContactController::class)->only([
 ]);
 
 // don cancel
-Route::get('/canceldon/{id}',[ DonateController::class,'deleteDonCancel']);
+Route::get('/canceldon',[ DonateController::class,'deleteDonCancel']);
 
 // don succes
-Route::get('/succesDon', [DonateController::class, 'succesDon']);
+Route::get('/succesDon/{id}', [DonateController::class, 'succesDon']);
 
 
 // member cancel
-Route::get('/cancelmember/{id}',[ MemberController::class,'cancelMember']);
+Route::get('/cancelmember',[ MemberController::class,'cancelMember']);
 
 // member succes
-Route::get('/succesMember', [MemberController::class, 'succesMember']);
+Route::get('/succesMember/{id}', [MemberController::class, 'succesMember']);
 });
 
 

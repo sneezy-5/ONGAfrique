@@ -51,6 +51,7 @@ class MemberController extends Controller
             $fileNameToStore = $filename. ''. time().'.'.$extension;
             // Upload Image $path = 
             $request->file('picture')->storeAs('public/image', $fileNameToStore);
+            $data['picture']=$fileNameToStore;
             }
        
         // Else add a dummy image
@@ -58,24 +59,24 @@ class MemberController extends Controller
             $fileNameToStore = 'noimage.jpg';
             $path = 'noimage.jpg';
             }
-          $member=  Member::create([
+        //   $member=  Member::create([
 
-                'nom'=>$request->nom,
-                'picture'=>$fileNameToStore,
-                'email' => $request->email,
-                'date_naissance'=>$request->date_naissance,
-                'fonction'=>$request->fonction,
-                'phone'=>$request->phone,
-                'region'=>$request->region,
-                'section'=>$request->section,
-                // 'civilite'=>$request->civilite,
-                'paye'=>true,
+        //         'nom'=>$request->nom,
+        //         'picture'=>$fileNameToStore,
+        //         'email' => $request->email,
+        //         'date_naissance'=>$request->date_naissance,
+        //         'fonction'=>$request->fonction,
+        //         'phone'=>$request->phone,
+        //         'region'=>$request->region,
+        //         'section'=>$request->section,
+        //         // 'civilite'=>$request->civilite,
+        //         'paye'=>true,
     
-            ]);
-
+        //     ]);
+            
             $apn =  env('APP_URL')."/ipn";
-            $succes =  env('APP_URL')."succesMember";
-            $cancel =  env('APP_URL')."cancelmember/".$member->id;
+            $succes =  env('APP_URL')."succesMember/".http_build_query($data);
+            $cancel =  env('APP_URL')."cancelmember";
             $postFields = array(
                 "item_name"    =>$request['nom'],
             "item_price"   => 2000,
@@ -149,13 +150,15 @@ class MemberController extends Controller
     }
 
 
-    public function cancelMember($id){
-        Member::find($id)->delete();
-        // dd($don);
+    public function cancelMember(){
+
         return redirect()->route('/')->with('message', 'Votre payement a échoué');
      }
  
-     public function succesMember(){
+     public function succesMember($id){
+        parse_str($id, $params);
+
+        Member::create($params);
         return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
 
      }
