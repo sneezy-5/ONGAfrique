@@ -30,7 +30,7 @@
     {{__("description5")}}
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i>C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE,  M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo.  Championnat qui s'étend sur 3 mois.</li>
+              <li><i class="bi bi-check-circle"></i>{{__("option5")}}</li>
 
             </ul>
           </div>

@@ -34,8 +34,8 @@
     {{__("description6")}}
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. </li>
-      <li><i class="bi bi-check-circle"></i>Créer des projets au nom de L'ONG Sourire D'Afrique.
+              <li><i class="bi bi-check-circle"></i>{{__("option6")}} </li>
+      <li><i class="bi bi-check-circle"></i>{{__("option7")}}
       </li>
       </ul>
           </div>

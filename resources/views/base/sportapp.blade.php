@@ -31,6 +31,7 @@
   <!-- Colorbox -->
   <link rel="stylesheet" href="{{asset('styles/plugins/colorbox/colorbox.css')}}">
   <!-- Template styles-->
+  <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
   <link rel="stylesheet" href="{{asset('styles/css/gallery.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   
@@ -118,7 +119,7 @@
 
   </div>
 
-
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>
  @include('base.jsapp')
 </body>

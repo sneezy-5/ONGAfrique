@@ -30,7 +30,7 @@
  {{__("description4")}}
       </p>
       <ul>
-      <li><i class="bi bi-check-circle"></i>Le Président fondateur M.Richard Gabdibé est le    Parrain de ce grand Festival qui réunit les fils et filles du département de Taabo autour d'un idéal commun.  Celui du vivre ensemble et de la cohésion sociale.</li>
+      <li><i class="bi bi-check-circle"></i>{{__("option4")}}</li>
 
       </ul>
     </div>

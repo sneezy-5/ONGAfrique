@@ -17,7 +17,7 @@
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+   <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/actualites.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
      <!--neww pour devise-->
@@ -118,8 +118,9 @@
     </button>
 
   </div>
-
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>
+  
  @include('base.jsapp')
 
 </body>

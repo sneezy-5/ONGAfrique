@@ -88,7 +88,7 @@
         <div class="row m-0 p-0">
             <div class="col-lg">
               <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
-                <h2 class="section-title text-light">{{__("NosActualite")}}</h2>
+                <h2 class="section-title text-light">{{__("nos")}}</h2>
                 <h3 class="section-sub-title text-light">Youtube</h3>
               </div>
 

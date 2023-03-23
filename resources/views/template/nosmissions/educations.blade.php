@@ -30,12 +30,7 @@
    {{__("description3")}}
 
             </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i>Les filles sont sous-représentées dans l'éducation, ne représentant que 30% des enfants scolarisés dans le monde. Environ 900 millions de personnes analphabètes sont recensées, dont les deux tiers sont des femmes.</li>
-              <li> Au Cambodge, 30% des femmes sont illettrées, contre 15% des hommes. Dans les zones rurales, plus de 65% des femmes travaillent sans être rémunérées pour leurs activités agricoles, tandis que 40% d'entre elles rencontrent des difficultés pour accéder aux soins médicaux.</li>
-              <li>Les enfants dont les mères sont capables de lire ou d'écrire ont 50% de chances supplémentaires de survivre après l'âge de 5 ans.</li>
-       
-            </ul>
+            
           </div>
         </div>
 

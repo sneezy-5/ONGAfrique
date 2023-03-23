@@ -74,7 +74,7 @@
 
           <div class="col-lg-3 col-12 bg-dark" data-aos="fade-up" data-aos-duration="2000">  
               <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
-                  <h3 class="text-white mb-3">Don de matériels offert à Madame la sous-préfet de Taabo </h3>
+                  <h3 class="text-white mb-3">{{__("offre")}}</h3>
 
                   <p class="text-secondary-white-color">Matériels Informatiques</p>
 

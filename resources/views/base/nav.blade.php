@@ -298,7 +298,7 @@
       <div class="input-group mb-3">
           
           @if($user = Auth::user())
-           <input type="text" name="last_name" value="{{$user->name}}" class="form-control casenom" placeholder="{{__("nomP")}}">
+           <input readonly type="text" name="last_name" value="{{$user->name}}" class="form-control casenom" placeholder="{{__("nomP")}}">
             @else
            <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
  
@@ -313,7 +313,7 @@
          </div>
          
 
-        <nav>
+         <nav>
           <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
             
             <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
@@ -326,8 +326,13 @@
 
       <div class="input-group mb-2">
         <span class="input-group-text devise">XOF</span>
-        <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
-        
+@if ($user= Auth::user())
+<input  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+
+@else
+<input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+
+@endif        
         <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
          <span class="alertprix"> </span> <span class="devisealerte">XOF</span>
         </div>
@@ -361,7 +366,7 @@
       </p>
       <div class="collapse" id="collapseExample">
         <div class="form-group">
-         <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+         <input type="text" class="form-control specialchamp" placeholder="{{__("honneur")}}">
         </div>
       </div>
   

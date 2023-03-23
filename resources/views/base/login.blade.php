@@ -30,6 +30,7 @@
   <!-- Colorbox -->
   <link rel="stylesheet" href="{{asset('styles/plugins/colorbox/colorbox.css')}}">
   <!-- Template styles-->
+  <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
   <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   
@@ -122,14 +123,10 @@
 
   <!-- <script src="{{asset('styles/jss/Accueil.js')}}"></script>-->
    <script src="{{asset('styles/jss/connexion.js')}}"></script> 
-  <!-- <script src="{{asset('styles/jss/About.js')}}"></script> -->
-  <!-- <script src="{{asset('styles/jss/description.js')}}"></script>
-  <script src="{{asset('styles/jss/social.js')}}"></script>
-  <script src="{{asset('styles/jss/activites.js')}}"></script>
-  <script src="{{asset('styles/jss/actualites.js')}}"></script> -->
+  
   <script src="{{asset('styles/jss/partieinscription.js')}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+  @include('base.jsapp')
 
 </body>
 

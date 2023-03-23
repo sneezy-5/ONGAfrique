@@ -18,7 +18,7 @@
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+   <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
 
 <!-- Autres -->
@@ -118,7 +118,7 @@
   </div>
 
  
-
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/gallery.js')}}"></script>
  @include('base.jsapp')
 

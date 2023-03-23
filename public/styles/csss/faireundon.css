@@ -1,0 +1,46 @@
+/* btn devis et montant*/
+
+.montant{
+    text-align:center;
+    margin-top:2px;
+  }
+  
+  .montant .btnprix,.btnprdevise{
+    width: 80px!important;
+    font-size:14px;
+    box-shadow:1px 1px 5px 0.1px #33333370;
+    border:none
+  }
+  
+  
+  .btnprix.btnprdevise:hover{
+    background:#99cfff
+  }
+  
+  .btnprdevise:hover{
+    background:#99cfff
+  }
+  .montant .active{
+    background-color: #2196F3;
+    color:white;
+    box-shadow:inset 0px 0px 10px 1px #0201014d;
+    border:2px solid #dbdbdb
+  }
+  
+  .point {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .point li {
+    padding-bottom: 10px;
+  }
+  
+  .point i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #cda45e;
+  
+  }
+  
+  /* fin btn devis et montant*/

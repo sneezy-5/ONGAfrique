@@ -29,18 +29,10 @@
         </h1>
     </div>
     <p class="fst-italic">
-    Le social est un enjeu clé en Afrique, où les défis incluent la pauvreté, l'injustice sociale, la violence, la discrimination et l'exclusion sociale. Le développement social durable est essentiel pour améliorer le bien-être des populations africaines, et l'éducation peut jouer un rôle clé dans la promotion d'une société plus juste et plus inclusive.
-
-L'éducation peut aider à renforcer la conscience sociale et à sensibiliser les populations aux défis sociaux. Les programmes éducatifs peuvent aider à promouvoir des valeurs telles que la tolérance, la solidarité, la diversité et le respect mutuel. Les individus éduqués sont également plus susceptibles de s'engager dans des activités sociales et de prendre des mesures pour résoudre les problèmes sociaux dans leur communauté.
-
-L'éducation peut également aider à réduire les inégalités sociales en fournissant des opportunités égales d'apprentissage et de développement pour tous les individus, quels que soient leur origine, leur sexe ou leur situation socio-économique. Les programmes éducatifs peuvent aider à briser le cycle de la pauvreté en fournissant aux enfants issus de milieux défavorisés une éducation de qualité qui leur permettra de réussir sur le marché du travail et de contribuer à la société.
-
-En outre, l'éducation peut jouer un rôle important dans la promotion de la santé mentale et du bien-être social. Les programmes éducatifs peuvent aider à renforcer les compétences sociales, les compétences en résolution de conflits et les compétences en gestion du stress, ce qui peut aider les individus à mieux faire face aux défis sociaux et à maintenir des relations positives avec les autres.
-
-En conclusion, le développement social est un enjeu majeur en Afrique, et l'éducation peut jouer un rôle clé dans la promotion d'une société plus juste et plus inclusive. L'éducation peut aider à renforcer la conscience sociale, à réduire les inégalités sociales et à promouvoir la santé mentale et le bien-être social.
+    {{__("description1")}}
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i>Pour nous, l'hygiène sanitaire doit être une priorité commune.</li>
+              <li><i class="bi bi-check-circle"></i>{{__("option2")}}</li>
 
             </ul>
           </div>

@@ -18,7 +18,7 @@
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <!--neww pour devise-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/education.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
 
@@ -119,10 +119,7 @@
   </div>
 
 
-  <!-- <script src="{{asset('styles/jss/Accueil.js')}}"></script>
-  <script src="{{asset('styles/jss/connexion.js')}}"></script>
-  <script src="{{asset('styles/jss/About.js')}}"></script>
-  <script src="{{asset('styles/jss/description.js')}}"></script> -->
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>
   @include('base.jsapp')
 </body>

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Bootstrapp only -->
     <link rel="stylesheet" href="{{asset('/styles/fontawesome-free-5.14.0-web/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/culture.css')}}">
     <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
      <!--cinepay-->
@@ -102,12 +103,7 @@
   </div>
 
 
-  <!-- <script src="{{asset('styles/jss/Accueil.js')}}"></script>
-  <script src="{{asset('styles/jss/connexion.js')}}"></script>
-  <script src="{{asset('styles/jss/About.js')}}"></script>
-   <script src="{{asset('styles/jss/activites.js')}}"></script>
-  <script src="{{asset('styles/jss/description.js')}}"></script> -->
-  
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>
   
   <script src="{{asset('styles/jss/partieinscription.js')}}"></script>

@@ -16,7 +16,8 @@
    <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+   
+   <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/culture.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
      <!--neww pour devise-->
@@ -118,12 +119,7 @@
   </div>
 
 
-  <!-- <script src="{{asset('styles/jss/Accueil.js')}}"></script>
-  <script src="{{asset('styles/jss/connexion.js')}}"></script>
-  <script src="{{asset('styles/jss/About.js')}}"></script>
-   <script src="{{asset('styles/jss/activites.js')}}"></script>
-  <script src="{{asset('styles/jss/description.js')}}"></script> -->
-  
+  <script src="{{asset('styles/jss/faireundon.js')}}"></script>
   <script src="{{asset('styles/jss/social.js')}}"></script>
 @include('base.jsapp')
 

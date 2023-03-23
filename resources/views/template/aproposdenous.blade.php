@@ -26,6 +26,10 @@
     <p class="fst-italic">
     {{__("textQuiSn")}}
   </p>
+  <ul>
+      <li><i class="bi bi-check-circle"></i>{{__("option1")}}</li>
+
+      </ul>
   
     </div>
     </div>
