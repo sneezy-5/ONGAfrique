@@ -21,7 +21,7 @@
     "Envoyer":"Envoyer",
     "Don":"Don",
     "Texte1A": "L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Taabo-Village à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... L'ONG sourire d'Afrique est aussi en charge d' accompagner les jeunes et les femmes dans leurs projets entrepreneuriales Nous intervenons dans le social, la santé, l'éducation, les activités socio-économiques, culturelles et sportives",
-    "Voir":"Voir",
+    "Voir":"Voir plus",
     "Texte2A": "L'AIDE HUMANITAIRE DE L'ONG SOURIRE D'AFRIQUE POUR LES ENFANTS",
     "Texte3A":"LISEZ NOS HISTOIRES »",
     "ActSo":"Action sociale",
@@ -29,15 +29,32 @@
     "NActCul":"Nos activités culturelles",
     "Socioeconomique":"Socio-economique",
     "NosActiviteSportives":"Nos Activité Sportives",
-    "PlanSanitaire":"Plan Sanitaire" ,
+    "PlanSanitaire":"Au plan sanitaire" ,
+    "PlanSocial":"Au plan social" ,
+    "PlanEdu":"Au plan educatif" ,
+    "PlanEco":"Au plan socio-economique" ,
+    "PlanCul":"Au plan culturel" ,
+    "PlanSport":" Au plan sportif" ,
     "TextPlanS":"En prélude de la fête l'indépendance 2022 , l'ONG Sourire D'Afrique a méné une opération Coup de Balai à l'hôpital Général de TAABO en présence du Préfet , des adjoints aux maire , de la directrice de l'hôpital, des autorités Administrative",
     "Participez":"Participez avec nous",
     "TextNews":"recevez des informations sur nos Actualités et activités en remplissant la newsletter",
     "Abonnez":"Abonnez-vous à notre newsletter",
     "Notifi":"Et recevez des notifications sur nous",
-    
     "FuD":"Faites un don",
 
+    "contacts": "Contactez-nous",
+    "ong": "Ong Sourire d'afrique",
+    "visite": "Visitez nos acitivités sur nos pages sociales",
+    "invitation": "Nous vous invitons à suivre nos actualités sur Facebook et Youtube pour être informé(e) rapidement de toutes nos nouveautés, promotions et événements. Grâce à nos pages, vous ne manquerez aucune annonce importante et pourrez également échanger avec notre communauté et partager vos expériences. Rejoignez-nous dès maintenant pour ne rien manquer !",
+    "facebook": "Nos Actualités Facebook",
+    "toutpro": "Voir tous nos projets",
+    "youtube": "Nos Actualités Youtube",
+    "plus":"plus qu'une ONG",
+    "question": "Si vous avez des questions, veuillez nous contacter",
+    "message": "Message",
+
+
+    
     "titre1":"Nos actions sociales",
     "titre2":"Accompagnons les malades",
     "titre3":"Les enfants non scolarisés",
@@ -58,11 +75,9 @@
     "titreactivite":"Visitez nos activités",
     "titreevent":"Visitez nos actualités",
     "Paix":"Journée Mondiale de la Paix",
-    "description1":"Le Jeudi 03 novembre 2022  les membres de L’ONG SOURIRE D’AFRIQUE ont effectué une visite à la maison de correction et d’arrêt de TIASSALE pour des dons en vivre et non vivre (03 sacs de riz de 50 kg, 03 cartons de 60 savons (180), 02 sacs d’OMO (240 sachets) et des kits d’habits). Notre priorité, c'est d'apporter le sourire aux autres.car il y a plus de bonheur à donner qu'à recevoir.",
-    "description2":"En prélude de la fête l'indépendance 2022 , l'ONG Sourire D'Afrique a méné une opération Coup de Balai à l'hôpital Général de TAABO en présence du Préfet , des adjoints aux maire , de la directrice de l'hôpital, des autorités Administratives et une bonne masse de la population. En effet, nous avons lavé toutes les salles et nettoyé la cour et les alentours de l'hôpital. Et nous avons terminé au marché de la ville. Pour nous, l'hygiène sanitaire doit être une priorité commune.",
-    "description3":"Au plan éducatif Le 22 septembre 2022 l'ONG Sourire D'Afrique a apporté le sourire aux élèves démunis et orphelins du département de Taabo à travers la distribution de 450 kits scolaires du primaire au secondaire. Une manière pour l'ONG SOURIRE D'AFRIQUE de soulager la population rurale et d'accompagner le gouvernement dans sa vision d'une Côte d'Ivoire Solidaire",
-    "description4":"Dans sa vision de rallumer la joie et le bonheur dans les cœurs, L'ONG Sourire D'Afrique L'ONG Sourire D'Afrique accompagne le festival N’GOHA de Taabo organisé par l'alliance des jeunes leaders pour le Développement de Taabo ( AJLD). Le Président fondateur M.Richard Gabdibé est le Parrain de ce grand Festival qui réunit les fils et filles du département de Taabo autour d'un idéal commun. Celui du vivre ensemble et de la cohésion sociale.",
-    "description5":"Le sport , comme bon facteur de rassembleur, l'ONG Sourire D'Afrique s'engage à accompagner championnat et tournoi communautaire et scolaires là où besoin se fait sentir. C'est pourquoi, pour empêcher les congés scolaires anticipés pendant cette fin d'année, Le Président fondateur de l'ONG SOURIRE D'AFRIQUE, M.Richard Gabdibé a eu l'honneur de parrainer le championnat de Hand-ball des collèges et lycée de Taabo. Championnat qui s'étend sur 3 mois.",
+    "description1":"Le social est un enjeu clé en Afrique, où les défis incluent la pauvreté, l'injustice sociale, la violence, la discrimination et l'exclusion sociale. Le développement social durable est essentiel pour améliorer le bien-être des populations africaines, et l'éducation peut jouer un rôle clé dans la promotion d'une société plus juste et plus inclusive. L'éducation peut aider à renforcer la conscience sociale et à sensibiliser les populations aux défis sociaux. Les programmes éducatifs peuvent aider à promouvoir des valeurs telles que la tolérance, la solidarité, la diversité et le respect mutuel. Les individus éduqués sont également plus susceptibles de s'engager dans des activités sociales et de prendre des mesures pour résoudre les problèmes sociaux dans leur communauté. L'éducation peut également aider à réduire les inégalités sociales en fournissant des opportunités égales d'apprentissage et de développement pour tous les individus, quels que soient leur origine, leur sexe ou leur situation socio-économique. Les programmes éducatifs peuvent aider à briser le cycle de la pauvreté en fournissant aux enfants issus de milieux défavorisés une éducation de qualité qui leur permettra de réussir sur le marché du travail et de contribuer à la société. En outre, l'éducation peut jouer un rôle important dans la promotion de la santé mentale et du bien-être social. Les programmes éducatifs peuvent aider à renforcer les compétences sociales, les compétences en résolution de conflits et les compétences en gestion du stress, ce qui peut aider les individus à mieux faire face aux défis sociaux et à maintenir des relations positives avec les autres. En conclusion, le développement social est un enjeu majeur en Afrique, et l'éducation peut jouer un rôle clé dans la promotion d'une société plus juste et plus inclusive. L'éducation peut aider à renforcer la conscience sociale, à réduire les inégalités sociales et à promouvoir la santé mentale et le bien-être social.",
+    "description4":"La culture est un élément essentiel de l'identité et de la diversité en Afrique. Elle peut prendre différentes formes, telles que la musique, la danse, la littérature, les arts visuels, la cuisine et bien d'autres encore. La culture est également un moteur important de l'économie, offrant des emplois et des opportunités pour les artistes et les créateurs.Cependant, de nombreux obstacles peuvent limiter l'accès des populations africaines à la culture, notamment le manque d'éducation artistique, le manque d'infrastructures culturelles, les coûts élevés des événements culturels et la stigmatisation liée à certaines formes d'expression artistique.L'éducation peut jouer un rôle important dans la promotion de la culture en Afrique. Une meilleure éducation peut aider à sensibiliser les populations aux avantages de la culture pour l'identité, la créativité et le bien-être. Les programmes éducatifs peuvent également aider à former des artistes et des créateurs qualifiés pour soutenir la création artistique locale.En outre, l'éducation peut aider à améliorer l'accès aux infrastructures culturelles, telles que les salles de spectacle, les bibliothèques et les musées. Les programmes éducatifs peuvent également aider à surmonter les barrières linguistiques et culturelles en favorisant la compréhension mutuelle entre les différentes communautés.Enfin, l'éducation peut également aider à promouvoir la diversité culturelle en Afrique en célébrant les différentes formes d'expression artistique et en encourageant l'échange et la collaboration entre les artistes et les communautés.En conclusion, la culture est un élément important de l'identité et de la diversité en Afrique. L'éducation peut jouer un rôle crucial dans la promotion de la culture, en sensibilisant les populations aux avantages de la culture, en formant des artistes qualifiés et en améliorant l'accès aux infrastructures culturelles.",
+    "description5":"Le sport est un élément essentiel de notre bien-être physique et mental. Il peut aider à améliorer notre santé cardiaque, notre endurance, notre force musculaire, notre souplesse et notre coordination. En outre, le sport peut également contribuer à réduire le stress, à améliorer notre humeur et à renforcer notre confiance en nous-mêmes. Malgré les nombreux avantages du sport, de nombreux obstacles peuvent limiter l'accès des populations africaines à une pratique sportive régulière. Les coûts élevés des équipements et des installations sportives, le manque d'infrastructures adéquates, les barrières linguistiques et culturelles, ainsi que les préjugés et la stigmatisation liés au genre peuvent empêcher les populations de s'engager dans une pratique sportive. L'éducation peut jouer un rôle important dans la promotion du sport en Afrique. Une meilleure éducation peut aider à sensibiliser les populations aux avantages du sport pour la santé et le bien-être, et à encourager une pratique sportive régulière. Les programmes éducatifs peuvent également aider à surmonter les barrières linguistiques et culturelles en facilitant la compréhension mutuelle entre les différentes communautés. En outre, l'éducation peut aider à former des entraîneurs et des professionnels de la santé qualifiés pour soutenir les populations dans leur pratique sportive. Ces professionnels peuvent aider à fournir des conseils sur la nutrition, la récupération et la prévention des blessures, ainsi que des soins de santé de qualité pour les athlètes en cas de blessure. En conclusion, le sport est un élément important de la santé et du bien-être en Afrique. L'éducation peut jouer un rôle crucial dans la promotion du sport en Afrique, en sensibilisant les populations aux avantages du sport, en surmontant les barrières linguistiques et culturelles et en formant des professionnels qualifiés pour soutenir les athlètes et les populations en général.",
     "description6":"À le projet Ya Mangé, dès l'année 2023 , L'ONG Sourire D'Afrique envisage créer de l'emploi pour les jeunes filles déscolarisées. Nous voulons financer de micro projets générateur de revenus. Accorder des prêts aux associations et groupements biens structurés. Créer des projets au nom de L'ONG Sourire D'Afrique.",
     "nosstories":"Nos story",
 
@@ -106,6 +121,18 @@
     "fmai":"faites un don maintenant !",
     "nmbdon":"nombre de dons",
     "smmdon":"sommes totale des dons",
-    "chargemt":"chargement"
+    "chargemt":"chargement",
+
+
+
+    "home":"L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... Richard GABDIBE",
+    "hom_titre": "Visitez nos acitivités sur nos pages sociales",
+    "home_cont": "Nous vous invitons à suivre nos actualités sur Facebook et Youtube pour être informé(e) rapidement de toutes nos nouveautés, promotions et événements. Grâce à nos pages, vous ne manquerez aucune annonce importante et pourrez également échanger avec notre communauté et partager vos expériences. Rejoignez-nous dès maintenant pour ne rien manquer !",
+    "projet": "Projet Recents",
+    "gallery": "Notre Gallery",
+    "cotedivoire": "Visitez nos missions à travers 'la Côte d'Ivoire'",
+    
+    "descriptionAct": "L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés...",
+    "descriptionActua": "L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés..."
     
 }

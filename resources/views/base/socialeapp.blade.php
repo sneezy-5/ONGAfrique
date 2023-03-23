@@ -25,7 +25,8 @@
     <link href="{{asset('styles/css/templatemo-nomad-force.css')}}" rel="stylesheet">
     <link href="{{asset('styles/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('styles/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
-  
+   <!--neww pour devise-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="{{asset('styles/plugins/fontawesome/css/all.min.css')}}">
   <!-- Colorbox -->
   <link rel="stylesheet" href="{{asset('styles/plugins/colorbox/colorbox.css')}}">

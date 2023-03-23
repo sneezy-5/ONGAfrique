@@ -15,8 +15,8 @@
       <div  style="padding-top:100px;padding-bottom:100px;">
         <div class="row text-center" data-aos="fade-down" data-aos-duration="2000">
         <div class="col-lg-12">
-          <h2 class="section-title">Notre Gallery</h2>
-          <h3 class="section-sub-title">Nos Projets</h3>
+          <h2 class="section-title">{{__("gallery")}}</h2>
+          <h3 class="section-sub-title">{{__("projet")}}</h3>
         </div>
         </div>
         <!--/ Title row end -->
@@ -25,25 +25,25 @@
         <div class="col-12">
           <div class="shuffle-btn-group">
           <label class="active" for="all">
-            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Voir
+            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">All
           </label>
           <label for="education">
-            <input type="radio" name="shuffle-filter" id="education" value="education">Education
+            <input type="radio" name="shuffle-filter" id="education" value="education">{{__("Education")}}
           </label>
           <label for="social">
-            <input type="radio" name="shuffle-filter" id="social" value="social">Social
+            <input type="radio" name="shuffle-filter" id="social" value="social">{{__("Social")}}
           </label>
           <label for="sante">
-            <input type="radio" name="shuffle-filter" id="sante" value="sante">Santé
+            <input type="radio" name="shuffle-filter" id="sante" value="sante">{{__("Sante")}}
           </label>
           <label for="sport">
-            <input type="radio" name="shuffle-filter" id="sport" value="sport">Sport
+            <input type="radio" name="shuffle-filter" id="sport" value="sport">{{__("Sport")}}
           </label>
           <label for="socioeco">
-            <input type="radio" name="shuffle-filter" id="socioeco" value="socioeco">Soiaux économique
+            <input type="radio" name="shuffle-filter" id="socioeco" value="socioeco">{{__("Socio-économique")}}
           </label>
           <label for="culturel">
-            <input type="radio" name="shuffle-filter" id="culturel" value="culturel">Culturel
+            <input type="radio" name="shuffle-filter" id="culturel" value="culturel">{{__("Culture")}}
           </label>
           </div><!-- project filter end -->
       

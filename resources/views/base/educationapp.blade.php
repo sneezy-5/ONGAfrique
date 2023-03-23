@@ -16,7 +16,8 @@
    <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
 
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+     <!--neww pour devise-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="{{asset('styles/csss/education.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">

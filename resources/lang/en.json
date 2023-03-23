@@ -1,6 +1,6 @@
 {
     "Accueil": "Home",
-    "Qsn": "Who we are",
+    "Qsn": "Who we are ?",
     "Nosmissions":"Our missions",
     "Social":"Social",
     "Sante":"Health",
@@ -29,12 +29,31 @@
     "NActCul":"Our cultural activities",
     "Socioeconomique":"Socio-economic",
     "NosActiviteSportives":"Our Sports Activities",
-    "PlanSanitaire":"Health Plan",
+   
+    "PlanSanitaire":"At the health level" ,
+    "PlanSocial":"At the social level" ,
+    "PlanEdu":"At the educational level" ,
+    "PlanEco":"At the socio-economic level" ,
+    "PlanCul":"At the cultural level" ,
+    "PlanSport":" In terms of sports" ,
     "TextPlanS":"As a prelude to the Independence Day 2022, the NGO Sourire D'Afrique has conducted an operation Sweeping up at the General Hospital of TAABO in the presence of the Prefect, the deputy mayors, the director of the hospital, the administrative authorities",
     "Participez":"Participate with us",
     "TextNews":"receive information about our news and activities by filling in the newsletter",
     "Abonnez":"Subscribe to our newsletter",
     "Notifi":"And receive notifications about us" ,
+
+
+    "contacts": "Contact us",
+    "ong": "Ong Sourire d'afrique",
+    "visite": "Visit our activities on our social pages",
+    "invitation": "We invite you to follow our news on Facebook and Youtube to be quickly informed of all our news, promotions and events. Thanks to our pages, you won't miss any important announcement and you can also exchange with our community and share your experiences. Join us now so you don't miss anything!",
+    "facebook": "Our Facebook News",
+    "toutpro": "See all our projects",
+    "youtube": "Our Youtube News",
+    "plus":"more than an NGO",
+    "question": "If you have any questions, please contact us",
+    "message": "Message",
+
 
     "FuD":"Make a donation",
 
@@ -56,11 +75,10 @@
     "titreactivite":"Visit our activities",
     "titreevent":"Visit our news",
     "Paix":"World Peace Day",
-    "description1": "On Thursday, November 03, 2022 members of the NGO SOURIRE D'AFRIQUE made a visit to the correctional facility and arrest of TIASSALE for donations in living and not living (03 bags of rice of 50 kg, 03 boxes of 60 soaps (180), 02 bags of OMO (240 bags) and clothing kits). Our priority is to bring a smile to others, because there is more happiness in giving than in receiving",
-    "description2": "As a prelude to Independence Day 2022, the NGO Sourire D'Afrique carried out a Clean-up operation at the TAABO General Hospital in the presence of the Prefect, the deputy mayors, the director of the hospital, the administrative authorities and a good mass of the population. Indeed, we washed all the rooms and cleaned the yard and the surroundings of the hospital. And we finished at the city market. For us, sanitary hygiene must be a common priority",
-    "description3": "On September 22, 2022 the NGO Sourire D'Afrique brought a smile to the poor and orphaned students of the department of Taabo through the distribution of 450 school kits from primary to secondary. A way for the NGO SOURIRE D'AFRIQUE to relieve the rural population and to accompany the government in its vision of a united Ivory Coast",
-    "description4": "In its vision to rekindle joy and happiness in the hearts, the NGO Sourire D'Afrique The NGO Sourire D'Afrique accompanies the festival N'GOHA of Taabo organized by the alliance of young leaders for the Development of Taabo ( AJLD). The President and Founder, Mr. Richard Gabdibé, is the sponsor of this great festival which brings together the sons and daughters of the department of Taabo around a common ideal. That of living together and social cohesion",
-    "description5": "Sport, as a good unifying factor, the NGO Sourire D'Afrique is committed to accompanying championships and community and school tournaments where needed. That is why, in order to prevent early school vacations during this end of the year, the President and Founder of the NGO SOURIRE D'AFRIQUE, Mr. Richard Gabdibé had the honor to sponsor the Handball Championship of the middle and high schools of Taabo. Championship that extends over 3 months.",
+    "description1": "Social is a key issue in Africa, where challenges include poverty, social injustice, violence, discrimination, and social exclusion. Sustainable social development is essential to improving the well-being of African populations, and education can play a key role in promoting a more just and inclusive society. Education can help raise social consciousness and awareness of social challenges. Educational programs can help promote values such as tolerance, solidarity, diversity and mutual respect. Educated individuals are also more likely to engage in social activities and take action to solve social problems in their communities. Education can also help reduce social inequalities by providing equal opportunities for learning and development for all individuals, regardless of their background, gender, or socioeconomic status. Education programs can help break the cycle of poverty by providing children from disadvantaged backgrounds with a quality education that will enable them to succeed in the labor market and contribute to society. In addition, education can play an important role in promoting mental health and social well-being. Educational programs can help build social skills, conflict resolution skills and stress management skills, which can help individuals better cope with social challenges and maintain positive relationships with others. In conclusion, social development is a major issue in Africa, and education can play a key role in promoting a more just and inclusive society. Education can help strengthen social awareness, reduce social inequalities, and promote mental health and social well-being.",
+    "description3": " Girls' education is a priority in Africa and the rest of the world, as women are often considered burdens and discriminated against. However, progress in recent years has been uneven, particularly in rural and outlying urban areas, where results are unsatisfactory. There are many reasons for the under-enrollment of girls, including lack of resources, as public schooling is never completely free, and fees and uniforms can be an obstacle. In addition, when the school is located a considerable distance away and it may be dangerous for a girl to walk there, parents prefer to keep her at home rather than expose her to violence such as abduction and rape. As a result, an educated woman can play a crucial role in encouraging the education of her children and passing on her knowledge to her family.",
+    "description4": " Culture is an essential element of identity and diversity in Africa. It can take many forms, such as music, dance, literature, visual arts, cuisine, and many others. Culture is also an important driver of the economy, providing jobs and opportunities for artists and creators. However, many barriers can limit access to culture for African populations, including lack of arts education, lack of cultural infrastructure, high costs of cultural events, and stigma associated with certain forms of artistic expression. Education can play an important role in promoting culture in Africa. Better education can help raise awareness of the benefits of culture for identity, creativity, and well-being. Educational programs can also help train skilled artists and creators to support local artistic creation. In addition, education can help improve access to cultural infrastructure, such as performance spaces, libraries, and museums. Educational programs can also help overcome language and cultural barriers by promoting mutual understanding between different communities.Finally, education can also help promote cultural diversity in Africa by celebrating different forms of artistic expression and encouraging exchange and collaboration between artists and communities. In conclusion, culture is an important element of identity and diversity in Africa. Education can play a crucial role in promoting culture by raising awareness of the benefits of culture, training skilled artists, and improving access to cultural infrastructure.",
+    "description5": "Sport is an essential part of our physical and mental well-being. It can help improve our heart health, endurance, muscle strength, flexibility and coordination. In addition, sport can also help reduce stress, improve our mood and boost our confidence. Despite the many benefits of sport, there are many barriers that can limit access to regular sport for people in Africa. The high cost of sports equipment and facilities, lack of adequate infrastructure, language and cultural barriers, and gender bias and stigma can prevent people from engaging in sports. Education can play an important role in promoting sport in Africa. Better education can help raise awareness of the benefits of sport for health and well-being and encourage regular participation in sport. Educational programs can also help overcome language and cultural barriers by facilitating mutual understanding between different communities. In addition, education can help train qualified coaches and health professionals to support populations in their sport participation. These professionals can help provide guidance on nutrition, recovery, and injury prevention, as well as quality health care for athletes in the event of injury. In conclusion, sport is an important component of health and well-being in Africa. Education can play a crucial role in promoting sport in Africa by raising awareness of the benefits of sport, overcoming language and cultural barriers, and training qualified professionals to support athletes and the general population.",
     "description6": "With the Ya Mangé project, from the year 2023, the NGO Sourire D'Afrique plans to create employment for young girls out of school. We want to finance income generating micro projects. To grant loans to associations and well-structured groups. Create projects in the name of the NGO Sourire D'Afrique",
     "nosstories": "Our story",
 
@@ -105,7 +123,18 @@
     "fmai":"donate now!",
     "nmbdon": "number of donations",
     "smmdon": "total amount of donations",
-    "chargemt": "load..."
+    "chargemt": "load...",
+    
+
+    "home":"The NGO SOURIRE D'AFRIQUE created on September 08, 2022 in Taabo by its president Mr. Richard GABDIBE residing in the United States son and executive of the Ivory Coast to help vulnerable people including: widows, orphans, the sick, the disabled ... Richard GABDIBE",
+    "hom_titre": "Visit our activities on our social pages",
+    "home_cont": "We invite you to follow our news on Facebook and Youtube to be quickly informed of all our news, promotions and events. Thanks to our pages, you won't miss any important announcement and you can also exchange with our community and share your experiences. Join us now so you don't miss anything!",
+    "projet": "Project Recents",
+    "gallery": "Our Gallery",
+    "cotedivoire": "Visit our missions throughout the Ivory Coast'",
+
+    "descriptionAct": "The NGO SOURIRE D'AFRIQUE created on September 08, 2022 in Taabo by its president Mr. Richard GABDIBE residing in the United States son and executive of the Ivory Coast with the mission to help vulnerable people including: widows, orphans, the sick, the disabled ...",
+    "descriptionActua": "The NGO SOURIRE D'AFRIQUE created on September 08, 2022 in Taabo by its president Mr. Richard GABDIBE residing in the United States son and executive of the Ivory Coast with the mission to help vulnerable people including: widows, orphans, the sick, the disabled ..."
 
 }
 

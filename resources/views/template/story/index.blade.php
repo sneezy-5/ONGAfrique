@@ -19,13 +19,13 @@
     </div>
     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-down" data-aos-duration="2000">
       <div class="text-center text-md-start pb-3 pb-md-0 wow" style="max-width: 500px;" >
-        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <p class="fs-5 fw-medium text-primary">{{__("Nosmissions")}}</p>
         <h1 class="display-5 ">
-          Nos actualités
+        {{__("NosActualite")}}
         </h1>
     </div>
     <p class="fst-italic">
-      L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de Taabo-Village à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés... 
+      {{__("descriptionActua")}}
       </p>
       <ul>
       <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. </li>
@@ -44,9 +44,9 @@
     <div class="container-xxl contentdefile bg-light">
         <div>
             <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
-                <p class="fs-5 fw-medium text-primary">Nos Actualités</p>
+                <p class="fs-5 fw-medium text-primary">{{__("NosActualite")}}</p>
                 <h1 class="display-5 mb-5">
-                  Nos Actualités Récente
+                  {{__("NosActualite")}} Récente
                 </h1>
             </div>
             <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
@@ -87,7 +87,7 @@
         <div class="row m-0 p-0">
             <div class="col-lg">
               <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
-                <h2 class="section-title text-light">Nos actualités</h2>
+                <h2 class="section-title text-light">{{__("NosActualite")}}</h2>
                 <h3 class="section-sub-title text-light">Youtube</h3>
               </div>
 

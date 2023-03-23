@@ -11,7 +11,8 @@
     
     <!-- Bootstrapp only -->
       <link rel="stylesheet" href="{{asset('styles/fontawesome-free-5.14.0-web/css/all.min.css')}}">
-
+       <!--neww pour devise-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <!--cinepay-->
    <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
 

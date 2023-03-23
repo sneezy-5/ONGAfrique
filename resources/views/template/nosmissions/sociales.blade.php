@@ -23,9 +23,9 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-down" data-aos-duration="2000">
       <div class="text-center text-md-start pb-3 pb-md-0 wow" style="max-width: 500px;" >
-        <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+        <p class="fs-5 fw-medium text-primary">{{__("Nosmissions")}}</p>
         <h1 class="display-5 ">
-          Activités Sanitaires
+        {{__("titresocial")}}
         </h1>
     </div>
     <p class="fst-italic">
@@ -55,9 +55,9 @@ En conclusion, le développement social est un enjeu majeur en Afrique, et l'éd
     <div class="container-xxl contentdefile bg-light">
         <div>
             <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
-                <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+                <p class="fs-5 fw-medium text-primary">{{__("Nosmissions")}}</p>
                 <h1 class="display-5 mb-5">
-                  Visitez nos activités Sociales"
+                  {{__("titresocial")}}
                 </h1>
             </div>
             <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
@@ -76,7 +76,7 @@ En conclusion, le développement social est un enjeu majeur en Afrique, et l'éd
                       <h4 class="d-block h5 Titretrans">{{$soc->title_fr}}</h4>
                       <span class="texttrans">{{ Str::limit($soc->description_fr, 75)}}</span>
                     </div>
-                    <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("Voir")}}</a>
                 </div>
               @endforeach
 
@@ -96,7 +96,7 @@ En conclusion, le développement social est un enjeu majeur en Afrique, et l'éd
         <div class="row m-0 p-0">
             <div class="col-lg">
               <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
-                <h2 class="section-title text-light">Nos actualités</h2>
+                <h2 class="section-title text-light">{{__("NosActualite")}}</h2>
                 <h3 class="section-sub-title text-light">Youtube</h3>
               </div>
 

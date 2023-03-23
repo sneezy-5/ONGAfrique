@@ -14,8 +14,8 @@
         <div>
             <div class="row parentcontact">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 mb-3">Contactez-nous</div>
-                    <h1 class="display-6 mb-3">Si vous avez des questions, veuillez nous contacter</h1>
+                    <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 mb-3">{{__("contacts")}}</div>
+                    <h1 class="display-6 mb-3">{{__("question")}}</h1>
                     <small class="text-danger alerte"></small>
   
 
@@ -24,31 +24,31 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control case" name="prenomNom" id="name" placeholder="Nom">
-                                    <label for="name">Nom</label>
+                                    <input type="text" class="form-control case" name="prenomNom" id="name" placeholder="{{__("nom")}}">
+                                    <label for="name">{{__("nom")}}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control case" name="email" id="email" placeholder="Email">
-                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control case" name="email" id="email" placeholder="{{__("mail")}}">
+                                    <label for="email">{{__("mail")}}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="number" name="telephone" class="form-control case" id="subject" placeholder="telephone">
-                                    <label for="subject">Contact</label>
+                                    <input type="number" name="telephone" class="form-control case" id="subject" placeholder="{{__("contact")}}">
+                                    <label for="subject">{{__("contact")}}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control case" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message">{{__("message")}}</label>
                                 </div>
                             </div>
                             <div class="col-12 pb-2">
                                 <button class="btn btn-primary py-2 px-3 me-3">
-                                    Envoyer
+                                {{__("Envoyer")}}
                                 </button>
                             </div>
                         </div>

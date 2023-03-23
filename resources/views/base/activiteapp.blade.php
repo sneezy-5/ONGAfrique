@@ -20,7 +20,8 @@
  
     <link rel="stylesheet" href="{{asset('styles/csss/activites.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
-
+     <!--neww pour devise-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <!-- Autres -->
     <link href="{{asset('styles/css/templatemo-nomad-force.css')}}" rel="stylesheet">
     <link href="{{asset('styles/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">

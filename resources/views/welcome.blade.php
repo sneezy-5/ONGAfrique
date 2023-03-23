@@ -29,22 +29,22 @@
               </div>
               <div class="col-lg-6 wow" data-aos="fade-down" data-aos-duration="2000" style="visibility: visible; animation-delay: 0.5s;">
                   <div class="h-100">
-                      <div class="d-inline-block rounded-pill mt-3 bg-primary text-light py-1 px-3 mb-3">Qui Sommes Nous ?</div>
-                      <h3 class=" text-dark mb-2">Ong Sourire d'afrique</h3>
+                      <div class="d-inline-block rounded-pill mt-3 bg-primary text-light py-1 px-3 mb-3">{{__("Qsn")}}</div>
+                      <h3 class=" text-dark mb-2">{{__("ong")}}</h3>
                       <div class="bg-light border-bottom border-5 border-primary rounded p-2 mb-4">
-                          <p class="text-dark mb-0">L'ONG SOURIRE D'AFRIQUE crée le 08 septembre 2022 à Taabo par son président Monsieur Richard GABDIBE résidant aux États-Unis fils et cadre de la Côte d'Ivoire à pour mission de venir en aide aux personnes vulnérables notamment : les veuves, les orphelins,les malades, les handicapés...</p>
+                          <p class="text-dark mb-0">{{__("textQuiSn")}}</p>
                     
                           <span class="text-primary mt-2">Richard GABDIBE</span>
                       </div>
 
                       <a class="btn btnabout btn-primary btnprimaryabout" href="/aproposdenous">
-                          Voir plus
+                      {{__("Voir")}}
                           <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ">
                               <i class="fa fa-arrow-right"></i>
                           </div>
                       </a>
                       <a class="btn btn-outline-primary btnoutlineprimaryabout" href="{{route('contact.index')}}">
-                          Contactez-Nous
+                      {{__("contacts")}}
                           <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ">
                               <i class="fa fa-arrow-right"></i>
                           </div>
@@ -62,8 +62,8 @@
 <section class="section-padding pb-0" id="about" style="padding-top:100px!important;padding-bottom:100px!important; background-color:#F8F8F9;">
   <div class="row text-center">
     <div class="col-lg-12" data-aos="fade-up" data-aos-duration="2000">
-      <h2 class="section-title">Nos actualites</h2>
-      <h3 class="section-sub-title">Projets Recents</h3>
+      <h2 class="section-title">{{__("NosActualite")}}</h2>
+      <h3 class="section-sub-title">{{__("projet")}}</h3>
     </div>
 
   <div class="container-fluid">
@@ -80,7 +80,7 @@
 
                   <div class="mt-3 custom-links">
 
-                      <a href="{{route('actualites.index')}}" class="text-white custom-link">Voir actualité</a>
+                      <a href="{{route('actualites.index')}}" class="text-white custom-link">{{__("NosActualite")}}</a>
                   </div>
 
               </div>
@@ -96,7 +96,7 @@
                           <div class="team-thumb bg-warning" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.educations')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.educations')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                       @endforeach
@@ -108,7 +108,7 @@
                           <div class="team-thumb bg-primary" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.santes')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.santes')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                       @endforeach
@@ -120,7 +120,7 @@
                           <div class="team-thumb bg-success" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                       @endforeach
@@ -132,7 +132,7 @@
                           <div class="team-thumb bg-info" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.sports')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.sports')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                      @endforeach
@@ -144,7 +144,7 @@
                           <div class="team-thumb bg-danger" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                       @endforeach
@@ -156,7 +156,7 @@
                           <div class="team-thumb bg-danger" style="text-align:start;">
                               <h3 class="text-white mb-0">{{$acc->type}}</h3>
 
-                              <a href="{{route('nosmissions.economies')}}" class="text-light mb-0">Voir Plus</a>
+                              <a href="{{route('nosmissions.economies')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
                       @endforeach
@@ -197,22 +197,22 @@
 
           <div class="row  justify-content-center">
               <div class="col-lg-4 wow fadeIn mb-3" data-wow-delay="0.1s">
-                  <div class="d-inline-block rounded-pill bg-light text-dark py-1 px-3 mb-3">Actualités</div>
-                  <h1 class="display-6 text-white mb-5" data-aos="fade-up" data-aos-duration="2000">Visitez nos acitivités sur nos pages sociales</h1>
+                  <div class="d-inline-block rounded-pill bg-light text-dark py-1 px-3 mb-3">{{__("NosActualite")}}</div>
+                  <h1 class="display-6 text-white mb-5" data-aos="fade-up" data-aos-duration="2000">{{__("visite")}}</h1>
                   <p class="text-white-50 mb-0" data-aos="fade-up" data-aos-duration="2000">
-                    Nous vous invitons à suivre nos actualités sur Facebook et Youtube pour être informé(e) rapidement de toutes nos nouveautés, promotions et événements. Grâce à nos pages, vous ne manquerez aucune annonce importante et pourrez également échanger avec notre communauté et partager vos expériences. Rejoignez-nous dès maintenant pour ne rien manquer !
+                  {{__("invitation")}}
 
                   </p>
               
                   <div class=" mt-3" data-aos="fade-up" data-aos-duration="2000">
                     <form action="{{route('newsletter.store')}}" method="post" enctype="multipart/form-data" class="formcenter">
                       @csrf
-                      <h5 class="display-6 text-white">Abonnez-vous à notre newsletter</h5>
-                      <p class="text-white-50">Et recevez des notifications sur nous</p>
+                      <h5 class="display-6 text-white">{{__("Abonnez")}}</h5>
+                      <p class="text-white-50">{{__("Notifi")}}</p>
                       <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
                         <input id="newsletter1" type="email" class="form-control newslettercenter" placeholder="Email address">
-                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                        <button class="btn btn-primary" type="submit">{{__("Envoyer")}}</button>
                       </div>
                     </form>
                   </div>
@@ -220,9 +220,9 @@
                 </div>
 
               <div class="col-lg-6 wow" data-aos="fade-down" data-aos-duration="2000">
-                <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 mb-3">Nos Actualités Facebook</div>
+                <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 mb-3">{{__("facebook")}}</div>
                   <iframe class="container-fluid col-md d-flex justify-content-center align-items-center" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fprofile.php%3Fid%3D100086654464545&tabs=timeline&width=900&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="800" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                  <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 ml-5 mb-3 mt-3">Nos Actualités Youtube</div>
+                  <div class="d-inline-block rounded-pill bg-primary text-light py-1 px-3 ml-5 mb-3 mt-3">{{__("youtube")}}</div>
                   <iframe class="container-fluid col-md" width="560" height="315" src="https://www.youtube.com/embed/8UiOxY4KuUs?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
           </div>
@@ -241,8 +241,8 @@
       <div  style="padding-top:100px;padding-bottom:100px;">
         <div class="row text-center" data-aos="fade-down" data-aos-duration="2000">
         <div class="col-lg-12">
-          <h2 class="section-title">Notre Gallery</h2>
-          <h3 class="section-sub-title">Projet Recents</h3>
+          <h2 class="section-title">{{__("gallery")}}</h2>
+          <h3 class="section-sub-title">{{__("projet")}}</h3>
         </div>
         </div>
         <!--/ Title row end -->
@@ -251,25 +251,25 @@
         <div class="col-12">
           <div class="shuffle-btn-group">
           <label class="active" for="all">
-            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Voir
+            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">all
           </label>
           <label for="education">
             <input type="radio" name="shuffle-filter" id="education" value="education">Education
           </label>
           <label for="social">
-            <input type="radio" name="shuffle-filter" id="social" value="social">Social
+            <input type="radio" name="shuffle-filter" id="social" value="social">{{__("Social")}}
           </label>
           <label for="sante">
-            <input type="radio" name="shuffle-filter" id="sante" value="sante">Santé
+            <input type="radio" name="shuffle-filter" id="sante" value="sante">{{__("Sante")}}
           </label>
           <label for="sport">
-            <input type="radio" name="shuffle-filter" id="sport" value="sport">Sport
+            <input type="radio" name="shuffle-filter" id="sport" value="sport">{{__("Sport")}}
           </label>
           <label for="socioeco">
-            <input type="radio" name="shuffle-filter" id="socioeco" value="socioeco">Soiaux économique
+            <input type="radio" name="shuffle-filter" id="socioeco" value="socioeco">{{__("Socio-économique")}}
           </label>
           <label for="culturel">
-            <input type="radio" name="shuffle-filter" id="culturel" value="culturel">Culturel
+            <input type="radio" name="shuffle-filter" id="culturel" value="culturel">{{__("Culture")}}
           </label>
           </div><!-- project filter end -->
       
@@ -428,7 +428,7 @@
       
         <div class="col-12 mt-3">
           <div class="general-btn text-center">
-          <a class="btn btn-primary" href="{{route('gallery')}}">Voir Tous nos projets</a>
+          <a class="btn btn-primary" href="{{route('gallery')}}">{{__("toutpro")}}</a>
           </div>
         </div>
       
@@ -445,9 +445,9 @@
     <div class="container-xxl contentdefile">
       <div class="">
           <div class="text-center text-md-start pb-5 pb-md-0 wow" style="max-width: 500px;" data-aos="fade-down" data-aos-duration="2000">
-              <p class="fs-5 fw-medium text-primary">Nos Missions</p>
+              <p class="fs-5 fw-medium text-primary">{{__("Nosmissions")}}</p>
               <h1 class="display-5 mb-5">
-                Visitez nos missions à travers "la Côte d'Ivoire"
+              {{__("cotedivoire")}}
               </h1>
           </div>
           <div class="owl-carousel project-carousel wow" data-aos="fade-up" data-aos-duration="2000">
@@ -463,8 +463,8 @@
                       </div>
                   </div>
                   <div class="p-4">
-                    <a class="d-block h5" href="{{route('nosmissions.santes')}}">Santé</a>
-                    <span>Visitez nos activités sanitaires</span>
+                    <a class="d-block h5" href="{{route('nosmissions.santes')}}">{{__("Sante")}}</a>
+                    <span>{{__("titresante")}}</span>
                   </div>
               </div>
 
@@ -479,8 +479,8 @@
                     </div>
                 </div>
                 <div class="p-4">
-                  <a class="d-block h5" href="{{route('nosmissions.educations')}}">Education</a>
-                  <span>Visitez nos activités Educatif</span>
+                  <a class="d-block h5" href="{{route('nosmissions.educations')}}">{{__("Education")}}</a>
+                  <span>{{__("titreeducation")}}</span>
                 </div>
             </div>
 
@@ -495,8 +495,8 @@
                   </div>
               </div>
               <div class="p-4">
-                <a class="d-block h5" href="{{route('nosmissions.sports')}}">Sport</a>
-                <span>Visitez nos activités Sportif</span>
+                <a class="d-block h5" href="{{route('nosmissions.sports')}}">{{__("Sport")}}</a>
+                <span>{{__("titresport")}}</span>
               </div>
            </div>
 
@@ -511,8 +511,8 @@
                       </div>
                   </div>
                   <div class="p-4">
-                    <a class="d-block h5" href="{{route('nosmissions.cultures')}}">Culture</a>
-                    <span>Visitez nos activités Culturelles</span>
+                    <a class="d-block h5" href="{{route('nosmissions.cultures')}}">{{__("Culture")}}</a>
+                    <span>{{__("titreculture")}}</span>
                   </div>
               </div>
               <div class="project-item mb-5">
@@ -526,8 +526,8 @@
                       </div>
                   </div>
                   <div class="p-4">
-                    <a class="d-block h5" href="{{route('nosmissions.sociales')}}">Social</a>
-                    <span>Visitez  nos activités sociales</span>
+                    <a class="d-block h5" href="{{route('nosmissions.sociales')}}">{{__("Social")}}</a>
+                    <span>{{__("titresocial")}}</span>
                   </div>
               </div>
               <div class="project-item mb-5">
@@ -541,8 +541,8 @@
                       </div>
                   </div>
                   <div class="p-4">
-                    <a class="d-block h5" href="{{route('nosmissions.economies')}}">Socio-économique</a>
-                    <span>Visitez nos activités Socio-économique</span>
+                    <a class="d-block h5" href="{{route('nosmissions.economies')}}">{{__("Socio-économique")}}</a>
+                    <span>{{__("titreeco")}}</span>
                   </div>
               </div>
 

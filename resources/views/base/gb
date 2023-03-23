@@ -474,3 +474,639 @@
   </div>
   </div>
 </div><!-- shuffle item 6 end -->
+
+
+
+////nav
+
+
+ <!-- Modal don -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/logo.jpeg" class="img-container" alt="" width="70" height="70">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Faites un don </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row container-fluid justify-content-center  m-0">
+      
+        <div class="card m-2 mb-5 " style="width:25rem;">
+          <img src="img/social/11.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">
+              Ensemble, nous pouvons faire la différence. Faites un don aujourd'hui pour soutenir notre cause et aider à changer des vies.
+            
+            </p>
+          </div>
+
+<div class="alert alert-warning" role="alert">
+<h4>Mode de paiement</h4>
+<small>
+  <ul class="point">
+    <li><i class="bi bi-check-circle"></i> Nous convertissons les devises <b>euro</b> et <b>dollar</b> que vous saisissez en franc CFA pour faciliter le processus de paiement.</li>
+    <li><i class="bi bi-check-circle"></i>Pour payer avec des <b>francs CFA</b>, vous pouvez utiliser notre service de <b>mobile money</b> en suivant les instructions fournies. Les fonds doivent être transférés depuis votre compte mobile money.</li>
+    <li><i class="bi bi-check-circle"></i>Nous acceptons les paiements en <b>euros</b> et en <b>dollars américains</b> via les cartes de crédit <b>Visa</b> et <b>Mastercar</b> ainsi que les <b>virements bancaires.</b></li>
+    <li><i class="bi bi-check-circle"></i>Notez que les taux de change des paiements en devises autres que le franc CFA peuvent fluctuer et des frais de conversion peuvent être ajoutés.</li>
+  </ul>
+</small>
+
+</div>
+        </div>
+  
+        <div class="card m-2 mb-5 d-flex justify-content-between" style="width:20rem;">
+  
+        <!-- Nav pills -->
+        <ul class="nav nav-pills bg-light justify-content-between">
+          <li class="nav-item w-50 justify-content-center">
+            <a class="nav-link active " data-bs-toggle="pill" href="#home">Donner une fois</a>
+          </li>
+          <li class="nav-item w-50 ">
+            <a class="nav-link text-align-center" data-bs-toggle="pill" href="#menu1">mensuel</a>
+          </li>
+  
+        </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content justify-content-center align-items-center h-100">
+  <div class="tab-pane card nav nav-pills active montant" id="home">
+  
+  <div  class="btn btn-light m-1 active btnprix" data-bs-toggle="pill">100</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1500</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">2000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">5000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">10000</div> 
+
+
+
+  <div class="card text-danger border-0 ">
+    <small class="msgalertprix card-text"></small>
+    <small class="msgalertcontact card-text"></small>
+
+  </div>
+
+    <form action="Accueil.html" class="mt-3 m-1 justify-content-between formprixmodal">
+      
+
+        <div class="input-group mb-3">
+         <input type="text" class="form-control casenom" placeholder="Nom et Prénoms">
+        </div>
+  
+        <div class="input-group mb-3">
+          <input type="number" class="form-control casecontact"  placeholder="contacts">
+          
+         </div>
+         
+
+        <nav>
+          <div class="row m-2" id="nav-tab" role="tablist">
+            
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+            <div class="btn btn-light col-md m-1 p-1  btnprdevise" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+          </div>
+
+        </nav>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text devise">XOF</span>
+        <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()">
+        
+        <div id="validationServerUsernameFeedback" class="invalid-feedback" style="text-align:start;">
+          Entrez un montant superieur ou égale à 100 <span class="devisealerte">XOF</span>
+        </div>
+
+        <div class="valid-feedback" style="text-align:start;">
+          Très bien
+        </div>
+      </div>
+
+        <span class="badge text-bg-danger" id="resultat"></span>
+
+        <select class="francscfa" name="francscfa" style="display:none;">
+          <option value="" class="FrCfa"></option>
+        </select>
+
+     <div>
+  
+      <p>
+        <div class="form-check d-flex gap-2">
+          <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+          <label class="form-check-label" for="flexCheckDefault">
+            Donner en l'honneur ou en mémoire 
+          </label>
+        </div>
+  
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="form-group">
+         <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+        </div>
+      </div>
+  
+     </div>
+  
+      <input type="submit" value="faire un don" class="btn btn-primary w-100 mt-5 btnapi1">
+    </form>
+  </div>
+  
+  
+  <div class="tab-pane container fade" id="menu1">
+  
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="">
+            <div class="card rounded-3">
+              <img src="img/3.jpg"
+                class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                alt="Sample photo">
+              <div class="card-body ">
+                <h3>Inscrivez-Vous</h3>
+                 <small class="m-0 p-0  alertinscri" style="color: red;"></small>
+  
+                <form action="#" class="px-md-2 mt-2 forminscrimodal">
+    
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="nom">Nom & prénoms</label>
+                    <input type="text" id="nom" class="form-control iptinscript1"/>
+  
+                  </div>
+  
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="mail">email</label>
+                    <input type="email" id="mail" class="form-control iptinscript2 un"/>
+  
+                  </div>
+  
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="chiffre">Combien Souhaitez-vous donner par mois ?</label>
+  
+                    <select class="form-select chiffreinscri" aria-label="Default select example">
+   
+                      <option value="10000">10000</option>
+                      <option value="20000">20000</option>
+                      <option value="30000">30000</option>
+                    </select>
+  
+                  </div>
+    
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="pass">Entrez un mot de passe</label>
+                    <input type="password" id="pass" class="form-control iptinscript3 un"/>
+  
+                  </div>
+  
+                  <button type="submit" class="btn btn-success mb-1">Envoyer</button>
+    
+                </form>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  </div>
+  </div>
+  
+  </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <!--fin modal-->
+
+
+
+
+     <!-- Modal don -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/logo.jpeg" class="img-container" alt="" width="70" height="70">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Faites un don </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row container-fluid justify-content-center  m-0">
+      
+        <div class="card m-2 mb-5 " style="width:25rem;">
+          <img src="img/social/11.jpg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Title</h5>
+            <p class="card-text">
+              Ensemble, nous pouvons faire la différence. Faites un don aujourd'hui pour soutenir notre cause et aider à changer des vies.
+            
+            </p>
+          </div>
+
+<div class="alert alert-warning" role="alert">
+<h4>Mode de paiement</h4>
+<small>
+  <ul class="point">
+    <li><i class="bi bi-check-circle"></i> Nous convertissons les devises <b>euro</b> et <b>dollar</b> que vous saisissez en franc CFA pour faciliter le processus de paiement.</li>
+    <li><i class="bi bi-check-circle"></i>Pour payer avec des <b>francs CFA</b>, vous pouvez utiliser notre service de <b>mobile money</b> en suivant les instructions fournies. Les fonds doivent être transférés depuis votre compte mobile money.</li>
+    <li><i class="bi bi-check-circle"></i>Nous acceptons les paiements en <b>euros</b> et en <b>dollars américains</b> via les cartes de crédit <b>Visa</b> et <b>Mastercar</b> ainsi que les <b>virements bancaires.</b></li>
+    <li><i class="bi bi-check-circle"></i>Notez que les taux de change des paiements en devises autres que le franc CFA peuvent fluctuer et des frais de conversion peuvent être ajoutés.</li>
+  </ul>
+</small>
+
+</div>
+        </div>
+  
+        <div class="card m-2 mb-5 d-flex justify-content-between" style="width:20rem;">
+  
+        <!-- Nav pills -->
+        <ul class="nav nav-pills bg-light justify-content-between">
+          <li class="nav-item w-50 justify-content-center">
+            <a class="nav-link active " data-bs-toggle="pill" href="#home">Donner une fois</a>
+          </li>
+          <li class="nav-item w-50 ">
+            <a class="nav-link text-align-center" data-bs-toggle="pill" href="#menu1">mensuel</a>
+          </li>
+  
+        </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content justify-content-center align-items-center h-100">
+  <div class="tab-pane card nav nav-pills active montant" id="home">
+  
+  <div  class="btn btn-light m-1 active btnprix" data-bs-toggle="pill">100</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1500</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">2000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">5000</div>
+  <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">10000</div> 
+
+
+
+  <div class="card text-danger border-0 ">
+    <small class="msgalertprix m-2 card-text alert alert-danger p-1" role="alert" style="display:none; justify-content: center;align-items: center;">* Veuillez remplir tous les champs</small>
+    <small class="msgalertcontact m-2 card-text alert alert-danger p-1" role="alert" style="display:none; justify-content: center;align-items: center;">* Renseignez les 10 chiffres de votre contacts</small>
+
+  </div>
+
+    <form action="Accueil.html" class="mt-3 m-1 justify-content-between formprixmodal">
+      
+
+        <div class="input-group mb-3">
+         <input type="text" class="form-control casenom" placeholder="Nom et Prénoms">
+        </div>
+  
+        <div class="input-group mb-3">
+          <input type="number" class="form-control casecontact"  placeholder="contacts">
+          
+         </div>
+         
+
+        <nav>
+          <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+            
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+            <div class="btn btn-light col-md m-1 p-1  btnprdevise" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+          </div>
+
+        </nav>
+
+
+      <div class="input-group mb-2">
+        <span class="input-group-text devise">XOF</span>
+        <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+        
+        <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+         <span class="alertprix"> </span> <span class="devisealerte">XOF</span>
+        </div>
+
+        <div class="valid-feedback" style="text-align:start;">
+          Très bien
+        </div>
+      </div>
+
+        
+
+        <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+          <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat" style="display:none;"></button>
+          <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat2" style="display:none;"></button>
+        </div>
+
+        <select class="francscfa" name="francscfa" style="display:none;">
+          <option value="100" class="FrCfa">100</option>
+        </select>
+
+     <div>
+  
+      <p>
+        <div class="form-check d-flex gap-2">
+          <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+          <label class="form-check-label" for="flexCheckDefault">
+            Donner en l'honneur ou en mémoire 
+          </label>
+        </div>
+  
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="form-group">
+         <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+        </div>
+      </div>
+  
+     </div>
+  
+      <input type="submit" value="faire un don" class="btn btn-primary w-100 mt-5 btnapi1">
+    </form>
+  </div>
+  
+  
+  <div class="tab-pane container fade" id="menu1">
+  
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="">
+            <div class="card rounded-3">
+              <img src="img/3.jpg"
+                class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                alt="Sample photo">
+              <div class="card-body ">
+                <h3>Inscrivez-Vous</h3>
+                 <small class="m-0 p-0  alertinscri" style="color: red;"></small>
+  
+                <form action="#" class="px-md-2 mt-2 forminscrimodal">
+    
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="nom">Nom & prénoms</label>
+                    <input type="text" id="nom" class="form-control iptinscript1"/>
+  
+                  </div>
+  
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="mail">email</label>
+                    <input type="email" id="mail" class="form-control iptinscript2 un"/>
+  
+                  </div>
+  
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="chiffre">Combien Souhaitez-vous donner par mois ?</label>
+  
+                    <select class="form-select chiffreinscri" aria-label="Default select example">
+   
+                      <option value="10000">10000</option>
+                      <option value="20000">20000</option>
+                      <option value="30000">30000</option>
+                    </select>
+  
+                  </div>
+    
+                  <div class="form-outline mb-1">
+                    <label class="form-label" for="pass">Entrez un mot de passe</label>
+                    <input type="password" id="pass" class="form-control iptinscript3 un"/>
+  
+                  </div>
+  
+                  <button type="submit" class="btn btn-success mb-1">Envoyer</button>
+    
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  </div>
+  </div>
+  
+  </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--fin modal-->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="{{asset('styles/img/logo.jpeg')}}" class="img-container" alt="" width="70" height="70">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{__("FuD")}} </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row container-fluid justify-content-center  m-0">
+      
+        <div class="card m-2 mb-5 " style="width:25rem;">
+          <img src="{{asset('styles/img/social/11.jpg')}}" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{__("titrespecial")}}</h5>
+            <p class="card-text">{{__("textspecial")}}</p>
+          </div>
+        
+
+        <div class="alert alert-warning" role="alert">
+<h4>Mode de paiement</h4>
+<small>
+  <ul class="point">
+    <li><i class="bi bi-check-circle"></i> Nous convertissons les devises <b>euro</b> et <b>dollar</b> que vous saisissez en <b>franc CFA</b> pour faciliter le processus de paiement.</li>
+    <li><i class="bi bi-check-circle"></i>Pour payer avec des <b>francs CFA</b>, vous pouvez utiliser notre service de <b>mobile money</b> en suivant les instructions fournies. Les fonds doivent être transférés depuis votre compte mobile money.</li>
+    <li><i class="bi bi-check-circle"></i>Nous acceptons les paiements en <b>euros</b> et en <b>dollars américains</b> via les cartes de crédit <b>Visa</b> et <b>Mastercar</b> ainsi que les <b>virements bancaires.</b></li>
+    <li><i class="bi bi-check-circle"></i>Notez que les taux de change des paiements en devises autres que le franc CFA peuvent fluctuer et des frais de conversion peuvent être ajoutés.</li>
+  </ul>
+</small>
+
+</div>
+        </div>
+  
+        <div class="card m-2 mb-5 d-flex justify-content-between" style="width:20rem;">
+  
+        <!-- Nav pills -->
+        <ul class="nav nav-pills bg-light justify-content-between">
+          <li class="nav-item w-50 justify-content-center">
+            <a class="nav-link active " data-bs-toggle="pill" href="#home">{{__("Dnf")}}</a>
+          </li>
+          @guest
+          <li class="nav-item w-50 ">
+            <a class="nav-link text-align-center" data-bs-toggle="pill" href="#menu1">{{__("mensuel")}}</a>
+          </li>
+          @endguest
+        
+  
+        </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content justify-content-center align-items-center h-100">
+  <div class="tab-pane card nav nav-pills active montant" id="home">
+  
+    <div  class="btn btn-light m-1 active btnprix" data-bs-toggle="pill">500fr</div>
+    <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1000fr</div>
+    <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">1500fr</div>
+    <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">2000fr</div>
+    <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">5000fr</div>
+    <div  class="btn btn-light m-1 btnprix" data-bs-toggle="pill">10000fr</div> 
+
+    <div class="card text-danger border-0 ">
+      <small class="msgalertprix m-2 card-text alert alert-danger p-1" role="alert" style="display:none; justify-content: center;align-items: center;">* Veuillez remplir tous les champs</small>
+      <small class="msgalertcontact m-2 card-text alert alert-danger p-1" role="alert" style="display:none; justify-content: center;align-items: center;">* Renseignez les 10 chiffres de votre contacts</small>
+
+    </div>
+
+    <form action="{{route('faireundon.store')}}" method="POST" class="mt-3 m-1 justify-content-between formprixmodal">
+      @csrf
+
+        <div class="input-group mb-3">
+          
+         @if($user = Auth::user())
+          <input type="text" name="last_name" value="{{$user->name}}" class="form-control casenom" placeholder="{{__("nomP")}}">
+           @else
+          <input type="text" name="last_name" class="form-control casenom" placeholder="{{__("nomP")}}">
+
+         @endif
+         
+
+        </div>
+  
+        <div class="input-group mb-3">
+          <input type="number" name="phone" class="form-control casecontact"  placeholder="{{__("contact")}}">
+          
+         </div>
+
+         <nav>
+          <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+            
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+            <div class="btn btn-light col-md m-1 p-1  btnprdevise" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+          </div>
+
+        </nav>
+         
+        <div class="input-group mb-2">
+          <span class="input-group-text devise">XOF</span>
+          <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+          
+          <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+           <span class="alertprix"> </span> <span class="devisealerte">XOF</span>
+          </div>
+  
+          <div class="valid-feedback" style="text-align:start;">
+            Très bien
+          </div>
+        </div>
+
+        <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+          <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat" style="display:none;"></button>
+          <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat2" style="display:none;"></button>
+        </div>
+      
+      
+
+        <select class="francscfa" name="francscfa" style="display:none;">
+          <option value="100" class="FrCfa">100</option>
+        </select>
+
+        <div>
+  
+          <p>
+            <div class="form-check d-flex gap-2">
+              <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+              <label class="form-check-label" for="flexCheckDefault">
+              {{__("honneur")}}
+              </label>
+            </div>
+      
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="form-group">
+             <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+            </div>
+          </div>
+      
+         </div>
+  
+      <input type="submit" value="{{__("FuD")}}" class="btn btn-primary w-100 mt-5 btnapi1">
+    </form>
+  </div>
+  
+  
+  
+@guest
+  <div class="tab-pane container fade" id="menu1">
+  
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="">
+      <div class="card rounded-3">
+        <img src="{{asset('styles/img/3.jpg')}}"
+          class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+          alt="Sample photo">
+        <div class="card-body ">
+          <h3>{{__("Inscription")}}</h3>
+           <small class="m-0 p-0  alertinscri" style="color: red;"></small>
+
+          <form action="{{route('register')}}" method="post" class="px-md-2 mt-2 forminscrimodal">
+            @csrf
+            <div class="form-outline mb-1">
+              <label class="form-label" for="nom">{{__("nomP")}}</label>
+              <input type="text" name="name" id="nom" class="form-control iptinscript1"/>
+
+            </div>
+
+            <div class="form-outline mb-1">
+              <label class="form-label" for="mail">{{__("mail")}}</label>
+              <input type="email" name="email" id="mail" class="form-control iptinscript2 un"/>
+
+            </div>
+
+            <div class="form-outline mb-1">
+              <label class="form-label" for="chiffre">{{__("choix")}}</label>
+
+              <select class="form-select chiffreinscri" name="amount" aria-label="Default select example">
+
+                <option value="10000">10000</option>
+                <option value="20000">20000</option>
+                <option value="30000">30000</option>
+              </select>
+
+            </div>
+
+            <div class="form-outline mb-1">
+              <label class="form-label" for="pass">{{__("password")}}</label>
+              <input type="password" name="password" id="pass" class="form-control iptinscript3 un"/>
+              
+              <label class="form-label" for="pass">{{__("confirm_pass")}}</label>
+              <input type="password" name="password_confirmation" id="pass" class="form-control iptinscript3 un"/>
+
+            </div>
+
+            <button type="submit" class="btn btn-success mb-1">{{__("Inscription")}}</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  @endguest
+
+  </div>
+  
+  </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__("fermer")}}</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--fin modal-->
