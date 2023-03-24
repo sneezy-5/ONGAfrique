@@ -67,9 +67,9 @@ class DonateController extends Controller
         $cancel =  env('APP_URL')."canceldon";
         $postFields = array(
             "item_name"    =>$request['last_name'],
-        "item_price"   => $request['amount'],
+        "item_price"   => $request['francscfa'],
         "currency"     => "XOF",
-        "ref_command"  => date("Hs"),
+        "ref_command"  => date("Hs").date('H'),
         "command_name" =>  "test",
         "env"=>"test",
         "ipn_url" =>"https://ongsouriredafrique.com/ipn",
@@ -86,7 +86,7 @@ class DonateController extends Controller
         "API_SECRET: ".$api_secret
     ]);
 
-    //dd($postFields, $jsonResponse);
+    dd($postFields, $jsonResponse);
      return redirect(json_decode($jsonResponse,true)['redirect_url']);
     //dd(json_decode($jsonResponse,true)['redirect_url']);
        //

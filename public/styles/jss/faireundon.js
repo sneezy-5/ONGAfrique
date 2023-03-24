@@ -222,7 +222,7 @@ if(devise.innerHTML=="EUR" || devise.innerHTML=="USD"){
     msgalertcontact.style.display="flex"
 
    }else{
-      e.preventDefault()
+      //e.preventDefault()
       msgalertprix.style.display="none"
       msgalertcontact.style.display="none"
       caseprix.classList.remove("is-invalid")
@@ -235,7 +235,7 @@ if(devise.innerHTML=="EUR" || devise.innerHTML=="USD"){
 
 
    if(caseprix.value > 10){
-    e.preventDefault()
+    //e.preventDefault()
     caseprix.classList.remove("is-invalid")
     caseprix.classList.add("is-valid")
     
