@@ -64,7 +64,7 @@
                       <h4 class="d-block h5 Titretrans">{{$edu->title_fr}}</h4>
                       <span class="texttrans">{{ Str::limit($edu->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("Voir")}}</a>
                 </div>
              @endforeach
 

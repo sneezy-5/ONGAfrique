@@ -67,7 +67,7 @@
                     <h4 class="d-block h5 Titretrans">{{$actu->title_fr}}</h4>
                     <span class="texttrans">{{Str::limit($actu->description_fr,75)}}</span>
                   </div>
-                  <a href="{{route('actualites.show', $actu)}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                  <a href="{{route('actualites.show', $actu)}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("Voir")}}</a>
               </div>
                @endforeach
 

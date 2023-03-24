@@ -29,9 +29,9 @@
       {{__("descriptionAct")}}
       </p>
       <ul>
-      <li><i class="bi bi-check-circle"></i>Accorder des prêts aux associations et groupements biens structurés. 
+      <li><i class="bi bi-check-circle"></i>{{__("option6")}} 
       </li>
-      <li><i class="bi bi-check-circle"></i>Créer des projets au nom de L'ONG Sourire D'Afrique.
+      <li><i class="bi bi-check-circle"></i>{{__("option7")}}
       </li>
       </ul>
     </div>
@@ -67,7 +67,7 @@
                       <h4 class="d-block h5 Titretrans">{{$soc->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($soc->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voirsociale', ['id'=>$soc->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
                 </div>
               @endforeach
 
@@ -101,7 +101,7 @@
                       <h4 class="d-block h5 Titretrans">{{$edu->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($edu->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voireducation', ['id'=>$edu->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
                 </div>
              @endforeach
     
@@ -136,7 +136,7 @@
                       <h4 class="d-block h5 Titretrans">{{$san->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($san->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
                 </div>
               @endforeach
 
@@ -172,7 +172,7 @@
                     <h4 class="d-block h5 Titretrans">{{$spo->title_fr}}</h4>
                     <span class="texttrans">{{Str::limit($spo->description_fr,75)}}</span>
                   </div>
-                  <a href="{{route('voirsport', ['id'=>$spo->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                  <a href="{{route('voirsport', ['id'=>$spo->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
               </div>
             @endforeach
 
@@ -212,7 +212,7 @@
                          <h4 class="d-block h5 Titretrans">{{$cul->title_fr}}</h4>
                          <span class="texttrans">{{Str::limit($cul->description_fr,75)}}</span>
                        </div>
-                       <a href="{{route('voirculture', ['id'=>$cul->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                       <a href="{{route('voirculture', ['id'=>$cul->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
                    </div>
    
                    @endforeach
@@ -249,7 +249,7 @@
                       <h4 class="d-block h5 Titretrans">{{$eco->title_fr}}</h4>
                       <span class="texttrans">{{Str::limit($eco->description_fr,75)}}</span>
                     </div>
-                    <a href="{{route('voireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voireconomie', ['id'=>$eco->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("voir")}}</a>
                 </div>
              @endforeach
 

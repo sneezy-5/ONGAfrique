@@ -19,9 +19,11 @@
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-    <!-- <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}"> -->
+    <link rel="stylesheet" href="{{asset('styles/csss/Accueil.css')}}">
 
 <!-- Autres -->
+<link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
+  <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
     <link href="{{asset('styles/css/templatemo-nomad-force.css')}}" rel="stylesheet">
     <link href="{{asset('styles/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('styles/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
@@ -30,8 +32,8 @@
   <!-- Colorbox -->
   <link rel="stylesheet" href="{{asset('styles/plugins/colorbox/colorbox.css')}}">
   <!-- Template styles-->
-  <link rel="stylesheet" href="{{asset('styles/csss/faireundon.css')}}">
-  <link rel="stylesheet" href="{{asset('styles/csss/connexion.css')}}">
+
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   
  

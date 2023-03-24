@@ -204,7 +204,7 @@
 
             <div class="btns-group">
               <div class="btn btn-prev btn-outline-primary d-flex justify-content-center align-items-center">{{__("prece")}}</div>
-              <input type="submit" value="Adhérez" id="submit-form" class="btnsuive btn-success champadhes">
+              <input type="submit" value="{{__("Adhérer")}}" id="submit-form" class="btnsuive btn-success champadhes">
             </div>
 
 
@@ -215,7 +215,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">{{__("fermer")}}</button>
       </div>
     </div>
   </div>
@@ -244,13 +244,13 @@
           </div>
 
           <div class="alert alert-warning" role="alert">
-<h4>Mode de paiement</h4>
+<h4>{{__("modePa")}}</h4>
 <small>
   <ul class="point">
-    <li><i class="bi bi-check-circle"></i> Nous convertissons les devises <b>euro</b> et <b>dollar</b> que vous saisissez en <b>franc CFA</b> pour faciliter le processus de paiement.</li>
-    <li><i class="bi bi-check-circle"></i>Pour payer avec des <b>francs CFA</b>, vous pouvez utiliser notre service de <b>mobile money</b> en suivant les instructions fournies. Les fonds doivent être transférés depuis votre compte mobile money.</li>
-    <li><i class="bi bi-check-circle"></i>Nous acceptons les paiements en <b>euros</b> et en <b>dollars américains</b> via les cartes de crédit <b>Visa</b> et <b>Mastercar</b> ainsi que les <b>virements bancaires.</b></li>
-    <li><i class="bi bi-check-circle"></i>Notez que les taux de change des paiements en devises autres que le franc CFA peuvent fluctuer et des frais de conversion peuvent être ajoutés.</li>
+    <li><i class="bi bi-check-circle"></i>{{__("mode1")}}</li>
+    <li><i class="bi bi-check-circle"></i>{{__("mode2")}}</li>
+    <li><i class="bi bi-check-circle"></i>{{__("mode3")}}</li>
+    <li><i class="bi bi-check-circle"></i>{{__("mode4")}}</li>
   </ul>
 </small>
 
@@ -327,7 +327,7 @@
       <div class="input-group mb-2">
         <span class="input-group-text devise">XOF</span>
 @if ($user= Auth::user())
-<input  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+<input  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
 
 @else
 <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
@@ -350,14 +350,14 @@
         </div>
 
         <select class="francscfa" name="francscfa" style="display:none;">
-          <option value="100" class="FrCfa">100</option>
+          <option  value="100" class="FrCfa">100</option>
         </select>
 
      <div>
   
       <p>
         <div class="form-check d-flex gap-2">
-          <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+          <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" name="honneur >
           <label class="form-check-label" for="flexCheckDefault">
           {{__("honneur")}}
           </label>
@@ -366,13 +366,13 @@
       </p>
       <div class="collapse" id="collapseExample">
         <div class="form-group">
-         <input type="text" class="form-control specialchamp" placeholder="{{__("honneur")}}">
+         <input type="text" name="honnoree" class="form-control specialchamp" placeholder="{{__("honneur")}}">
         </div>
       </div>
   
      </div>
   
-      <input type="submit" value="faire un don" class="btn btn-primary w-100 mt-5 btnapi1">
+      <input type="submit" value="{{__("FuD")}}" class="btn btn-primary w-100 mt-5 btnapi1">
     </form>
   </div>
   

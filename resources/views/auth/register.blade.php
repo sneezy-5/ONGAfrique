@@ -56,7 +56,7 @@
             <div class="form-outline mb-1">
               <label class="form-label" for="chiffre">{{__("choix")}}</label>
 
-              <input type="text" name="amount" class="iptadhe champadhes contactsadhe">
+              <input type="number" name="amount" class="iptadhe champadhes contactsadhe">
 
             </div>
 

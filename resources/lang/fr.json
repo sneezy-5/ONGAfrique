@@ -149,5 +149,11 @@
     "option9" : "Créer des projets au nom de L'ONG Sourire D'Afrique.",
 
     
-    "offre": "Don de matériels offert à Madame la sous-préfet de Taabo "
+    "offre": "Don de matériels offert à Madame la sous-préfet de Taabo ",
+
+    "mode1":  "Nous convertissons les devises EURO et DOLLAR que vous saisissez en FRANC CFA pour faciliter le processus de paiement.",
+    "mode2": "Pour payer avec des francs CFA, vous pouvez utiliser notre service de mobile money en suivant les instructions fournies. Les fonds doivent être transférés depuis votre compte mobile money.",
+    "mode3": "Nous acceptons les paiements en euros et en dollars américains  via les cartes de crédit Visa et Mastercar ainsi que les virements bancaires.",
+    "mode4": "Notez que les taux de change des paiements en devises autres que le franc CFA peuvent fluctuer et des frais de conversion peuvent être ajoutés.",
+    "modePa": "Mode de paiement"
 }

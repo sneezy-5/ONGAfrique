@@ -148,7 +148,14 @@
     "option8" : "Provide loans to well-structured associations and groups,",  
     "option9" : "Create projects on behalf of the NGO Sourire D'Afrique.",
    
-    "offre": "Donation of materials offered to the sub-prefect of Taabo  "
+    "offre": "Donation of materials offered to the sub-prefect of Taabo  ",
+
+    "mode1":  "We convert the EURO and DOLLAR currencies you enter into CFA FRANC to facilitate the payment process.",
+    "mode2":  "To pay with CFA francs, you can use our mobile money service by following the instructions provided. The funds must be transferred from your mobile money account.",
+    "mode3":  "We accept payments in Euros and US dollars via Visa and Mastercar credit cards as well as bank transfers.",
+    "mode4" :"Note that exchange rates for payments in currencies other than the CFA franc may fluctuate and conversion fees may be added.",
+    "modePa": "Method of payment"
+
 
 }
 

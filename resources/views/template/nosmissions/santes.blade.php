@@ -32,7 +32,7 @@
     {{__("description2")}}
       </p>
       <ul>
-      <li><i class="bi bi-check-circle"></i>Pour nous, l'hygiène sanitaire doit être une priorité commune.</li>
+      <li><i class="bi bi-check-circle"></i>{{__("option3")}}</li>
 
       </ul>
     </div>
@@ -68,7 +68,7 @@
                       <h4 class="d-block h5 Titretrans">{{$san->title_fr}}</h4>
                       <span class="texttrans">{{ Str::limit($san->description_fr, 75)}}</span>
                     </div>
-                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> Voir Plus</a>
+                    <a href="{{route('voirsante', ['id'=>$san->id])}}" class="btn btn-danger m-4 mt-1 btn-sm btntrans"> {{__("Voir")}}</a>
                 </div>
               @endforeach
 
@@ -88,7 +88,7 @@
         <div class="row m-0 p-0">
             <div class="col-lg">
               <div class="col-lg-12" data-aos="fade-down" data-aos-duration="2000">
-                <h2 class="section-title text-light">{{__("nos")}}</h2>
+                <h2 class="section-title text-light">{{__("NosActualite")}}</h2>
                 <h3 class="section-sub-title text-light">Youtube</h3>
               </div>
 
