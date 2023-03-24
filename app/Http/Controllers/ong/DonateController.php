@@ -68,11 +68,11 @@ class DonateController extends Controller
         $postFields = array(
             "item_name"    =>$request['last_name'],
         "item_price"   => $request['amount'],
-        "currency"     => "xof",
+        "currency"     => "XOF",
         "ref_command"  => date("Hs"),
         "command_name" =>  "test",
         "env"=>"test",
-        "ipn_url" =>"https://domaine.com/ipn",
+        "ipn_url" =>"https://ongsouriredafrique.com/ipn",
         "success_url" => $succes,
         "cancel_url" => $cancel,
         "custom_field" =>  "zefezf"

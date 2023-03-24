@@ -174,7 +174,7 @@ if(devise.innerHTML=="XOF"){
     msgalertcontact.style.display="flex"
 
    }else{
-      e.preventDefault()
+      //e.preventDefault()
       msgalertprix.style.display="none"
       msgalertcontact.style.display="none"
       caseprix.classList.remove("is-invalid")
@@ -188,7 +188,7 @@ if(devise.innerHTML=="XOF"){
    }
 
    if(caseprix.value > 100){
-    e.preventDefault()
+    //e.preventDefault()
     caseprix.classList.remove("is-invalid")
     caseprix.classList.add("is-valid")
     
@@ -200,13 +200,13 @@ if(devise.innerHTML=="XOF"){
 
 if(devise.innerHTML=="EUR" || devise.innerHTML=="USD"){
 
-  if(caseprix.value <50){
+  if(caseprix.value <10){
     e.preventDefault()
     caseprix.classList.add("is-invalid")
     caseprix.classList.remove("is-valid")
     alertprix.innerHTML='Entrez un montant superieur ou égale à 50'
     
-   }if(casenom.value==='' || casecontact.value==='' || caseprix.value <50){
+   }if(casenom.value==='' || casecontact.value==='' || caseprix.value <10){
     e.preventDefault()
     msgalertprix.style.display="flex"
     alertprix.innerHTML='Entrez un montant superieur ou égale à 50'
@@ -234,7 +234,7 @@ if(devise.innerHTML=="EUR" || devise.innerHTML=="USD"){
    }
 
 
-   if(caseprix.value > 50){
+   if(caseprix.value > 10){
     e.preventDefault()
     caseprix.classList.remove("is-invalid")
     caseprix.classList.add("is-valid")

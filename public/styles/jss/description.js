@@ -101,41 +101,6 @@ var msgalertcontact=document.querySelector('.msgalertcontact')
 
      
 
-      //   CinetPay.setConfig({
-      //     apikey: '496511264637a741547eca9.50530040',//   YOUR APIKEY
-      //     site_id: '798238',//YOUR_SITE_ID
-      //     notify_url: 'http://mondomaine.com/notify/',
-      //     mode: 'PRODUCTION'
-      //   });
-      //   CinetPay.getCheckout({
-      //     transaction_id: Math.floor(Math.random() * 100000000).toString(), // YOUR TRANSACTION ID
-      //     amount:montantapi,
-      //     currency: 'XOF',
-      //     channels: 'ALL',
-      //     description: 'Test de paiement',   
-      //      //Fournir ces variables pour le paiements par carte bancaire
-      //     customer_name:casenom.value,//Le nom du client
-      //     customer_surname:"souriredafrique",//Le prenom du client
-      //     customer_email: "donn@test.com",//l'email du client
-      //     customer_phone_number: casecontact.value,//l'email du client
-      //     customer_address : "BP 0024",//addresse du client
-      //     customer_city: "Antananarivo",// La ville du client
-      //     customer_country : "CM",// le code ISO du pays
-      //     customer_state : "CM",// le code ISO l'état
-      //     customer_zip_code : "06510", // code postal
-    
-      //   });
-      //   CinetPay.waitResponse(function(data) {
-      //     if (data.status == "REFUSED") {
-      //        e.preventDefault()
-      //     } else if (data.status == "ACCEPTED") {
-      //       document.querySelector('.formprixmodal').submit()
-      //     }
-      // });
-      // CinetPay.onError(function(data) {
-      //     console.log(data);
-      // });
-  
   
   
        

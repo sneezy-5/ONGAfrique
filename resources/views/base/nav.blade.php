@@ -330,7 +330,7 @@
 <input  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
 
 @else
-<input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+<input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
 
 @endif        
         <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
