@@ -86,7 +86,7 @@ class DonateController extends Controller
         "API_SECRET: ".$api_secret
     ]);
 
-    dd($postFields, $jsonResponse);
+    //dd($postFields, $jsonResponse);
      return redirect(json_decode($jsonResponse,true)['redirect_url']);
     //dd(json_decode($jsonResponse,true)['redirect_url']);
        //
