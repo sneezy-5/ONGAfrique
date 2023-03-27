@@ -89,77 +89,73 @@
           <div class="col-lg-6 col-12 p-0 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">  
               <section id="myCarousel" class="carousel slide carousel-fade h-100 pointer-event" data-bs-ride="carousel">
                   <div class="carousel-inner h-100">
-                      @foreach ($accuEdu as $acc)
+                     
+                  <!--education-->
                       <div class="carousel-item h-100">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image h-100" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/education/educ (13).jpeg')}}" class="img-fluid team-image h-100" alt="">
 
                           <div class="team-thumb bg-warning" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Education')}}</h3>
 
                               <a href="{{route('nosmissions.educations')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                      @endforeach
+                     
 
-                      @foreach ($accuSan as $acc)
+                     <!--sante-->
                       <div class="carousel-item h-100">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/sante/san (7).jpeg')}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-primary" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Sante')}}</h3>
 
                               <a href="{{route('nosmissions.santes')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                      @endforeach
-
-                      @foreach ($accuSoc as $acc)
+                     <!--sociale-->
                       <div class="carousel-item h-100">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/social/socia (2).jpeg')}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-success" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Social')}}</h3>
 
                               <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                      @endforeach
-
-                     @foreach ($accuSpo as $acc)
+                     
+                    <!--sport-->
+                     
                      <div class="carousel-item h-100">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/sport/spor (8).jpeg')}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-info" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Sport')}}</h3>
 
                               <a href="{{route('nosmissions.sports')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                     @endforeach
-
-                      @foreach ($accuCul as $acc)
+                    <!--culture-->
                       <div class="carousel-item h-100 active">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/culture/3.jpg')}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-danger" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Culture')}}</h3>
 
-                              <a href="{{route('nosmissions.sociales')}}" class="text-light mb-0">{{__("Voir")}}</a>
+                              <a href="{{route('nosmissions.cultures')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                      @endforeach
 
-                      @foreach ($accuEco as $acc)
+                     <!--econo-->
                       <div class="carousel-item h-100 active">
-                          <img style="height: 500px!important; width:720px!important" src="{{asset('storage/image/'.$acc->image)}}" class="img-fluid team-image" alt="">
+                          <img style="height: 500px!important; width:720px!important" src="{{asset('styles/img/socioeconomique/1.jpg')}}" class="img-fluid team-image" alt="">
 
                           <div class="team-thumb bg-danger" style="text-align:start;">
-                              <h3 class="text-white mb-0">{{$acc->type}}</h3>
+                              <h3 class="text-white mb-0">{{__('Socio-économique')}}</h3>
 
                               <a href="{{route('nosmissions.economies')}}" class="text-light mb-0">{{__("Voir")}}</a>
                           </div>
                       </div>
-                      @endforeach
+                     
                   </div>
 
             <div class="col-md m-3 bg-danger">
