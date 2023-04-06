@@ -1,46 +1,121 @@
 /* btn devis et montant*/
 
 .montant{
-    text-align:center;
-    margin-top:2px;
-  }
+  text-align:center;
+  margin-top:2px;
+}
+
+.montant .btnprix,.btnprdevise{
+  width: 80px!important;
+  font-size:14px;
+  box-shadow:1px 1px 5px 0.1px #33333370;
+  border:none
+}
+
+
+
+
+.btnprix.btnprdevise:hover{
+  background:#99cfff
+}
+
+.btnprdevise:hover{
+  background:#99cfff
+}
+.montant .active{
+  background-color: #2196F3;
+  color:white;
+  box-shadow:inset 0px 0px 10px 1px #0201014d;
+  border:2px solid #dbdbdb
+}
+
+.point {
+  list-style: none;
+  padding: 0;
+}
+
+.point li {
+  padding-bottom: 10px;
+}
+
+.point i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
+
+}
+
+.btnprdevise2{
+  width: 60px!important;
+  font-size:14px;
+  box-shadow:1px 1px 5px 0.1px #33333370;
+  border:none
+}
+
+.btnprdevise2.active{
+  background-color: #2196F3;
+  color:white;
+  box-shadow:inset 0px 0px 10px 1px #0201014d;
+  border:2px solid #dbdbdb
+}
+
+
+.btnprdevise3{
+  width: 60px!important;
+  font-size:14px;
+  box-shadow:1px 1px 5px 0.1px #33333370;
+  border:none
+}
+
+.btnprdevise3.active{
+  background-color: #2196F3;
+  color:white;
+  box-shadow:inset 0px 0px 10px 1px #0201014d;
+  border:2px solid #dbdbdb
+}
+
+.btnmobilemoney{
+  border-radius:8px;
+  border:1px solid #e8e8e8;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:2px!important
+
+}
+
+
+.activemodepai{
+  box-shadow:inset 0px 0px 10px 1px #0201014d;
+  border:2px solid #b4c4d5;
+  background-color: #4f9eee;
+  color:aliceblue
+}
+
+.btnmobilemoney img{
+  height: 40px;
+  width: 60px;
+}
+
+.btnbancaire{
+  border-radius:8px;
+  border:1px solid #e8e8e8;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:2px!important
+}
+.btnbancaire img{
+  height: 40px;
+  width: 60px;
   
-  .montant .btnprix,.btnprdevise{
-    width: 80px!important;
-    font-size:14px;
-    box-shadow:1px 1px 5px 0.1px #33333370;
-    border:none
-  }
-  
-  
-  .btnprix.btnprdevise:hover{
-    background:#99cfff
-  }
-  
-  .btnprdevise:hover{
-    background:#99cfff
-  }
-  .montant .active{
-    background-color: #2196F3;
-    color:white;
-    box-shadow:inset 0px 0px 10px 1px #0201014d;
-    border:2px solid #dbdbdb
-  }
-  
-  .point {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .point li {
-    padding-bottom: 10px;
-  }
-  
-  .point i {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #cda45e;
-  
-  }
-  
-  /* fin btn devis et montant*/
+}
+
+.containtmodepaie{
+  display: flex;
+  justify-content: center;
+}
+
+/* fin btn devis et montant*/

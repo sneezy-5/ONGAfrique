@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="{{asset('/styles/fontawesome-free-5.14.0-web/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('styles/csss/description.css')}}">
     <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
-     <!--cinepay-->
-   <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
- 
+     <!--cinepay et kkiapay-->
+  <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+  <script src="https://cdn.kkiapay.me/k.js"></script>
+
     <title>@yield('title')</title>
 </head>
 <body>

@@ -53,12 +53,39 @@
 
             </div>
 
-            <div class="form-outline mb-1">
-              <label class="form-label" for="chiffre">{{__("choix")}}</label>
+            <nav>
+              <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+                
+                <div class="btn btn-light col-md m-1 p-1 btnprdevise3 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+                <div class="btn btn-light col-md m-1 p-1  btnprdevise3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+                <div class="btn btn-light col-md m-1 p-1 btnprdevise3" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+              </div>
 
-              <input type="number" name="amount" class="iptadhe champadhes contactsadhe">
+            </nav>
 
+            <label class="form-label" for="montantmois">{{__('choix')}}</label>
+            <div class="input-group mb-2">
+        
+              <span class="input-group-text devise3">XOF</span>
+              <input type="number" id="montantmois" class="form-control iptinscript4 caseprix3 champ" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise3()" placeholder="saisissez un montant">
+              
+              <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+              <span class="alertprix3"> </span> <span class="devisealerte3">XOF</span>
+              </div>
+
+              <div class="valid-feedback" style="text-align:start;">
+                Très bien
+              </div>
             </div>
+
+            <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+              <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat5" style="display:none;"></button>
+              <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat6" style="display:none;"></button>
+            </div>
+
+            <select class="francscfa3" name="amount" style="display:none;">
+            <option value="100" class="FrCfa3">100</option>
+           </select>
 
             <!-- Password input -->
             <div class="form-outline mb-1">

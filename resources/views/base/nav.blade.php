@@ -295,6 +295,24 @@
   <form action="{{route('faireundon.store')}}" method="POST" class="mt-3 m-1 justify-content-between formprixmodal">
       @csrf
 
+      <div class="w-100 d-flex justify-content-center align-items-center">
+
+        <div class="row containtmodepaie w-100 m-2" id="nav-tab" role="tablist">
+          <h5>Moyens de paiement</h5>
+
+          <div class="btnbancaire btnmoyenpai col m-1 p-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+            <span class="visually-hidden">New alerts</span>
+            <img src="{{asset('styles/img/modepaiement/visa-mastercard-logos.jpg')}}" alt="">
+            
+          </div>
+
+          <div class="btnmobilemoney btnmoyenpai col m-1 p-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">
+            <img src="{{asset('styles/img/modepaiement/mobilemoney.webp')}}" alt="">
+          
+          </div>
+        </div>
+      </div>
+
       <div class="input-group mb-3">
           
           @if($user = Auth::user())
@@ -316,9 +334,15 @@
          <nav>
           <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
             
+            @if($user = Auth::user())
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise active disabled" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+            <div class="btn btn-light col-md m-1 p-1  btnprdevise disabled" id="nav-profile-tab " data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+            <div class="btn btn-light col-md m-1 p-1 btnprdevise disabled" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+            @else
             <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
             <div class="btn btn-light col-md m-1 p-1  btnprdevise" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
             <div class="btn btn-light col-md m-1 p-1 btnprdevise" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+            @endif
           </div>
 
         </nav>
@@ -327,7 +351,7 @@
       <div class="input-group mb-2">
         <span class="input-group-text devise">XOF</span>
 @if ($user= Auth::user())
-<input  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
+<input readonly  type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="{{$user->amount}}" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
 
 @else
 <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant" name="amount">
@@ -349,9 +373,15 @@
           <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat2" style="display:none;"></button>
         </div>
 
+        @if ($user = Auth::user())
+        <select class="francscfa" name="francscfa" style="display:none;">
+          <option  value="{{$user->amount}}" class="FrCfa">{{$user->amount}}</option>
+        </select>
+        @else
         <select class="francscfa" name="francscfa" style="display:none;">
           <option  value="100" class="FrCfa">100</option>
         </select>
+        @endif
 
      <div>
   
@@ -394,27 +424,49 @@
             @csrf
             <div class="form-outline mb-1">
               <label class="form-label" for="nom">{{__("nomP")}}</label>
-              <input type="text" name="name" id="nom" class="form-control iptinscript1"/>
+              <input type="text" name="name" id="nom" class="form-control iptinscript1 inpinsmodal"/>
 
             </div>
 
             <div class="form-outline mb-1">
               <label class="form-label" for="mail">{{__("mail")}}</label>
-              <input type="email" name="email" id="mail" class="form-control iptinscript2 un"/>
+              <input type="email" name="email" id="mail" class="form-control iptinscript2 inpinsmodal un"/>
 
             </div>
 
-            <div class="form-outline mb-1">
-              <label class="form-label" for="chiffre">{{__("choix")}}</label>
+            <nav>
+              <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+                
+                <div class="btn btn-light col-md m-1 p-1 btnprdevise2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+                <div class="btn btn-light col-md m-1 p-1  btnprdevise2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+                <div class="btn btn-light col-md m-1 p-1 btnprdevise2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+              </div>
 
-              <select class="form-select chiffreinscri" name="amount" aria-label="Default select example">
+            </nav>
 
-                <option value="10000">10000</option>
-                <option value="20000">20000</option>
-                <option value="30000">30000</option>
-              </select>
+            <div class="input-group mb-2">
+      <label class="form-label" for="montantmois">{{__('choix')}}</label>
+      <span class="input-group-text devise2">XOF</span>
+      <input type="number" id="montantmois" class="form-control iptinscript4 caseprix2" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise2()" placeholder="saisissez un montant">
+      
+      <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+       <span class="alertprix2"> </span> <span class="devisealerte2">XOF</span>
+      </div>
 
-            </div>
+      <div class="valid-feedback" style="text-align:start;">
+        Très bien
+      </div>
+    </div>
+
+
+    <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+      <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat3" style="display:none;"></button>
+      <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat4" style="display:none;"></button>
+    </div>
+
+    <select class="francscfa2" name="francscfa2" style="display:none;">
+      <option value="100" class="FrCfa2">100</option>
+    </select>
 
             <div class="form-outline mb-1">
               <label class="form-label" for="pass">{{__("password")}}</label>

@@ -1110,3 +1110,398 @@
   </div>
 
   <!--fin modal-->
+
+
+  /// Inscription
+
+
+  <form action="#" class="formconnex">
+    <div
+      class="card-body row d-flex container-fluid flex-sm-row w-100 gap-2  align-items-center justify-content-center justify-content-lg-start">
+      <div class="card-title text-dark h2 mb-0  col-md" style="font-weight:700;">Inscrivez-vous</div>
+
+
+
+      <!-- nom et prenom input -->
+      <div class="form-outline mb-1">
+
+        <input type="text" id="form3Example3" class="form-control  champ" placeholder="Nom et prénoms" />
+
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Entrez votre nom et prenoms
+        </div>
+        <div class="valid-feedback">
+          Très bien
+        </div>
+
+      </div>
+
+    <!-- email input -->
+      <div class="form-outline mb-1">
+
+        <input type="email" id="form3Example3" class="form-control champ" placeholder="Email" />
+
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Entrez votre Email
+        </div>
+        <div class="valid-feedback">
+          Très bien
+        </div>
+
+      </div>
+
+      <nav>
+        <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+          
+          <div class="btn btn-light col-md m-1 p-1 btnprdevise3 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+          <div class="btn btn-light col-md m-1 p-1  btnprdevise3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+          <div class="btn btn-light col-md m-1 p-1 btnprdevise3" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+        </div>
+
+      </nav>
+
+      <label class="form-label" for="montantmois">Combien Souhaitez-vous donner par mois ?</label>
+      <div class="input-group mb-2">
+        
+        <span class="input-group-text devise3">XOF</span>
+        <input type="number" id="montantmois" class="form-control iptinscript4 caseprix3 champ" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise3()" placeholder="saisissez un montant">
+        
+        <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+         <span class="alertprix3"> </span> <span class="devisealerte3">XOF</span>
+        </div>
+
+        <div class="valid-feedback" style="text-align:start;">
+          Très bien
+        </div>
+      </div>
+
+      <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+        <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat5" style="display:none;"></button>
+        <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat6" style="display:none;"></button>
+      </div>
+
+      <select class="francscfa3" name="francscfa3" style="display:flex;">
+        <option value="100" class="FrCfa3">100</option>
+      </select>
+
+      <!-- Password input -->
+      <div class="form-outline mb-1">
+  
+        <input type="password" id="form3Example4" class="form-control  champ"
+          placeholder="Entrer un mot de passe" />
+
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+          Veuillez Entrez un mot de passe
+        </div>
+        <div class="valid-feedback">
+          Très bien
+        </div>
+
+      </div> 
+
+      <div class="text-center text-lg-start  pt-2">
+          <input type="submit" value="Connexion" class="btn btn-primary">
+        <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="#!"
+            class="link-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Inscriver-vous</a></p>
+      </div>
+
+  </form>
+
+
+  //// inscription Dnf
+
+  
+  <form action="Accueil.html" class="mt-3 m-1 justify-content-between formprixmodal">
+
+
+    <div class="w-100 d-flex justify-content-center align-items-center">
+
+      <div class="row containtmodepaie w-100 m-2" id="nav-tab" role="tablist">
+        <h5>Moyens de paiement</h5>
+      
+        <div class="btnbancaire btnmoyenpai col m-1 p-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          <span class="visually-hidden">New alerts</span>
+          <img src="img/modepaiement/visa-mastercard-logos.jpg" alt="">
+          <small>Bancaire</small>
+        </div>
+
+        <div class="btnmobilemoney btnmoyenpai col m-1 p-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">
+          <img src="img/modepaiement/mobilemoney.webp" alt="">
+          <small>Mobile money</small>
+        </div>
+       </div>
+    </div>
+
+      <div class="input-group mb-3">
+       <input type="text" class="form-control casenom" placeholder="Nom et Prénoms">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="number" class="form-control casecontact"  placeholder="contacts">
+        
+       </div>
+       
+
+
+      <nav>
+        <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+          
+          <div class="btn btn-light col-md m-1 p-1 btnprdevise active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+          <div class="btn btn-light col-md m-1 p-1  btnprdevise" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+          <div class="btn btn-light col-md m-1 p-1 btnprdevise" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+        </div>
+
+      </nav>
+
+
+    <div class="input-group mb-2">
+      <span class="input-group-text devise">XOF</span>
+      <input type="number" class="form-control caseprix" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise()" placeholder="saisissez un montant">
+      
+      <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+       <span class="alertprix"> </span> <span class="devisealerte">XOF</span>
+      </div>
+
+      <div class="valid-feedback" style="text-align:start;">
+        Très bien
+      </div>
+    </div>
+
+      
+
+      <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+        <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat" style="display:none;"></button>
+        <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat2" style="display:none;"></button>
+      </div>
+
+      <select class="francscfa" name="francscfa" style="display:none;">
+        <option value="100" class="FrCfa">100</option>
+      </select>
+
+   <div>
+
+    <p>
+      <div class="form-check d-flex gap-2">
+        <input class="form-check-input btncoche" type="checkbox"  id="flexCheckDefault" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+        <label class="form-check-label" for="flexCheckDefault">
+          Donner en l'honneur ou en mémoire 
+        </label>
+      </div>
+
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="form-group">
+       <input type="text" class="form-control specialchamp" placeholder="nom de quelqu'un de spécial">
+      </div>
+    </div>
+
+   </div>
+
+    <input type="submit" value="faire un don" class="btn btn-primary w-100 mt-5 btnapi1">
+  </form>
+
+  //// inscription mensuel
+
+
+  <form action="#" class="px-md-2 mt-2 forminscrimodal">
+    
+    <div class="form-outline mb-1">
+      <label class="form-label" for="nom">Nom & prénoms</label>
+      <input type="text" id="nom" class="form-control iptinscript1 inpinsmodal"/>
+
+    </div>
+
+    <div class="form-outline mb-1">
+      <label class="form-label" for="mail">email</label>
+      <input type="email" id="mail" class="form-control iptinscript2 inpinsmodal un"/>
+
+    </div>
+
+    <nav>
+      <div class="row m-2 display-flex justify-content-center align-items-center" id="nav-tab" role="tablist">
+        
+        <div class="btn btn-light col-md m-1 p-1 btnprdevise2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">XOF</div>
+        <div class="btn btn-light col-md m-1 p-1  btnprdevise2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">EUR</div>
+        <div class="btn btn-light col-md m-1 p-1 btnprdevise2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">USD</div>
+      </div>
+
+    </nav>
+
+
+    <div class="input-group mb-2">
+      <label class="form-label" for="montantmois">Combien Souhaitez-vous donner par mois ?</label>
+      <span class="input-group-text devise2">XOF</span>
+      <input type="number" id="montantmois" class="form-control iptinscript4 caseprix2" aria-label="Dollar amount (with dot and two decimal places)" value="100" onkeyup="convertisseur_devise2()" placeholder="saisissez un montant">
+      
+      <div class="alert alert-danger mb-0 invalid-feedback p-1" role="alert" id="validationServerUsernameFeedback" style="text-align:start;">
+       <span class="alertprix2"> </span> <span class="devisealerte2">XOF</span>
+      </div>
+
+      <div class="valid-feedback" style="text-align:start;">
+        Très bien
+      </div>
+    </div>
+
+
+    <div class="m-0" style="display:flex; justify-content:center;align-items: center;">
+      <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat3" style="display:none;"></button>
+      <button type="button"  class="btn btn-danger p-0 h5 btn-small" id="resultat4" style="display:none;"></button>
+    </div>
+
+    <select class="francscfa2" name="francscfa2" style="display:none;">
+      <option value="100" class="FrCfa2">100</option>
+    </select>
+
+  
+
+    <div class="form-outline mb-1">
+      <label class="form-label" for="pass">Entrez un mot de passe</label>
+      <input type="password" id="pass" class="form-control iptinscript3 un inpinsmodal" >
+
+    </div>
+
+    <button type="submit" class="btn btn-success mb-1">Envoyer</button>
+
+  </form>
+
+  /***NEWWW ADHESIONN */
+
+const prevBtns = document.querySelectorAll(".btn-prev");
+const nextBtns = document.querySelectorAll(".btn-next");
+const progress = document.getElementById("progress");
+const formSteps = document.querySelectorAll(".step-forms");
+const progressSteps = document.querySelectorAll(".progress-step");
+
+
+let formStepsNum = 0;
+
+nextBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    formStepsNum++;
+    updateFormSteps();
+    updateProgressbar();
+   
+  });
+});
+
+prevBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    formStepsNum--;
+    updateFormSteps();
+    updateProgressbar();
+    
+  });
+});
+
+function updateFormSteps() {
+  formSteps.forEach((formStep) => {
+    formStep.classList.contains("step-forms-active") &&
+      formStep.classList.remove("step-forms-active");
+  });
+
+  formSteps[formStepsNum].classList.add("step-forms-active");
+}
+
+function updateProgressbar() {
+  progressSteps.forEach((progressStep, idx) => {
+    if (idx < formStepsNum + 1) {
+      progressStep.classList.add("progress-step-active");
+      
+    } else {
+      progressStep.classList.remove("progress-step-active");
+   
+    }
+  });
+
+  progressSteps.forEach((progressStep, idx) => {
+    if (idx < formStepsNum) {
+      
+      progressStep.classList.add("progress-step-check");
+    } else {
+   
+      progressStep.classList.remove("progress-step-check");
+    }
+  });
+ 
+  const progressActive = document.querySelectorAll(".progress-step-active");
+
+  progress.style.width =
+    ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+}
+
+
+var formadhe=document.querySelector('.formadhe')
+
+var msgalert=document.querySelector('.msgalert')
+
+var nomadhe=document.querySelector('.nomadhe')
+var dateadhe=document.querySelector('.dateadhe')
+var fonctionadhe=document.querySelector('.fonctionadhe')
+var photoadhe=document.querySelector('.photoadhe')
+var mailadhe=document.querySelector('.mailadhe')
+var regionadhe=document.querySelector('.regionadhe')
+var sectionadhe=document.querySelector('.sectionadhe')
+var contactsadhe=document.querySelector('.contactsadhe')
+
+
+formadhe.addEventListener('submit',function(e){
+  if(nomadhe.value==='' || dateadhe.value==='' || fonctionadhe.value==='' || photoadhe.value==='' || mailadhe.value==='' || regionadhe.value==='' || sectionadhe.value==='' || contactsadhe.value===''){
+
+    e.preventDefault()
+    msgalert.innerHTML= "Veillez remplire tous les champs"
+    
+
+  }else{
+    e.preventDefault()
+    msgalert.innerHTML= ""
+
+
+
+
+ /**api de paiement */
+
+        CinetPay.setConfig({
+          apikey: '496511264637a741547eca9.50530040',//   YOUR APIKEY
+          site_id: '798238',//YOUR_SITE_ID
+          notify_url: 'http://mondomaine.com/notify/',
+          mode: 'PRODUCTION'
+        });
+        CinetPay.getCheckout({
+          transaction_id: Math.floor(Math.random() * 100000000).toString(), // YOUR TRANSACTION ID
+          amount:2000,
+          currency: 'XOF',
+          channels: 'ALL',
+          description: 'Test de paiement',   
+           //Fournir ces variables pour le paiements par carte bancaire
+          customer_name:nomadhe.value,//Le nom du client
+          customer_surname:"ONGSOURIREDAFRIQUE",//Le prenom du client
+          customer_email:mailadhe.value,//l'email du client
+          customer_phone_number:'0574686453',//l'email du client
+          customer_address : "BP 0024",//addresse du client
+          customer_city: "abidjan",// La ville du client
+          customer_country : "CI",// le code ISO du pays
+          customer_state : "CI",// le code ISO l'état
+          customer_zip_code : "ABJ2", // code postal
+    
+        });
+        CinetPay.waitResponse(function(data) {
+          if (data.status == "REFUSED") {
+             e.preventDefault()
+    
+          } else if (data.status == "ACCEPTED") {
+            document.querySelector('.formadhe').submit()  
+          }
+      });
+      CinetPay.onError(function(data) {
+          console.log(data);
+      });
+    
+     
+      if(document.head.lastChild){
+    
+          document.head.lastChild.innerHTML= `input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='password'] {font-size: 16px;}#cp-close svg {fill: #fff;stroke: #fff;width: 10px;height: 10px;}button {cursor: pointer;}#cp-close:hover svg {fill: red;}.cp-modal {position: fixed;top: 0;left: 0;display: flex;align-items: center;justify-content: center;height: 0vh;background-color: transparent;overflow: hidden;transition: background-color 0.25s ease;z-index: 9999;}.cp-modal.open {position: fixed;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.75);transition: background-color 0.25s;}.cp-modal.open > .cp-content-wrapper {transform: scale(1);}.cp-modal .cp-content-wrapper {position: relative;display: flex;flex-direction: column;align-items: center;justify-content: flex-start;width: 540px;height: 710px;margin: 0;padding: 2.5rem;background-color: transparent;border-radius: 0.3125rem;transform: scale(0);transition: transform 0.25s;transition-delay: 0.15s;}.cp-modal .cp-content-wrapper .cp-close {position: absolute;top: 0.5rem;right: 0.5rem;display: flex;align-items: center;justify-content: center;width: 1.5rem;height: 1.5rem;border: none;background-color: transparent;font-size: 1.5rem;transition: 0.25s linear;}.cp-modal .cp-content-wrapper .cp-modal-header {position: relative;display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 100%;margin: 0;padding: 0 0 1.25rem;}.cp-modal .cp-content-wrapper .cp-modal-header h2 {font-size: 1.5rem;font-weight: bold;}.cp-modal .cp-content-wrapper .cp-content {position: relative;display: flex;width: 100%;height: 100%;}.cp-modal .cp-content-wrapper .cp-content p {font-size: 0.875rem;line-height: 1.75;}.cp-modal .cp-content-wrapper .cp-modal-footer {position: relative;display: flex;align-items: center;justify-content: flex-end;width: 100%;margin: 0;padding: 1.875rem 0 0;}.cp-modal .cp-content-wrapper .cp-modal-footer .action {position: relative;margin-left: 0.625rem;padding: 0.625rem 1.25rem;border: none;background-color: slategray;border-radius: 0.25rem;color: white;font-size: 0.87rem;font-weight: 300;overflow: hidden;z-index: 1;}.cp-modal .cp-content-wrapper .cp-modal-footer .action:before {position: absolute;cp-content: "";top: .6rem;left: 0;width: 0%;height: 100%;background-color: rgba(255, 255, 255, 0.2);transition: width 0.25s;z-index: 0;}.cp-modal .cp-content-wrapper .cp-modal-footer .action:first-child {background-color: #2ecc71;}.cp-modal .cp-content-wrapper .cp-modal-footer .action:last-child {background-color: #e74c3c;}.cp-modal .cp-content-wrapper .cp-modal-footer .action:hover:before {width: 100%;}.germinator {display: block;position: absolute;z-index: 100;background-position: center;left: 50%;top: 50%;transform: translate(-50%, -50%);}.germinator span {vertical-align: middle;border-radius: 100%;display: inline-block;width: 3rem;height: 3rem;margin: 3px 2px;-webkit-animation: germinator 0.8s linear infinite alternate;animation: germinator 0.8s linear infinite alternate;}.germinator span:nth-child(1) {-webkit-animation-delay: -0.8s;animation-delay: -0.8s;background: #41ac4c;}.germinator span:nth-child(2) {-webkit-animation-delay: -0.26666s;animation-delay: -0.26666s;background: #357a4f;}.germinator span:nth-child(3) {-webkit-animation-delay: -0.8s;animation-delay: -0.8s;background: #41ac4c;}@keyframes germinator {from {transform: scale(0, 0);}to {transform: scale(1, 1);}}@-webkit-keyframes germinator {from {-webkit-transform: scale(0, 0);}to {-webkit-transform: scale(1, 1);}}@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}}@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 4) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {}@media screen and (device-width: 360px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 480px) and (device-height: 800px) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: portrait) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}}@media screen and (device-width: 480px) and (device-height: 800px) and (orientation: landscape) {.cp-modal .cp-content-wrapper {width: 100%;padding: .0rem;}#cp-close svg {fill: red;stroke: red;width: 15px;height: 15px;}.cp-modal .cp-content-wrapper .cp-close {top: .6rem;right: .6rem;}.cp-modal .cp-content-wrapper {height: clamp(600px, calc(100vh - 2rem), 741px);}} @media only screen and (max-device-width: 667px) {.cp-modal .cp-content-wrapper .cp-close {z-index: 100 !important;right: 0 !important;top: 9% !important;transform: translate(-50%, -50%) !important; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;border-radius: 5px !important;position: absolute !important;display: flex !important;align-items: center !important;justify-content: center !important;width: 1.5rem !important;height: 1.5rem !important;border: none !important;background-color: white !important;transition: 0.25s linear !important;}#cp-close svg{fill: red !important; stroke: red !important;}}`
+    
+    }
+
+  }
+})
