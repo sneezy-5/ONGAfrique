@@ -305,7 +305,10 @@ if(btnmobilemoney.classList.contains('active')){
         
         openKkiapayWidget({amount:montantapayer,position:"center",theme:"rgb(200 166 43)",callback:"",name:nomclient, sandbox:"true", key:"85d5ea40ce3911edb98f214e308c4a18"})
       
-
+        addSuccessListener(response => {
+          console.log(response);
+          document.querySelector('.formprixmodal').submit()
+      });
   
      }
   

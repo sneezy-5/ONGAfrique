@@ -60,39 +60,39 @@ class DonateController extends Controller
         if(auth()->check()){
             $data['user_id']=auth()->user()->id;
         }
-
+        Don::create($data);
        
-        $apn =  env('APP_URL')."/ipn";
-        $succes =  env('APP_URL')."succesDon/".http_build_query($data);
-        $cancel =  env('APP_URL')."canceldon";
-        $postFields = array(
-            "item_name"    =>$request['last_name'],
-        "item_price"   => $request['francscfa'],
-        "currency"     => "XOF",
-        "ref_command"  => date("Hs").date('H'),
-        "command_name" =>  "test",
-        "env"=>"test",
-        "ipn_url" =>"https://ongsouriredafrique.com/ipn",
-        "success_url" => $succes,
-        "cancel_url" => $cancel,
-        "custom_field" =>  "zefezf"
-    );
+    //     $apn =  env('APP_URL')."/ipn";
+    //     $succes =  env('APP_URL')."succesDon/".http_build_query($data);
+    //     $cancel =  env('APP_URL')."canceldon";
+    //     $postFields = array(
+    //         "item_name"    =>$request['last_name'],
+    //     "item_price"   => $request['francscfa'],
+    //     "currency"     => "XOF",
+    //     "ref_command"  => date("Hs").date('H'),
+    //     "command_name" =>  "test",
+    //     "env"=>"test",
+    //     "ipn_url" =>"https://ongsouriredafrique.com/ipn",
+    //     "success_url" => $succes,
+    //     "cancel_url" => $cancel,
+    //     "custom_field" =>  "zefezf"
+    // );
 
     
-    $api_key="386c30e32715a54b2beba9a5306242a6621545961f8152b18aca4372ba19ece6";
-    $api_secret="94af82652ae929fd60b3a26e2e2e96e310871e3362f75455402cb229da8863e0";
-    $jsonResponse =$this->payement('https://paytech.sn/api/payment/request-payment', $postFields, [
-        "API_KEY: ".$api_key,
-        "API_SECRET: ".$api_secret
-    ]);
+    // $api_key="386c30e32715a54b2beba9a5306242a6621545961f8152b18aca4372ba19ece6";
+    // $api_secret="94af82652ae929fd60b3a26e2e2e96e310871e3362f75455402cb229da8863e0";
+    // $jsonResponse =$this->payement('https://paytech.sn/api/payment/request-payment', $postFields, [
+    //     "API_KEY: ".$api_key,
+    //     "API_SECRET: ".$api_secret
+    // ]);
 
-    //dd($postFields, $jsonResponse);
-     return redirect(json_decode($jsonResponse,true)['redirect_url']);
-    //dd(json_decode($jsonResponse,true)['redirect_url']);
-       //
+    // //dd($postFields, $jsonResponse);
+    //  return redirect(json_decode($jsonResponse,true)['redirect_url']);
+    // //dd(json_decode($jsonResponse,true)['redirect_url']);
+    //    //
         
 
-        //return redirect()->route('/')->with('success', 'Votre don a été effectué avec succès');
+        return redirect()->route('/')->with('success', 'Votre don a été effectué avec succès');
     }
 
     /**

@@ -59,48 +59,48 @@ class MemberController extends Controller
             $fileNameToStore = 'noimage.jpg';
             $path = 'noimage.jpg';
             }
-        //   $member=  Member::create([
+          $member=  Member::create([
 
-        //         'nom'=>$request->nom,
-        //         'picture'=>$fileNameToStore,
-        //         'email' => $request->email,
-        //         'date_naissance'=>$request->date_naissance,
-        //         'fonction'=>$request->fonction,
-        //         'phone'=>$request->phone,
-        //         'region'=>$request->region,
-        //         'section'=>$request->section,
-        //         // 'civilite'=>$request->civilite,
-        //         'paye'=>true,
+                'nom'=>$request->nom,
+                'picture'=>$fileNameToStore,
+                'email' => $request->email,
+                'date_naissance'=>$request->date_naissance,
+                'fonction'=>$request->fonction,
+                'phone'=>$request->phone,
+                'region'=>$request->region,
+                'section'=>$request->section,
+                // 'civilite'=>$request->civilite,
+                'paye'=>true,
     
-        //     ]);
+            ]);
             
-            $apn =  env('APP_URL')."/ipn";
-            $succes =  env('APP_URL')."succesMember/".http_build_query($data);
-            $cancel =  env('APP_URL')."cancelmember";
-            $postFields = array(
-                "item_name"    =>$request['nom'],
-            "item_price"   => 2000,
-            "currency"     => "xof",
-            "ref_command"  => date("Hs"),
-            "command_name" =>  "test",
-            "env"=>"test",
-            "ipn_url" =>"https://domaine.com/ipn",
-            "success_url" => $succes,
-            "cancel_url" => $cancel,
-            "custom_field" =>  "zefezf"
-        );
+        //     $apn =  env('APP_URL')."/ipn";
+        //     $succes =  env('APP_URL')."succesMember/".http_build_query($data);
+        //     $cancel =  env('APP_URL')."cancelmember";
+        //     $postFields = array(
+        //         "item_name"    =>$request['nom'],
+        //     "item_price"   => 2000,
+        //     "currency"     => "xof",
+        //     "ref_command"  => date("Hs"),
+        //     "command_name" =>  "test",
+        //     "env"=>"test",
+        //     "ipn_url" =>"https://domaine.com/ipn",
+        //     "success_url" => $succes,
+        //     "cancel_url" => $cancel,
+        //     "custom_field" =>  "zefezf"
+        // );
     
         
-        $api_key="386c30e32715a54b2beba9a5306242a6621545961f8152b18aca4372ba19ece6";
-        $api_secret="94af82652ae929fd60b3a26e2e2e96e310871e3362f75455402cb229da8863e0";
-        $jsonResponse =$this->payement('https://paytech.sn/api/payment/request-payment', $postFields, [
-            "API_KEY: ".$api_key,
-            "API_SECRET: ".$api_secret
-        ]);
-        //dd($postFields, $jsonResponse);
-        return redirect(json_decode($jsonResponse,true)['redirect_url']);
+        // $api_key="386c30e32715a54b2beba9a5306242a6621545961f8152b18aca4372ba19ece6";
+        // $api_secret="94af82652ae929fd60b3a26e2e2e96e310871e3362f75455402cb229da8863e0";
+        // $jsonResponse =$this->payement('https://paytech.sn/api/payment/request-payment', $postFields, [
+        //     "API_KEY: ".$api_key,
+        //     "API_SECRET: ".$api_secret
+        // ]);
+        // //dd($postFields, $jsonResponse);
+        // return redirect(json_decode($jsonResponse,true)['redirect_url']);
     
-        // return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
+        return redirect()->route('/')->with('success', 'Votre adhésion a été effectuée avec succès');
 
     }
 
