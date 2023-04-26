@@ -286,19 +286,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Evennement</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('events.index')}}">Liste des evennement</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{route('events.create')}}">Ajouter un evennement</a></li>
-              </ul>
-            </div>
-          </li>
+         
           
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
@@ -313,7 +301,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">pages</li>
+          <li class="nav-item nav-category">Comptes</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-account-circle-outline"></i>
