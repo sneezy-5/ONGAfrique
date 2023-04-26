@@ -34,7 +34,7 @@
   <!-- Template styles-->
   <link rel="stylesheet" href="{{asset('styles/css/gallery.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  
+  <link rel="shortcut icon" href="{{url('styles/img/logo.jpeg')}}" />
 
  
     <title>@yield('title')</title>
